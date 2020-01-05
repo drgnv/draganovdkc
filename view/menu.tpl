@@ -1,7 +1,7 @@
 <div class="sidenav">
-    <form align="center">
-        <input type="text" size="14">
-        <input type="submit" size="5" value="t">
+    <center><img src="../images/dkcwhite.png" width="100px" height="100px" ></center>
+    <form id="demo-2">
+        <input type="search" placeholder="Search">
     </form><br>
     <a href="./home.php">Начало</a>
     <a href="./exams.php">Прегледи</a>
