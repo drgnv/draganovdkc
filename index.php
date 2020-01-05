@@ -2,7 +2,7 @@
 error_reporting(E_ERROR);
 session_start();
 if(isset($_SESSION['user_info'])){
-    header("Location: ./controller/new_patient.php");
+    header("Location: ./controller/home.php");
 }
 include './libs/Smarty.class.php';
 include_once './model/Settings.php';
@@ -23,7 +23,7 @@ if(isset($_POST['password'])){
 
     if($Settings->logIn($username, $password) == true){
         $_SESSION['login'] = true;
-        header("Location: ./controller/new_patient.php");
+        header("Location: ./controller/home.php");
     }else{
         $wrong_msg = "Грешно име/парола!";
         session_destroy();
