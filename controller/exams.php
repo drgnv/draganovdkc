@@ -22,6 +22,12 @@ $Smarty->assign('lang', $language);
 $exam_list = $Dkc->getExamsByUserId($_SESSION['user_info'][0]['id']);
 $Smarty->assign('exam_list', $exam_list);
 
+if(isset($_GET['delete_id'])){
 
+    $delete_id = $_GET['delete_id'];
+    $Dkc->deleteExamById($delete_id);
+    header('Location: exams.php');
+
+}
 
 $Smarty->display('exams.tpl');

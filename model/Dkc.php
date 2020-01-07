@@ -32,6 +32,7 @@ class Dkc extends Mdds
     public function deleteExamById($exam_id){
         $sql = "DELETE FROM `exams` WHERE `exams_id` = '".$exam_id."'";
         $this->sqliexecute($sql);
+        $sql;
     }
 
     public function newExam($exam){
@@ -45,4 +46,6 @@ class Dkc extends Mdds
            ".mysqli_real_escape_string($this->connect(), $exam['status']).")";
         $this->sqliexecute($sql);
     }
+
+
 }

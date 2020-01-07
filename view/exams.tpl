@@ -106,7 +106,7 @@
                            'width=500,height=300');
                            return false;"
                 ><img src="../images/edit.png" width="20" height="20"></a>
-                <img src="../images/delete.png" width="20" height="20">
+                <a href="./exams.php?delete_id={$exam.exams_id}" onclick="return confirm('Сигурни ли сте, че искате да изтриете прегледа на {$exam.pi_names}?')"><img src="../images/delete.png" width="20" height="20"></a>
             </td>
         </tr>
         {/foreach}
