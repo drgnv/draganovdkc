@@ -47,5 +47,10 @@ class Dkc extends Mdds
         $this->sqliexecute($sql);
     }
 
+    public function changeExamStatus($status, $exam_id){
+        $sql = "UPDATE exams SET exams_status = '".mysqli_real_escape_string($this->connect(), $status)."' WHERE exams_id = '".$exam_id."'";
+        $this->sqliexecute($sql);
+    }
+
 
 }

@@ -30,4 +30,12 @@ if(isset($_GET['delete_id'])){
 
 }
 
+if(isset($_GET['status'])){
+$status = $_GET['status'];
+$exam_id = $_GET['exam_id'];
+    $Dkc->changeExamStatus($status, $exam_id);
+    header('Location: exams.php');
+
+}
+
 $Smarty->display('exams.tpl');
