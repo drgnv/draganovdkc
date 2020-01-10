@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-01-10 17:31:34
+/* Smarty version 3.1.32, created on 2020-01-10 19:44:43
   from '/var/www/html/dkc/view/clinical_laboratory.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5e1898d62a8667_48399193',
+  'unifunc' => 'content_5e18b80b55f0a5_97392699',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '498439288ab0f2eb56a6123b4928b96d96336e55' => 
     array (
       0 => '/var/www/html/dkc/view/clinical_laboratory.tpl',
-      1 => 1578670293,
+      1 => 1578678282,
       2 => 'file',
     ),
   ),
@@ -23,7 +23,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5e1898d62a8667_48399193 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e18b80b55f0a5_97392699 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 $_smarty_tpl->_subTemplateRender("file:menu.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 echo '<script'; ?>
@@ -54,7 +54,7 @@ echo '<script'; ?>
 <div class="main">
 
 
-    <table id="journal" class="display" >
+    <table id="journal" class="hover compact" >
         <thead>
         <tr  style="background-color: #34495E; color: white; height: 1px; font-size: 15px;">
             <th title="Статус">С</th>
@@ -73,11 +73,9 @@ foreach ($_from as $_smarty_tpl->tpl_vars['patient']->value) {
 ?>
             <tr>
                 <td><?php if ($_smarty_tpl->tpl_vars['patient']->value['over'] == "on") {?>
-                        <i style="visibility: hidden;">1</i><a href="./exams.php?status=0&exam_id=<?php echo $_smarty_tpl->tpl_vars['exam']->value['exams_id'];?>
-"><img src="../images/over.PNG" width="20" height="20" title="Приключен"></a>
+                        <i style="visibility: hidden;">1</i><img src="../images/over.PNG" width="20" height="20" title="Приключен">
                     <?php } else { ?>
-                        <i style="visibility: hidden;">0</i><a href="./exams.php?status=1&exam_id=<?php echo $_smarty_tpl->tpl_vars['exam']->value['exams_id'];?>
-"><img src="../images/notover.PNG" width="20" height="20" title="НЕприключен"></a>
+                        <i style="visibility: hidden;">0</i><img src="../images/notover.PNG" width="20" height="20" title="НЕприключен">
                     <?php }?></td>
                 <td>
 
@@ -100,7 +98,16 @@ if ($_prefixVariable2 !== "on") {?> <b hidden="true">b</b>
 </td>
                 <td><?php echo $_smarty_tpl->tpl_vars['patient']->value['idn'];?>
 </td>
-                <td></td>
+                <td>
+                    <a href="./edit.php?id=<?php echo $_smarty_tpl->tpl_vars['patient']->value['id'];?>
+"
+                       onclick="window.open('./edit.php?id=<?php echo $_smarty_tpl->tpl_vars['patient']->value['id'];?>
+',
+                               'newwindow',
+                               'width=900,height=600');
+                               return false;"
+                    ><img src="../images/edit.png" width="20" height="20"></a>
+                </td>
             </tr>
         <?php
 }

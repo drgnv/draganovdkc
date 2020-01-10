@@ -22,7 +22,7 @@
 <div class="main">
 
 
-    <table id="journal" class="display" >
+    <table id="journal" class="hover compact" >
         <thead>
         <tr  style="background-color: #34495E; color: white; height: 1px; font-size: 15px;">
             <th title="Статус">С</th>
@@ -37,9 +37,9 @@
         {foreach from=$daylist item=patient}
             <tr>
                 <td>{if $patient.over == "on"}
-                        <i style="visibility: hidden;">1</i><a href="./exams.php?status=0&exam_id={$exam.exams_id}"><img src="../images/over.PNG" width="20" height="20" title="Приключен"></a>
+                        <i style="visibility: hidden;">1</i><img src="../images/over.PNG" width="20" height="20" title="Приключен">
                     {else}
-                        <i style="visibility: hidden;">0</i><a href="./exams.php?status=1&exam_id={$exam.exams_id}"><img src="../images/notover.PNG" width="20" height="20" title="НЕприключен"></a>
+                        <i style="visibility: hidden;">0</i><img src="../images/notover.PNG" width="20" height="20" title="НЕприключен">
                     {/if}</td>
                 <td>
 
@@ -53,7 +53,14 @@
                 <td>{$patient.number}</td>
                 <td>{$patient.names}</td>
                 <td>{$patient.idn}</td>
-                <td></td>
+                <td>
+                    <a href="./edit.php?id={$patient.id}"
+                       onclick="window.open('./edit.php?id={$patient.id}',
+                               'newwindow',
+                               'width=900,height=600');
+                               return false;"
+                    ><img src="../images/edit.png" width="20" height="20"></a>
+                </td>
             </tr>
         {/foreach}
         </tbody>

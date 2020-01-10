@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-01-08 19:32:10
+/* Smarty version 3.1.32, created on 2020-01-10 19:33:06
   from '/var/www/html/dkc/view/exam_panel1.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5e16121a356a92_95715884',
+  'unifunc' => 'content_5e18b552f27c42_47496709',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '362abc7a8997d796ef9f9a71bcc8a1b32083097f' => 
     array (
       0 => '/var/www/html/dkc/view/exam_panel1.tpl',
-      1 => 1578504356,
+      1 => 1578677586,
       2 => 'file',
     ),
   ),
@@ -20,9 +20,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e16121a356a92_95715884 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e18b552f27c42_47496709 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/var/www/html/dkc/libs/plugins/modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
-?><table border="0" id="journal" class="display" >
+?><table border="0" id="journal" class="hover compact" >
     <thead>
     <tr  style="background-color: #34495E; color: white; height: 1px; font-size: 15px;">
         <th title="Статус">С</th>

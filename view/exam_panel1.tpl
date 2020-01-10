@@ -1,4 +1,4 @@
-<table border="0" id="journal" class="display" >
+<table border="0" id="journal" class="hover compact" >
     <thead>
     <tr  style="background-color: #34495E; color: white; height: 1px; font-size: 15px;">
         <th title="Статус">С</th>
