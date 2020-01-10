@@ -9,7 +9,7 @@
     <div class="showhim">
         <a>Лаборатории+</a>
         <div class="showme">
-            <a style="font-size: 15px">Клинична</a>
+            <a style="font-size: 15px" href="clinical_laboratory.php">Клинична</a>
             <a style="font-size: 15px">Микробиология</a>
         </div>
     </div>

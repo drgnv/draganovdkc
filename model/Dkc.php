@@ -52,5 +52,18 @@ class Dkc extends Mdds
         $this->sqliexecute($sql);
     }
 
+    public function searchByDoctor($start, $end, $doctor_id) {
+        $sql = "SELECT * FROM patients LEFT JOIN doctors ON patients.doctor=doctors.doctor_id WHERE date between '".mysqli_real_escape_string($this->connect(), $start)."' and '".mysqli_real_escape_string($this->connect(), $end)."'";
+
+        $data = $this->sqliexecute($sql);
+        return $data;
+    }
+
+    public function getDayPatientListForDoc($doctor_id) {
+        $date = date('Y-m-d');
+        $sql = "SELECT * FROM patients LEFT JOIN doctors ON patients.doctor=doctors.doctor_id WHERE date = '".mysqli_real_escape_string($this->connect(), $date)."' AND patients.doctor = '".$doctor_id."'";
+      return $this->sqliexecute($sql);
+
+    }
 
 }
