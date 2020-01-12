@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-01-10 19:50:17
+/* Smarty version 3.1.32, created on 2020-01-10 21:13:14
   from '/var/www/html/dkc/view/edit.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5e18b9593fc296_76060160',
+  'unifunc' => 'content_5e18ccca9fba05_22549210',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a374c1a3e02e9f5ae390f0c00d8bb7ef5224e241' => 
     array (
       0 => '/var/www/html/dkc/view/edit.tpl',
-      1 => 1578678614,
+      1 => 1578679886,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e18b9593fc296_76060160 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e18ccca9fba05_22549210 (Smarty_Internal_Template $_smarty_tpl) {
 ?><html>
 
 <head>
@@ -148,7 +148,7 @@ if ($_prefixVariable3 == "on") {?>checked<?php }?>>
                 <img src="../images/archive.png" width="20" height="20"> <?php echo $_smarty_tpl->tpl_vars['lang']->value['old_results'];?>
 </a> | <?php echo $_smarty_tpl->tpl_vars['lang']->value['status'];?>
 :
-           
+
                 <?php ob_start();
 echo $_smarty_tpl->tpl_vars['data']->value[0]['over'];
 $_prefixVariable4 = ob_get_clean();

@@ -54,6 +54,14 @@
                 <td>{$patient.names}</td>
                 <td>{$patient.idn}</td>
                 <td>
+                    <a href="./new_request_cl.php?names={$patient.names}&idn={$patient.idn}&doctor={$patient.doctor_id}"
+                       style="text-decoration: none;"
+                       onclick="window.open('./new_request_cl.php?names={$patient.names}&idn={$patient.idn}&doctor={$patient.doctor_id}',
+                               'newwindow',
+                               'width=900,height=600');
+                               return false;">
+                        <img src="../images/add.png" width="20" height="20">
+                    </a>
                     <a href="./edit.php?id={$patient.id}"
                        onclick="window.open('./edit.php?id={$patient.id}',
                                'newwindow',

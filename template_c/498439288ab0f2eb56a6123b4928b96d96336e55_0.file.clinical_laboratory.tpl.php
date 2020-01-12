@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-01-10 19:44:43
+/* Smarty version 3.1.32, created on 2020-01-10 21:22:11
   from '/var/www/html/dkc/view/clinical_laboratory.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5e18b80b55f0a5_97392699',
+  'unifunc' => 'content_5e18cee3e05e81_88427861',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '498439288ab0f2eb56a6123b4928b96d96336e55' => 
     array (
       0 => '/var/www/html/dkc/view/clinical_laboratory.tpl',
-      1 => 1578678282,
+      1 => 1578684131,
       2 => 'file',
     ),
   ),
@@ -23,7 +23,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5e18b80b55f0a5_97392699 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e18cee3e05e81_88427861 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 $_smarty_tpl->_subTemplateRender("file:menu.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 echo '<script'; ?>
@@ -99,6 +99,20 @@ if ($_prefixVariable2 !== "on") {?> <b hidden="true">b</b>
                 <td><?php echo $_smarty_tpl->tpl_vars['patient']->value['idn'];?>
 </td>
                 <td>
+                    <a href="./new_request_cl.php?names=<?php echo $_smarty_tpl->tpl_vars['patient']->value['names'];?>
+&idn=<?php echo $_smarty_tpl->tpl_vars['patient']->value['idn'];?>
+&doctor=<?php echo $_smarty_tpl->tpl_vars['patient']->value['doctor_id'];?>
+"
+                       style="text-decoration: none;"
+                       onclick="window.open('./new_request_cl.php?names=<?php echo $_smarty_tpl->tpl_vars['patient']->value['names'];?>
+&idn=<?php echo $_smarty_tpl->tpl_vars['patient']->value['idn'];?>
+&doctor=<?php echo $_smarty_tpl->tpl_vars['patient']->value['doctor_id'];?>
+',
+                               'newwindow',
+                               'width=900,height=600');
+                               return false;">
+                        <img src="../images/add.png" width="20" height="20">
+                    </a>
                     <a href="./edit.php?id=<?php echo $_smarty_tpl->tpl_vars['patient']->value['id'];?>
 "
                        onclick="window.open('./edit.php?id=<?php echo $_smarty_tpl->tpl_vars['patient']->value['id'];?>

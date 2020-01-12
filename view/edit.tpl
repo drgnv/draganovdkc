@@ -85,7 +85,7 @@
 
             <a href="../controller/old_results.php?idn={$data.0.idn}" target="_blank" style="text-decoration:none; color: black;">
                 <img src="../images/archive.png" width="20" height="20"> {$lang.old_results}</a> | {$lang.status}:
-           
+
                 {if {$data.0.over} == "on"}
                     {$lang.over}
                 {/if} {if {$data.0.over} !== "on"}

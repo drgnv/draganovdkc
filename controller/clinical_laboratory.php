@@ -25,4 +25,8 @@ $Smarty->assign('daylist', $dayList);
 
 
 
+
+
+
+
 $Smarty->display('clinical_laboratory.tpl');
