@@ -22,14 +22,10 @@ class Basic extends Host{
     }
 
     public function newPatient($pname, $num, $doctor, $results, $date, $pay,$idn, $cito, $comment, $note) {
-        if($this->checkPersonalInfo($idn) == false){
-            $sql = "INSERT INTO `personal_info` (`pi_address`, `pi_phone`, `pi_mail`, `pi_gender`, `pi_blood_type`, `pi_workplace`, `pi_id`, `pi_patient_idn`) VALUES ('', '', '', 0, 'false', '', NULL, '".$idn."')";
-            $this->sqliexecute($sql);
-        }
+
         $userPass = $this->userPass();
         $sql = "INSERT INTO `patients` (`comment`, `note`, `number`, `names`, `doctor`, `date`, `id`, `username`, `password`, `pay`, `idn`, `cito`, `over`) VALUES ('".mysqli_real_escape_string($this->connect(), $comment)."', '".mysqli_real_escape_string($this->connect(), $note)."', '".mysqli_real_escape_string($this->connect(), $num)."', '".mysqli_real_escape_string($this->connect(), $pname)."', '".mysqli_real_escape_string($this->connect(), $doctor)."', '".mysqli_real_escape_string($this->connect(), $date)."', NULL, '".mysqli_real_escape_string($this->connect(), $userPass['username'])."', '".mysqli_real_escape_string($this->connect(), $userPass['password'])."', '".mysqli_real_escape_string($this->connect(), $pay)."', '".mysqli_real_escape_string($this->connect(), $idn)."', '".mysqli_real_escape_string($this->connect(), $cito)."', 'off')";
-//echo $sql;
-        $this->sqliexecute($sql);
+       $this->sqliexecute($sql);
 
         $sql="SELECT MAX(id) FROM patients";
         $_SESSION['patient_id'] = $this->sqliexecute($sql);
@@ -38,9 +34,9 @@ class Basic extends Host{
         foreach ($results as $key => $test) {
             $sql = "INSERT INTO `results` (`result`, `test_code`, `patient_id`, `id`, `date`, `patient_idn`) VALUES ('','".mysqli_real_escape_string($this->connect(), $test)."', ".mysqli_real_escape_string($this->connect(), $_SESSION['patient_id'][0]['MAX(id)']).", NULL, '".mysqli_real_escape_string($this->connect(), $date)."', '".mysqli_real_escape_string($this->connect(), $idn)."')";
             $this->sqliexecute($sql);
+
         }
-//echo $sql;
-        // print_r($results);
+
     }
 
     public function checkPersonalInfo($idn){

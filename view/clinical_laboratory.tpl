@@ -68,6 +68,9 @@
                                'width=900,height=600');
                                return false;"
                     ><img src="../images/edit.png" width="20" height="20"></a>
+                    <a href="./old_results.php?idn={$patient.idn}">
+                        <img src="../images/archive.png" width="20" height="20">
+                    </a>
                 </td>
             </tr>
         {/foreach}

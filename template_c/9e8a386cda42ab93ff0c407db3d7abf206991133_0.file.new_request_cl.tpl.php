@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-01-11 08:07:30
+/* Smarty version 3.1.32, created on 2020-01-12 10:23:17
   from '/var/www/html/dkc/view/new_request_cl.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5e1966228016c4_20981064',
+  'unifunc' => 'content_5e1ad7750bd754_26767360',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9e8a386cda42ab93ff0c407db3d7abf206991133' => 
     array (
       0 => '/var/www/html/dkc/view/new_request_cl.tpl',
-      1 => 1578722841,
+      1 => 1578817377,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e1966228016c4_20981064 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e1ad7750bd754_26767360 (Smarty_Internal_Template $_smarty_tpl) {
 ?><DOCTYPE html>
     <html>
 
@@ -183,8 +183,7 @@ function content_5e1966228016c4_20981064 (Smarty_Internal_Template $_smarty_tpl)
 
 
                             <input value="<?php echo $_smarty_tpl->tpl_vars['patient']->value;?>
-" placeholder="<?php echo $_smarty_tpl->tpl_vars['lang']->value['patient'];?>
-" required type="text" name="names" style="width: 220px; text-transform: capitalize;">
+"  required type="text" name="names" style="width: 220px; text-transform: capitalize;">
                             <input value="<?php echo $_smarty_tpl->tpl_vars['idn']->value;?>
 " type="text" name='idn' size="7" placeholder="<?php echo $_smarty_tpl->tpl_vars['lang']->value['idn'];?>
 " required>

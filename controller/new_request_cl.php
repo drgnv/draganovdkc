@@ -28,15 +28,16 @@ $Smarty->assign('idn', $idn);
 $Smarty->assign('doctorr', $docto_r);
 if(filter_has_var(INPUT_POST, 'record')){
 
-    $pname = $patient_name;
+    $pname = filter_input(INPUT_POST, 'names');
     $num = filter_input(INPUT_POST, 'num');
-    $doctor = $docto_r;
+    $doctor = filter_input(INPUT_POST, 'doctor');
     $results = $_POST['tests'];
     $pay = filter_input(INPUT_POST, 'pay');
-    $idn = $idn;
+    $idn = filter_input(INPUT_POST, 'idn');
     $cito = filter_input(INPUT_POST, 'cito');
     $comment = filter_input(INPUT_POST, 'comment');
     $note = filter_input(INPUT_POST, 'note');
+    $date = filter_input(INPUT_POST, 'date');
 
     if($Dkc->checkCBC($results)){
         $counter = 1;

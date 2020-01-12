@@ -142,7 +142,7 @@
                             </br>
 
 
-                            <input value="{$patient}" placeholder="{$lang.patient}" required type="text" name="names" style="width: 220px; text-transform: capitalize;">
+                            <input value="{$patient}"  required type="text" name="names" style="width: 220px; text-transform: capitalize;">
                             <input value="{$idn}" type="text" name='idn' size="7" placeholder="{$lang.idn}" required>
                             <input value="{$doctorr}"  list="hosting-plan" placeholder="{$lang.doctor}" type="text" size="14"  name='doctor'>
 
