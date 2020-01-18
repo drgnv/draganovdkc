@@ -51,18 +51,9 @@ if(isset($_POST['save'])){
 //print_r($data);
     //  echo 1;
     $patient['id']=$data[0]['patient_id'];
-    $x=0;
-    foreach ($data as $key => $value) {
-        foreach ($value as $key2 => $value2) {
-            if($key2 == 'test_code'){
 
-                $patient['results'][$value2] = $_POST[str_replace('.', '_', $value2)];
-                $x++;
-            }
-        }
-    }
 
-    $Dkc->updatePatient($patient);
+   $Dkc->updatePatient($patient);
     header("Location: old_results.php?patient_id=".$patient['id']."&itsok=".$language['saved_msg']."!&idn=".$patient['idn']."");
 }
 

@@ -18,9 +18,16 @@
         );
     });
 </script>
-
 <div class="main">
 
+    <a style="font-size: 16px; text-decoration: none;" href="./new_request.php?type=new_request_cl"
+
+       onclick="window.open('./new_request.php?type=new_request_cl',
+               'newwindow',
+               'width=500,height=300');
+               return false;"
+
+    ><img src="../images/add.png" width="17" height="17" align="left">Нова заявка</a>
 
     <table id="journal" class="hover compact" >
         <thead>

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-01-12 10:23:17
+/* Smarty version 3.1.32, created on 2020-01-12 14:48:03
   from '/var/www/html/dkc/view/new_request_cl.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5e1ad7750bd754_26767360',
+  'unifunc' => 'content_5e1b1583334977_90777984',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9e8a386cda42ab93ff0c407db3d7abf206991133' => 
     array (
       0 => '/var/www/html/dkc/view/new_request_cl.tpl',
-      1 => 1578817377,
+      1 => 1578833280,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e1ad7750bd754_26767360 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e1b1583334977_90777984 (Smarty_Internal_Template $_smarty_tpl) {
 ?><DOCTYPE html>
     <html>
 
@@ -183,13 +183,13 @@ function content_5e1ad7750bd754_26767360 (Smarty_Internal_Template $_smarty_tpl)
 
 
                             <input value="<?php echo $_smarty_tpl->tpl_vars['patient']->value;?>
-"  required type="text" name="names" style="width: 220px; text-transform: capitalize;">
+"  required type="hidden" name="names" style="width: 220px; text-transform: capitalize;">
                             <input value="<?php echo $_smarty_tpl->tpl_vars['idn']->value;?>
-" type="text" name='idn' size="7" placeholder="<?php echo $_smarty_tpl->tpl_vars['lang']->value['idn'];?>
+" type="hidden" name='idn' size="7" placeholder="<?php echo $_smarty_tpl->tpl_vars['lang']->value['idn'];?>
 " required>
                             <input value="<?php echo $_smarty_tpl->tpl_vars['doctorr']->value;?>
 "  list="hosting-plan" placeholder="<?php echo $_smarty_tpl->tpl_vars['lang']->value['doctor'];?>
-" type="text" size="14"  name='doctor'>
+" type="hidden" size="14"  name='doctor'>
 
                             <br>
                             <b style="color: red"><?php echo $_smarty_tpl->tpl_vars['not_valid_idn']->value;?>

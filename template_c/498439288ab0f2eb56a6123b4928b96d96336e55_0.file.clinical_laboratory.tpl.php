@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-01-12 10:53:38
+/* Smarty version 3.1.32, created on 2020-01-12 17:10:09
   from '/var/www/html/dkc/view/clinical_laboratory.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5e1ade92913250_12485079',
+  'unifunc' => 'content_5e1b36d19a9360_35650791',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '498439288ab0f2eb56a6123b4928b96d96336e55' => 
     array (
       0 => '/var/www/html/dkc/view/clinical_laboratory.tpl',
-      1 => 1578819203,
+      1 => 1578841271,
       2 => 'file',
     ),
   ),
@@ -23,7 +23,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5e1ade92913250_12485079 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e1b36d19a9360_35650791 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 $_smarty_tpl->_subTemplateRender("file:menu.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 echo '<script'; ?>
@@ -50,9 +50,16 @@ echo '<script'; ?>
     });
 <?php echo '</script'; ?>
 >
-
 <div class="main">
 
+    <a style="font-size: 16px; text-decoration: none;" href="./new_request.php?type=new_request_cl"
+
+       onclick="window.open('./new_request.php?type=new_request_cl',
+               'newwindow',
+               'width=500,height=300');
+               return false;"
+
+    ><img src="../images/add.png" width="17" height="17" align="left">Нова заявка</a>
 
     <table id="journal" class="hover compact" >
         <thead>

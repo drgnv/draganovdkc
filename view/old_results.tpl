@@ -1,5 +1,5 @@
-<html>
-<head>
+{include file="header.tpl"}
+{include file="menu.tpl"}
 <!--Datatables js-->
     <link href="../css/tooltip.css" media="screen" rel="stylesheet" type="text/css">
 <script type="text/javascript" charset="utf8" src="../js/jquery-3.3.1.min.js"></script>
@@ -37,9 +37,7 @@
         box-shadow: #33FF33;
     }
 </style>
-</head>
-<body bgcolor="#34495E">
-<div class="content">
+<div class="content" style="background-color: #34495E;">
     <script>
         // When the user clicks on div, open the popup
         function popup() {
@@ -48,7 +46,7 @@
         }
     </script>
     <link href="../css/scroll-table.css" rel="stylesheet">
-    <div class="center">
+    <div class="main" style="font-size: 14px">
 
         <script>
             document.addEventListener("touchstart", function() {}, true)
@@ -80,12 +78,12 @@
 
         <table border="0" cellspacing="0" cellpadding="0" width="100%" style=" border-collapse: collapse;">
             <tr>
-                <td valign="top" width="30%">
-                    <div class="newp" style="width: 350px">
+                <td valign="top" width="20%">
+                    <div class="newp" style="width: 220px">
                         <h3>{$lang.old_results}</h3>
                         <b>{$lang.patient}: </b>{$data.0.names}
                         <div id="table-wrapper">
-                            <div id="table-scroll">
+                            <div >
                                 <table id="journa122" class="lp" width="4350">
                                     <thead>
 
@@ -144,7 +142,7 @@
                         </form>
                     </div>
                 </td>
-                <td valign="top" width="70%">
+                <td valign="top" width="80%">
 
                     <div class="lp">
                         {if isset({$data2.0.patient_id}) && {$data2.0.patient_id} >0}
@@ -206,7 +204,7 @@
                         </tr>
                         <tr>
                             <td style="color: white;"> {$lang.doctor}:</td>
-                            <td>{$data2.0.doctor}
+                            <td style="color: white;">{$data2.0.doctor}
                                </td>
                         </tr>
                         <tr>
@@ -246,10 +244,10 @@
                         </th>
                         <tr>
                             <td>
-                                <textarea style="background-color: #ffedc4; resize: none;" name="comment" >{$data.0.comment}</textarea>
+                                <textarea style="background-color: #ffedc4; resize: none;" name="comment" >{$data2.0.comment}</textarea>
                             </td>
                             <td>
-                                <textarea style="background-color: #ffedc4; resize: none;" name="note">{$data.0.note}</textarea>
+                                <textarea style="background-color: #ffedc4; resize: none;" name="note">{$data2.0.note}</textarea>
                             </td>
                         </tr>
                     </table>
@@ -279,4 +277,6 @@
             });
         </script>
 
-    </div></body></html>
+    </div>
+
+{include file="footer.tpl"}

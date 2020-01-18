@@ -1,29 +1,33 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-01-12 11:44:42
+/* Smarty version 3.1.32, created on 2020-01-12 15:07:29
   from '/var/www/html/dkc/view/old_results.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5e1aea8ac74b92_20739375',
+  'unifunc' => 'content_5e1b1a1132a793_06791251',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '96dade8b89ad6eae7d8bc5f74182785c2c5482ed' => 
     array (
       0 => '/var/www/html/dkc/view/old_results.tpl',
-      1 => 1578822282,
+      1 => 1578834448,
       2 => 'file',
     ),
   ),
   'includes' => 
   array (
+    'file:header.tpl' => 1,
+    'file:menu.tpl' => 1,
+    'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5e1aea8ac74b92_20739375 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e1b1a1132a793_06791251 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/var/www/html/dkc/libs/plugins/modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
-?><html>
-<head>
+$_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+$_smarty_tpl->_subTemplateRender("file:menu.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
 <!--Datatables js-->
     <link href="../css/tooltip.css" media="screen" rel="stylesheet" type="text/css">
 <?php echo '<script'; ?>
@@ -69,9 +73,7 @@ $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/var/www/html/dkc/libs/plugi
         box-shadow: #33FF33;
     }
 </style>
-</head>
-<body bgcolor="#34495E">
-<div class="content">
+<div class="content" style="background-color: #34495E;">
     <?php echo '<script'; ?>
 >
         // When the user clicks on div, open the popup
@@ -82,7 +84,7 @@ $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/var/www/html/dkc/libs/plugi
     <?php echo '</script'; ?>
 >
     <link href="../css/scroll-table.css" rel="stylesheet">
-    <div class="center">
+    <div class="main" style="font-size: 14px">
 
         <?php echo '<script'; ?>
 >
@@ -118,15 +120,15 @@ $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/var/www/html/dkc/libs/plugi
 
         <table border="0" cellspacing="0" cellpadding="0" width="100%" style=" border-collapse: collapse;">
             <tr>
-                <td valign="top" width="30%">
-                    <div class="newp" style="width: 350px">
+                <td valign="top" width="20%">
+                    <div class="newp" style="width: 220px">
                         <h3><?php echo $_smarty_tpl->tpl_vars['lang']->value['old_results'];?>
 </h3>
                         <b><?php echo $_smarty_tpl->tpl_vars['lang']->value['patient'];?>
 : </b><?php echo $_smarty_tpl->tpl_vars['data']->value[0]['names'];?>
 
                         <div id="table-wrapper">
-                            <div id="table-scroll">
+                            <div >
                                 <table id="journa122" class="lp" width="4350">
                                     <thead>
 
@@ -238,7 +240,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                         </form>
                     </div>
                 </td>
-                <td valign="top" width="70%">
+                <td valign="top" width="80%">
 
                     <div class="lp">
                         <?php ob_start();
@@ -348,7 +350,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                         <tr>
                             <td style="color: white;"> <?php echo $_smarty_tpl->tpl_vars['lang']->value['doctor'];?>
 :</td>
-                            <td><?php echo $_smarty_tpl->tpl_vars['data2']->value[0]['doctor'];?>
+                            <td style="color: white;"><?php echo $_smarty_tpl->tpl_vars['data2']->value[0]['doctor'];?>
 
                                </td>
                         </tr>
@@ -411,11 +413,11 @@ if ($_prefixVariable17 !== "on") {?>
                         </th>
                         <tr>
                             <td>
-                                <textarea style="background-color: #ffedc4; resize: none;" name="comment" ><?php echo $_smarty_tpl->tpl_vars['data']->value[0]['comment'];?>
+                                <textarea style="background-color: #ffedc4; resize: none;" name="comment" ><?php echo $_smarty_tpl->tpl_vars['data2']->value[0]['comment'];?>
 </textarea>
                             </td>
                             <td>
-                                <textarea style="background-color: #ffedc4; resize: none;" name="note"><?php echo $_smarty_tpl->tpl_vars['data']->value[0]['note'];?>
+                                <textarea style="background-color: #ffedc4; resize: none;" name="note"><?php echo $_smarty_tpl->tpl_vars['data2']->value[0]['note'];?>
 </textarea>
                             </td>
                         </tr>
@@ -456,5 +458,8 @@ if ($_prefixVariable17 !== "on") {?>
         <?php echo '</script'; ?>
 >
 
-    </div></body></html><?php }
+    </div>
+
+<?php $_smarty_tpl->_subTemplateRender("file:footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+}
 }
