@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-01-12 14:48:03
+/* Smarty version 3.1.32, created on 2020-01-25 21:19:18
   from '/var/www/html/dkc/view/new_request_cl.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5e1b1583334977_90777984',
+  'unifunc' => 'content_5e2c94b6bd0a81_24405121',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9e8a386cda42ab93ff0c407db3d7abf206991133' => 
     array (
       0 => '/var/www/html/dkc/view/new_request_cl.tpl',
-      1 => 1578833280,
+      1 => 1579979957,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e1b1583334977_90777984 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e2c94b6bd0a81_24405121 (Smarty_Internal_Template $_smarty_tpl) {
 ?><DOCTYPE html>
     <html>
 
@@ -172,7 +172,7 @@ function content_5e1b1583334977_90777984 (Smarty_Internal_Template $_smarty_tpl)
 
                     <form autocomplete="off" method="POST" action='./new_request_cl.php' name='newp'>
                             ID:
-                            <input required type="number" name="num" style="width: 60px;" value="<?php echo $_smarty_tpl->tpl_vars['pid']->value;?>
+                            <input required type="number" name="num" style="width: 60px;" value="<?php echo $_smarty_tpl->tpl_vars['id']->value;?>
 "> <?php echo $_smarty_tpl->tpl_vars['lang']->value['paid'];?>
 :
                             <input type="checkbox" name="pay"> | <b style="color: red;"><?php echo $_smarty_tpl->tpl_vars['lang']->value['cito'];?>
@@ -183,13 +183,13 @@ function content_5e1b1583334977_90777984 (Smarty_Internal_Template $_smarty_tpl)
 
 
                             <input value="<?php echo $_smarty_tpl->tpl_vars['patient']->value;?>
-"  required type="hidden" name="names" style="width: 220px; text-transform: capitalize;">
+"  required type="text" name="names" style="width: 220px; text-transform: capitalize;">
                             <input value="<?php echo $_smarty_tpl->tpl_vars['idn']->value;?>
-" type="hidden" name='idn' size="7" placeholder="<?php echo $_smarty_tpl->tpl_vars['lang']->value['idn'];?>
+" type="text" name='idn' size="7" placeholder="<?php echo $_smarty_tpl->tpl_vars['lang']->value['idn'];?>
 " required>
                             <input value="<?php echo $_smarty_tpl->tpl_vars['doctorr']->value;?>
 "  list="hosting-plan" placeholder="<?php echo $_smarty_tpl->tpl_vars['lang']->value['doctor'];?>
-" type="hidden" size="14"  name='doctor'>
+" type="text" size="14"  name='doctor'>
 
                             <br>
                             <b style="color: red"><?php echo $_smarty_tpl->tpl_vars['not_valid_idn']->value;?>

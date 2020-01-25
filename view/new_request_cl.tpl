@@ -135,16 +135,16 @@
 
                     <form autocomplete="off" method="POST" action='./new_request_cl.php' name='newp'>
                             ID:
-                            <input required type="number" name="num" style="width: 60px;" value="{$pid}"> {$lang.paid}:
+                            <input required type="number" name="num" style="width: 60px;" value="{$id}"> {$lang.paid}:
                             <input type="checkbox" name="pay"> | <b style="color: red;">{$lang.cito}</b>
                             <input type="checkbox" name="cito">
                             </br>
                             </br>
 
 
-                            <input value="{$patient}"  required type="hidden" name="names" style="width: 220px; text-transform: capitalize;">
-                            <input value="{$idn}" type="hidden" name='idn' size="7" placeholder="{$lang.idn}" required>
-                            <input value="{$doctorr}"  list="hosting-plan" placeholder="{$lang.doctor}" type="hidden" size="14"  name='doctor'>
+                            <input value="{$patient}"  required type="text" name="names" style="width: 220px; text-transform: capitalize;">
+                            <input value="{$idn}" type="text" name='idn' size="7" placeholder="{$lang.idn}" required>
+                            <input value="{$doctorr}"  list="hosting-plan" placeholder="{$lang.doctor}" type="text" size="14"  name='doctor'>
 
                             <br>
                             <b style="color: red">{$not_valid_idn}</b>

@@ -17,19 +17,28 @@ $Dkc = new Dkc();
 $def_lang = $Dkc->getLanguage();
 include_once "../languages/".$def_lang[0]['default_lang'].".php";
 $Smarty->assign('lang', $language);
+
 //LANGUAGE STOP
 //echo $_SESSION['user_info'][0]['id'];
 $exam_list = $Dkc->getExamsByUserId($_SESSION['user_info'][0]['id']);
-$patient_name = $_GET['names'];
-$idn = $_GET['idn'];
+$patient_name = $_GET['patient_names'];
+$idn = $_GET['patient_idn'];
 $docto_r = $_GET['doctor'];
 $Smarty->assign('patient', $patient_name);
 $Smarty->assign('idn', $idn);
 $Smarty->assign('doctorr', $docto_r);
+//print_r($Dkc->getLastnum());
+
+$id = $Dkc->getLastnum();
+$Smarty->assign('id', $id[0]['MAX(number)']);
+
+    //
+$patient_names = filter_input(INPUT_GET, 'patient_names');
+$patient_idn = filter_input(INPUT_GET, 'patient_idn');
 if(filter_has_var(INPUT_POST, 'record')){
 
     $pname = filter_input(INPUT_POST, 'names');
-    $num = filter_input(INPUT_POST, 'num');
+    $num = $id[0]['MAX(number)']+1;
     $doctor = filter_input(INPUT_POST, 'doctor');
     $results = $_POST['tests'];
     $pay = filter_input(INPUT_POST, 'pay');

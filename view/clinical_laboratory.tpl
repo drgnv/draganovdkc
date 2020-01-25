@@ -20,11 +20,11 @@
 </script>
 <div class="main">
 
-    <a style="font-size: 16px; text-decoration: none;" href="./new_request.php?type=new_request_cl"
+    <a style="font-size: 16px; text-decoration: none;" href="./new_request.php"
 
-       onclick="window.open('./new_request.php?type=new_request_cl',
+       onclick="window.open('./new_request.php',
                'newwindow',
-               'width=500,height=300');
+               'width=1000,height=800');
                return false;"
 
     ><img src="../images/add.png" width="17" height="17" align="left">Нова заявка</a>

@@ -661,4 +661,9 @@ class Basic extends Host{
             return true;
     }
 
+    public function getLastnum(){
+        $sql="SELECT MAX(number) FROM patients";
+        return $this->sqliexecute($sql);
+    }
+
 }
