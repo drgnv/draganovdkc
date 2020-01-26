@@ -27,7 +27,7 @@ if(isset($_GET['type'])){
         header('Location: ./new_request_'.$type.'.php?patient_names='.$patients_data[0]['pi_names'].'&patient_idn='.$patients_data[0]['pi_patient_idn'].'&doctor='.$_SESSION['user_info'][0]['id'].'');
     }else{
         $find = "false";
-
+        $Smarty->assign('idn', $idn);
         $Smarty->assign('find', $find);
     }
 

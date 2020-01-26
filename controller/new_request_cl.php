@@ -149,5 +149,6 @@ if(filter_has_var(INPUT_POST, 'record')){
 
 $tests = $Dkc->getAllTests();
 $Smarty->assign('tests',$tests);
-
+$today_date = date('Y-m-d');
+$Smarty->assign('date',$today_date);
 $Smarty->display('new_request_cl.tpl');
