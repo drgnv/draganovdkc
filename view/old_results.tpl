@@ -37,7 +37,7 @@
         box-shadow: #33FF33;
     }
 </style>
-<div class="content" style="background-color: #34495E;">
+<div class="content" style="background-color: #34495E;color:white;">
     <script>
         // When the user clicks on div, open the popup
         function popup() {
@@ -171,12 +171,12 @@
                                             <th style="background-color: #1b6d85; color: white;">{$lang.referent_norms}</th>
                                             {foreach from=$data2 key=k item=result}
                                             <tr style="background-color: #c6dcff;">
-                                                <td>{$data2.$k.name} </td>
-                                                <td>
+                                                <td style="color: #0c1130;">{$data2.$k.name} </td>
+                                                <td >
                                                     <input readonly type="text" name="{$data2.$k.test_code}" value="{$data2.$k.result}">
                                                 </td>
-                                                <td>{$data2.$k.unit}</td>
-                                                <td>{$data2.$k.up} - {$data2.$k.down}</td>
+                                                <td style="color: #0c1130;">{$data2.$k.unit}</td>
+                                                <td style="color: #0c1130;">{$data2.$k.up} - {$data2.$k.down}</td>
                                             </tr>
                                             {/foreach}
                                         </table>
@@ -210,7 +210,7 @@
                         <tr>
                             <td style="color: white;">{$lang.date}:</td>
                             <td>
-                                <input type="date" name="date" value="{$data2.0.date}">
+                                {$data2.0.date|date_format:"%d.%m.%Y"}
                             </td>
                         </tr>
                         <tr>
@@ -232,12 +232,12 @@
                     </table>
                     <table border="1" style="border-collapse: collapse;" cellspacing="0">
                         <th style="background-color: #ffbd28;">
-                            <div class="tooltip">{$lang.comment}
+                            <div class="tooltip" style="color: #0c1130;">{$lang.comment}
                                 <span class="tooltiptext">Коментрът на резултатите се принтира с резултатите на пациента</span>
                             </div>
                         </th>
                         <th style="background-color: #ffbd28;">
-                            <div class="tooltip">{$lang.note}
+                            <div class="tooltip" style="color: #0c1130;">{$lang.note}
                                 <span class="tooltiptext">Бележките са видими само в полето "Болежки" и не достигат до пациентите. Подходящи
   за работни записки.</span>
                             </div>

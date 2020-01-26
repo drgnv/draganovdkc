@@ -248,7 +248,8 @@ class Basic extends Host{
               . "patients.cito = '".mysqli_real_escape_string($this->connect(), $data['cito'])."' "
               . "WHERE patients.id = '".mysqli_real_escape_string($this->connect(), $data['id'])."'";
     $this->sqliexecute($sql);
-   //return $sql;
+
+
 
   }
   

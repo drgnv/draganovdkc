@@ -42,7 +42,6 @@ if(isset($_POST['save'])){
     $patient['number'] = filter_input(INPUT_POST, 'number');
     $patient['name'] = filter_input(INPUT_POST, 'patient');
     $patient['doctor'] = filter_input(INPUT_POST, 'doctor');
-    $patient['date'] = substr(filter_input(INPUT_POST, 'date'), 0, 10);
     $patient['over'] = filter_input(INPUT_POST, 'over');
     $patient['comment'] = filter_input(INPUT_POST, 'comment');
     $patient['note'] = filter_input(INPUT_POST, 'note');
