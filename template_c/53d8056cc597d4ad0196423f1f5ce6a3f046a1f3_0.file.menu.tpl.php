@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-01-09 08:07:55
+/* Smarty version 3.1.32, created on 2020-01-26 09:40:19
   from '/var/www/html/dkc/view/menu.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5e16c33b15c581_94746888',
+  'unifunc' => 'content_5e2d4263641078_46031958',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '53d8056cc597d4ad0196423f1f5ce6a3f046a1f3' => 
     array (
       0 => '/var/www/html/dkc/view/menu.tpl',
-      1 => 1578550074,
+      1 => 1580024418,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e16c33b15c581_94746888 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e2d4263641078_46031958 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="sidenav">
     <center><img src="../images/dkcwhite.png" width="100px" height="100px" ></center>
     <form id="demo-2">
@@ -32,8 +32,8 @@ function content_5e16c33b15c581_94746888 (Smarty_Internal_Template $_smarty_tpl)
     <div class="showhim">
         <a>Лаборатории+</a>
         <div class="showme">
-            <a style="font-size: 15px" href="clinical_laboratory.php">Клинична</a>
-            <a style="font-size: 15px">Микробиология</a>
+            <a style="font-size: 15px" href="clinical_laboratory.php">>>Клинична</a>
+            <a style="font-size: 15px">>>Микробиология</a>
         </div>
     </div>
     <a href="#clients">Документи</a>

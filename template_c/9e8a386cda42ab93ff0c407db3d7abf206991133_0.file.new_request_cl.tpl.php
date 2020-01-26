@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-01-25 21:19:18
+/* Smarty version 3.1.32, created on 2020-01-26 08:32:57
   from '/var/www/html/dkc/view/new_request_cl.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5e2c94b6bd0a81_24405121',
+  'unifunc' => 'content_5e2d3299cb4747_65236576',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9e8a386cda42ab93ff0c407db3d7abf206991133' => 
     array (
       0 => '/var/www/html/dkc/view/new_request_cl.tpl',
-      1 => 1579979957,
+      1 => 1580020369,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e2c94b6bd0a81_24405121 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e2d3299cb4747_65236576 (Smarty_Internal_Template $_smarty_tpl) {
 ?><DOCTYPE html>
     <html>
 
@@ -173,7 +173,7 @@ function content_5e2c94b6bd0a81_24405121 (Smarty_Internal_Template $_smarty_tpl)
                     <form autocomplete="off" method="POST" action='./new_request_cl.php' name='newp'>
                             ID:
                             <input required type="number" name="num" style="width: 60px;" value="<?php echo $_smarty_tpl->tpl_vars['id']->value;?>
-"> <?php echo $_smarty_tpl->tpl_vars['lang']->value['paid'];?>
+" readonly> <?php echo $_smarty_tpl->tpl_vars['lang']->value['paid'];?>
 :
                             <input type="checkbox" name="pay"> | <b style="color: red;"><?php echo $_smarty_tpl->tpl_vars['lang']->value['cito'];?>
 </b>
@@ -183,11 +183,11 @@ function content_5e2c94b6bd0a81_24405121 (Smarty_Internal_Template $_smarty_tpl)
 
 
                             <input value="<?php echo $_smarty_tpl->tpl_vars['patient']->value;?>
-"  required type="text" name="names" style="width: 220px; text-transform: capitalize;">
+"  required type="text" name="names" style="width: 220px; text-transform: capitalize;" readonly>
                             <input value="<?php echo $_smarty_tpl->tpl_vars['idn']->value;?>
 " type="text" name='idn' size="7" placeholder="<?php echo $_smarty_tpl->tpl_vars['lang']->value['idn'];?>
-" required>
-                            <input value="<?php echo $_smarty_tpl->tpl_vars['doctorr']->value;?>
+" required readonly>
+                            <input readonly value="<?php echo $_smarty_tpl->tpl_vars['doctorr']->value;?>
 "  list="hosting-plan" placeholder="<?php echo $_smarty_tpl->tpl_vars['lang']->value['doctor'];?>
 " type="text" size="14"  name='doctor'>
 

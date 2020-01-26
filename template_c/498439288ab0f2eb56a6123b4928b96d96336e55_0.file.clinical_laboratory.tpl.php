@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-01-26 07:58:06
+/* Smarty version 3.1.32, created on 2020-01-26 08:57:49
   from '/var/www/html/dkc/view/clinical_laboratory.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5e2d2a6e928a90_05084661',
+  'unifunc' => 'content_5e2d386d56be20_15078436',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '498439288ab0f2eb56a6123b4928b96d96336e55' => 
     array (
       0 => '/var/www/html/dkc/view/clinical_laboratory.tpl',
-      1 => 1580018259,
+      1 => 1580021867,
       2 => 'file',
     ),
   ),
@@ -23,7 +23,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5e2d2a6e928a90_05084661 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e2d386d56be20_15078436 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 $_smarty_tpl->_subTemplateRender("file:menu.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 echo '<script'; ?>
@@ -52,7 +52,7 @@ echo '<script'; ?>
 >
 <div class="main">
 
-    <a style="font-size: 16px; text-decoration: none;" href="./new_request.php"
+    <a style="font-size: 16px; text-decoration: none; color: #1b6d85;" href="./new_request.php"
 
        onclick="window.open('./new_request.php',
                'newwindow',
@@ -78,7 +78,7 @@ $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->t
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['patient']->value) {
 ?>
-            <tr>
+            <tr align="center">
                 <td><?php if ($_smarty_tpl->tpl_vars['patient']->value['over'] == "on") {?>
                         <i style="visibility: hidden;">1</i><img src="../images/over.PNG" width="20" height="20" title="Приключен">
                     <?php } else { ?>
@@ -111,8 +111,8 @@ if ($_prefixVariable2 !== "on") {?> <b hidden="true">b</b>
 &doctor=<?php echo $_smarty_tpl->tpl_vars['patient']->value['doctor_id'];?>
 "
                        style="text-decoration: none;"
-                       onclick="window.open('./new_request_cl.php?names=<?php echo $_smarty_tpl->tpl_vars['patient']->value['names'];?>
-&idn=<?php echo $_smarty_tpl->tpl_vars['patient']->value['idn'];?>
+                       onclick="window.open('./new_request_cl.php?patient_names=<?php echo $_smarty_tpl->tpl_vars['patient']->value['names'];?>
+&patient_idn=<?php echo $_smarty_tpl->tpl_vars['patient']->value['idn'];?>
 &doctor=<?php echo $_smarty_tpl->tpl_vars['patient']->value['doctor_id'];?>
 ',
                                'newwindow',

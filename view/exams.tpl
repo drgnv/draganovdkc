@@ -68,7 +68,7 @@
 
        onclick="window.open('./add_exam.php',
                'newwindow',
-               'width=500,height=300');
+               'width=700,height=500');
                return false;"
 
     ><img src="../images/add.png" width="17" height="17" align="left"> Добави преглед</a>

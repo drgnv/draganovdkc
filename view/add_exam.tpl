@@ -11,6 +11,32 @@
             color: white;
             font-family: "Lato", sans-serif;
         }
+
+
+        input[type=text], select {
+            width: 40%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 20%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 <body><center>
@@ -26,7 +52,7 @@
             <td align="right">Час:</td>
             <td ><script src="http://cdn.jsdelivr.net/timepicker.js/latest/timepicker.min.js"></script>
                 <link href="http://cdn.jsdelivr.net/timepicker.js/latest/timepicker.min.css" rel="stylesheet"/>
-                <input type="text" id="time" name="time">
+                <input type="text" id="time" name="time" autocomplete="off">
 
                 <script>var timepicker = new TimePicker('time', {
                         lang: 'en',
@@ -46,7 +72,7 @@
         </tr>
         <tr>
             <td align="right">Бележка:</td>
-            <td><input type="text" name="note"></td>
+            <td><input type="text" name="note" autocomplete="off" size="40"></td>
         </tr>
         <tr>
             <td align="right">Статус: </td>
@@ -63,10 +89,10 @@
     <input type="submit" name="add" value="Добави">
     </form></center>
 {else}
-<p>Добави прегледа на:
+<p>Въведете ЕГН на пациент за да добавите преглед:
 
     <form action="add_exam.php" method="GET">
-        <input type="text" name="idn" placeholder="ЕГН">
+        <input type="text" name="idn" placeholder="ЕГН" autocomplete="off">
         <input type="submit" name="find_patient" value="Намери">
     </form>
 </p><br>

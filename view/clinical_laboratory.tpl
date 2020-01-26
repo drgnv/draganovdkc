@@ -20,7 +20,7 @@
 </script>
 <div class="main">
 
-    <a style="font-size: 16px; text-decoration: none;" href="./new_request.php"
+    <a style="font-size: 16px; text-decoration: none; color: #1b6d85;" href="./new_request.php"
 
        onclick="window.open('./new_request.php',
                'newwindow',
@@ -42,7 +42,7 @@
         </thead>
         <tbody style="background-color: #34495E; color: black; height: 1px; font-size: 15px;">
         {foreach from=$daylist item=patient}
-            <tr>
+            <tr align="center">
                 <td>{if $patient.over == "on"}
                         <i style="visibility: hidden;">1</i><img src="../images/over.PNG" width="20" height="20" title="Приключен">
                     {else}
@@ -63,7 +63,7 @@
                 <td>
                     <a href="./new_request_cl.php?names={$patient.names}&idn={$patient.idn}&doctor={$patient.doctor_id}"
                        style="text-decoration: none;"
-                       onclick="window.open('./new_request_cl.php?names={$patient.names}&idn={$patient.idn}&doctor={$patient.doctor_id}',
+                       onclick="window.open('./new_request_cl.php?patient_names={$patient.names}&patient_idn={$patient.idn}&doctor={$patient.doctor_id}',
                                'newwindow',
                                'width=900,height=600');
                                return false;">

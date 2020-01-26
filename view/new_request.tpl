@@ -34,9 +34,9 @@
 <body>
 <center><br><br><br>
     <p style="font-family: Monospace; font-size: 14px;">
-        Въведете ЕГН на пациент за да изпратите заявка за изслеване към клинична лаборатория
+        Въведете ЕГН на пациент за да изпратите заявка за изслеване към лаборатория
     </p>
-<form action="./new_request.php" method="get">
+<form action="./new_request.php" method="get"  autocomplete="off">
     <input type="text" name="idn" placeholder="ЕГН">
     <input type="hidden" name="type" value="cl">
     <input type="submit" name="send" value="Напред">
