@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-01-26 11:48:36
+/* Smarty version 3.1.32, created on 2020-01-26 12:04:02
   from '/var/www/html/dkc/view/old_results.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5e2d60744a3473_20331338',
+  'unifunc' => 'content_5e2d6412bb7af6_86042551',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '96dade8b89ad6eae7d8bc5f74182785c2c5482ed' => 
     array (
       0 => '/var/www/html/dkc/view/old_results.tpl',
-      1 => 1580032111,
+      1 => 1580033042,
       2 => 'file',
     ),
   ),
@@ -23,7 +23,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5e2d60744a3473_20331338 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e2d6412bb7af6_86042551 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/var/www/html/dkc/libs/plugins/modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 $_smarty_tpl->_subTemplateRender("file:menu.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
@@ -150,7 +150,7 @@ if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['result']->value) {
 ?>
 
-                                        <tr style="background-color: white; cursor: pointer;" data-href="../controller/old_results.php?patient_id=<?php echo $_smarty_tpl->tpl_vars['result']->value['id'];?>
+                                        <tr align="center" style="background-color: white; cursor: pointer;" data-href="../controller/old_results.php?patient_id=<?php echo $_smarty_tpl->tpl_vars['result']->value['id'];?>
 &idn=<?php echo $_smarty_tpl->tpl_vars['result']->value['idn'];?>
 ">
                                             <td>

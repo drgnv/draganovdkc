@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0f0652b-a8f7-4d6e-b035-4646ba311cfb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/old_results.php" afterPath="$PROJECT_DIR$/controller/old_results.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/Basic.php" afterPath="$PROJECT_DIR$/model/Basic.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template_c/53d8056cc597d4ad0196423f1f5ce6a3f046a1f3_0.file.menu.tpl.php" afterPath="$PROJECT_DIR$/template_c/53d8056cc597d4ad0196423f1f5ce6a3f046a1f3_0.file.menu.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template_c/96dade8b89ad6eae7d8bc5f74182785c2c5482ed_0.file.old_results.tpl.php" afterPath="$PROJECT_DIR$/template_c/96dade8b89ad6eae7d8bc5f74182785c2c5482ed_0.file.old_results.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/menu.tpl" afterPath="$PROJECT_DIR$/view/menu.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/old_results.tpl" afterPath="$PROJECT_DIR$/view/old_results.tpl" />
     </list>
     <ignored path="dkc.iws" />
@@ -30,8 +30,8 @@
       <file leaf-file-name="Basic.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/Basic.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.962963">
-              <caret line="250" column="0" selection-start-line="250" selection-start-column="0" selection-end-line="250" selection-end-column="0" />
+            <state vertical-scroll-proportion="-3.122807">
+              <caret line="608" column="31" selection-start-line="608" selection-start-column="23" selection-end-line="608" selection-end-column="31" />
               <folding>
                 <marker date="1580031931905" expanded="true" signature="133:229" placeholder="SELECT * FRO... users" />
                 <marker date="1580031931905" expanded="true" signature="795:1628" placeholder="INSERT INTO `patients`... " />
@@ -94,38 +94,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add_exam.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/add_exam.tpl">
+      <file leaf-file-name="search.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/search.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.6842105">
-              <caret line="74" column="73" selection-start-line="74" selection-start-column="73" selection-end-line="74" selection-end-column="73" />
+            <state vertical-scroll-proportion="-11.555555">
+              <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="old_results.tpl" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/view/old_results.tpl">
+      <file leaf-file-name="search.tpl" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/view/search.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7715356">
-              <caret line="211" column="32" selection-start-line="211" selection-start-column="32" selection-end-line="211" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.90425533">
+              <caret line="80" column="47" selection-start-line="80" selection-start-column="47" selection-end-line="80" selection-end-column="47" />
               <folding>
-                <element signature="e#1206#1252#0#HTML" expanded="true" />
-                <element signature="e#9809#9832#0#HTML" expanded="true" />
-                <element signature="e#10153#10176#0#HTML" expanded="true" />
-                <element signature="e#10251#10274#0#HTML" expanded="true" />
-                <element signature="e#13340#13363#0#HTML" expanded="true" />
-                <element signature="e#13686#13709#0#HTML" expanded="true" />
+                <element signature="e#746#770#0#HTML" expanded="true" />
+                <element signature="e#821#868#0#HTML" expanded="true" />
+                <element signature="e#1952#1976#0#HTML" expanded="true" />
+                <element signature="e#2027#2074#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="old_results.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/old_results.php">
+      <file leaf-file-name="menu.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/menu.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.555555">
-              <caret line="43" column="60" selection-start-line="43" selection-start-column="60" selection-end-line="43" selection-end-column="60" />
+            <state vertical-scroll-proportion="-2.0">
+              <caret line="3" column="49" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="clinical_laboratory.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/clinical_laboratory.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-15.555555">
+              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="31" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -134,18 +142,18 @@
       <file leaf-file-name="exams.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/exams.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-38.555557">
-              <caret line="70" column="23" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="23" />
+            <state vertical-scroll-proportion="-6.2105265">
+              <caret line="74" column="20" selection-start-line="74" selection-start-column="20" selection-end-line="74" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new_request.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/new_request.tpl">
+      <file leaf-file-name="exam_panel1.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/exam_panel1.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.5555556">
-              <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+            <state vertical-scroll-proportion="-7.2222223">
+              <caret line="24" column="51" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -192,12 +200,14 @@
         <option value="$PROJECT_DIR$/view/new_request_cl.tpl" />
         <option value="$PROJECT_DIR$/view/clinical_laboratory.tpl" />
         <option value="$PROJECT_DIR$/view/new_request.tpl" />
-        <option value="$PROJECT_DIR$/view/menu.tpl" />
         <option value="$PROJECT_DIR$/view/exams.tpl" />
         <option value="$PROJECT_DIR$/view/add_exam.tpl" />
         <option value="$PROJECT_DIR$/model/Basic.php" />
         <option value="$PROJECT_DIR$/controller/old_results.php" />
         <option value="$PROJECT_DIR$/view/old_results.tpl" />
+        <option value="$PROJECT_DIR$/view/menu.tpl" />
+        <option value="$PROJECT_DIR$/controller/search.php" />
+        <option value="$PROJECT_DIR$/view/search.tpl" />
       </list>
     </option>
   </component>
@@ -396,20 +406,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/controller/add_exam.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/edit_exam.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/index.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -568,13 +564,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/exam_panel1.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="41" selection-start-line="30" selection-start-column="18" selection-end-line="33" selection-end-column="41" />
+          <folding>
+            <marker date="1575624682000" expanded="true" signature="2346:2397" placeholder="DELETE FROM " />
+            <marker date="1575624682000" expanded="true" signature="2444:2495" placeholder="DELETE FROM " />
+            <marker date="1575624682000" expanded="true" signature="2545:2596" placeholder="DELETE FROM " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -589,6 +583,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.25531915">
           <caret line="21" column="34" selection-start-line="0" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -620,13 +615,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/clinical_laboratory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.82978725">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -721,22 +709,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/clinical_laboratory.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.666666">
-          <caret line="65" column="105" selection-start-line="65" selection-start-column="105" selection-end-line="65" selection-end-column="105" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/menu.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.0">
-          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/new_request_cl.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="4.6595745">
@@ -753,22 +725,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/new_request.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.5555556">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/exams.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-38.555557">
-          <caret line="70" column="23" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/add_exam.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.6842105">
@@ -777,10 +733,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/view/old_results.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3670412">
+          <caret line="100" column="57" selection-start-line="100" selection-start-column="57" selection-end-line="100" selection-end-column="57" />
+          <folding>
+            <element signature="e#1206#1252#0#HTML" expanded="false" />
+            <element signature="e#3809#3858#0#HTML" expanded="false" />
+            <element signature="e#9824#9847#0#HTML" expanded="false" />
+            <element signature="e#10168#10191#0#HTML" expanded="false" />
+            <element signature="e#10266#10289#0#HTML" expanded="false" />
+            <element signature="e#13355#13378#0#HTML" expanded="false" />
+            <element signature="e#13701#13724#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/old_results.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40957448">
+          <caret line="43" column="60" selection-start-line="43" selection-start-column="60" selection-end-line="43" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/new_request.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.07446808">
+          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/menu.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.0">
+          <caret line="3" column="49" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/model/Basic.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.962963">
-          <caret line="250" column="0" selection-start-line="250" selection-start-column="0" selection-end-line="250" selection-end-column="0" />
+        <state vertical-scroll-proportion="-3.122807">
+          <caret line="608" column="31" selection-start-line="608" selection-start-column="23" selection-end-line="608" selection-end-column="31" />
           <folding>
             <marker date="1580031931905" expanded="true" signature="133:229" placeholder="SELECT * FRO... users" />
             <marker date="1580031931905" expanded="true" signature="795:1628" placeholder="INSERT INTO `patients`... " />
@@ -842,25 +838,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/old_results.php">
+    <entry file="file://$PROJECT_DIR$/view/clinical_laboratory.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.555555">
-          <caret line="43" column="60" selection-start-line="43" selection-start-column="60" selection-end-line="43" selection-end-column="60" />
+        <state vertical-scroll-proportion="0.101123594">
+          <caret line="3" column="63" selection-start-line="3" selection-start-column="60" selection-end-line="3" selection-end-column="63" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/old_results.tpl">
+    <entry file="file://$PROJECT_DIR$/controller/clinical_laboratory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7715356">
-          <caret line="211" column="32" selection-start-line="211" selection-start-column="32" selection-end-line="211" selection-end-column="32" />
+        <state vertical-scroll-proportion="-15.555555">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="31" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/exam_panel1.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.2222223">
+          <caret line="24" column="51" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/exams.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.2105265">
+          <caret line="74" column="20" selection-start-line="74" selection-start-column="20" selection-end-line="74" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.555555">
+          <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/search.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.90425533">
+          <caret line="80" column="47" selection-start-line="80" selection-start-column="47" selection-end-line="80" selection-end-column="47" />
           <folding>
-            <element signature="e#1206#1252#0#HTML" expanded="true" />
-            <element signature="e#9809#9832#0#HTML" expanded="true" />
-            <element signature="e#10153#10176#0#HTML" expanded="true" />
-            <element signature="e#10251#10274#0#HTML" expanded="true" />
-            <element signature="e#13340#13363#0#HTML" expanded="true" />
-            <element signature="e#13686#13709#0#HTML" expanded="true" />
+            <element signature="e#746#770#0#HTML" expanded="true" />
+            <element signature="e#821#868#0#HTML" expanded="true" />
+            <element signature="e#1952#1976#0#HTML" expanded="true" />
+            <element signature="e#2027#2074#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>

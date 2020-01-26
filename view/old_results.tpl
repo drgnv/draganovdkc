@@ -98,7 +98,7 @@
                                     <tbody>
                                         {assign var="un" value="1"} {foreach from=$data item=result}
 
-                                        <tr style="background-color: white; cursor: pointer;" data-href="../controller/old_results.php?patient_id={$result.id}&idn={$result.idn}">
+                                        <tr align="center" style="background-color: white; cursor: pointer;" data-href="../controller/old_results.php?patient_id={$result.id}&idn={$result.idn}">
                                             <td>
                                                 {if {$result.over} == "on"}
 

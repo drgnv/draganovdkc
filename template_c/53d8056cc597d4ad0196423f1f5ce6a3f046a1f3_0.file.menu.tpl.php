@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-01-26 09:40:19
+/* Smarty version 3.1.32, created on 2020-01-26 14:19:12
   from '/var/www/html/dkc/view/menu.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5e2d4263641078_46031958',
+  'unifunc' => 'content_5e2d83c00ae4b6_16452364',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '53d8056cc597d4ad0196423f1f5ce6a3f046a1f3' => 
     array (
       0 => '/var/www/html/dkc/view/menu.tpl',
-      1 => 1580024418,
+      1 => 1580041151,
       2 => 'file',
     ),
   ),
@@ -20,11 +20,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e2d4263641078_46031958 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e2d83c00ae4b6_16452364 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="sidenav">
     <center><img src="../images/dkcwhite.png" width="100px" height="100px" ></center>
-    <form id="demo-2">
-        <input type="search" placeholder="Search">
+    <form id="demo-2" action="./search.php" method="GET">
+        <input type="search" placeholder="Търсене" name="search">
     </form><br>
     <a href="./home.php">Начало</a>
     <a href="./exams.php">Прегледи</a>
