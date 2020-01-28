@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-01-26 10:18:23
+/* Smarty version 3.1.32, created on 2020-01-28 23:12:09
   from '/var/www/html/dkc/view/add_exam.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5e2d4b4f257f81_46272976',
+  'unifunc' => 'content_5e30a3a9187478_66016698',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5f4a8c1eb7459a580d789d80853337f5cf29f962' => 
     array (
       0 => '/var/www/html/dkc/view/add_exam.tpl',
-      1 => 1580026701,
+      1 => 1580245924,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e2d4b4f257f81_46272976 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e30a3a9187478_66016698 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 
@@ -75,7 +75,7 @@ function content_5e2d4b4f257f81_46272976 (Smarty_Internal_Template $_smarty_tpl)
     <table border="0">
 
         <tr>
-            <td align="right">Час:</td>
+            <td align="right"><img src="../images/clock.png" width="25px" height="25px"></td>
             <td ><?php echo '<script'; ?>
  src="http://cdn.jsdelivr.net/timepicker.js/latest/timepicker.min.js"><?php echo '</script'; ?>
 >
@@ -97,7 +97,7 @@ function content_5e2d4b4f257f81_46272976 (Smarty_Internal_Template $_smarty_tpl)
             </td>
         </tr>
         <tr>
-            <td align="right">Дата:</td>
+            <td align="right"><img src="../images/calendar.png" width="25px" height="25px"></td>
             <td><input type="date" name="date" ></td>
         </tr>
         <tr>

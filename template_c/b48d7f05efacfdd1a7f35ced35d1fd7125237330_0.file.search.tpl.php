@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-01-27 18:06:44
+/* Smarty version 3.1.32, created on 2020-01-28 23:20:06
   from '/var/www/html/dkc/view/search.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5e2f0a947f9d91_50501626',
+  'unifunc' => 'content_5e30a586291406_84324579',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b48d7f05efacfdd1a7f35ced35d1fd7125237330' => 
     array (
       0 => '/var/www/html/dkc/view/search.tpl',
-      1 => 1580141197,
+      1 => 1580246405,
       2 => 'file',
     ),
   ),
@@ -23,7 +23,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5e2f0a947f9d91_50501626 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e30a586291406_84324579 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 $_smarty_tpl->_subTemplateRender("file:menu.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 echo '<script'; ?>
@@ -134,7 +134,10 @@ echo '<script'; ?>
                    'width=700,height=500');
                    return false;"
 
-        >Нов преглед</a>
+        >Нов преглед</a> |
+        <a href="" style="text-decoration: none; color: #394c70;">Лична анамнеза</a> |
+        <a href="" style="text-decoration: none; color: #394c70;">Фамилна анамнеза</a> |
+        <a href="" style="text-decoration: none; color: #394c70;">Алергии</a>
         </p>
 <table border="0"><tr><td>
         <table border="1" cellspacing="0" style="font-size: 16px;">

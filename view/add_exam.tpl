@@ -49,7 +49,7 @@
     <table border="0">
 
         <tr>
-            <td align="right">Час:</td>
+            <td align="right"><img src="../images/clock.png" width="25px" height="25px"></td>
             <td ><script src="http://cdn.jsdelivr.net/timepicker.js/latest/timepicker.min.js"></script>
                 <link href="http://cdn.jsdelivr.net/timepicker.js/latest/timepicker.min.css" rel="stylesheet"/>
                 <input type="text" id="time" name="time" autocomplete="off">
@@ -67,7 +67,7 @@
             </td>
         </tr>
         <tr>
-            <td align="right">Дата:</td>
+            <td align="right"><img src="../images/calendar.png" width="25px" height="25px"></td>
             <td><input type="date" name="date" ></td>
         </tr>
         <tr>

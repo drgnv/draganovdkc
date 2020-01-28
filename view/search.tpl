@@ -93,7 +93,10 @@
                    'width=700,height=500');
                    return false;"
 
-        >Нов преглед</a>
+        >Нов преглед</a> |
+        <a href="" style="text-decoration: none; color: #394c70;">Лична анамнеза</a> |
+        <a href="" style="text-decoration: none; color: #394c70;">Фамилна анамнеза</a> |
+        <a href="" style="text-decoration: none; color: #394c70;">Алергии</a>
         </p>
 <table border="0"><tr><td>
         <table border="1" cellspacing="0" style="font-size: 16px;">
