@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0f0652b-a8f7-4d6e-b035-4646ba311cfb" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/search.php" afterPath="$PROJECT_DIR$/controller/search.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template_c/53d8056cc597d4ad0196423f1f5ce6a3f046a1f3_0.file.menu.tpl.php" afterPath="$PROJECT_DIR$/template_c/53d8056cc597d4ad0196423f1f5ce6a3f046a1f3_0.file.menu.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template_c/96dade8b89ad6eae7d8bc5f74182785c2c5482ed_0.file.old_results.tpl.php" afterPath="$PROJECT_DIR$/template_c/96dade8b89ad6eae7d8bc5f74182785c2c5482ed_0.file.old_results.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template_c/b48d7f05efacfdd1a7f35ced35d1fd7125237330_0.file.search.tpl.php" afterPath="$PROJECT_DIR$/template_c/b48d7f05efacfdd1a7f35ced35d1fd7125237330_0.file.search.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/menu.tpl" afterPath="$PROJECT_DIR$/view/menu.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/old_results.tpl" afterPath="$PROJECT_DIR$/view/old_results.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/search.tpl" afterPath="$PROJECT_DIR$/view/search.tpl" />
     </list>
     <ignored path="dkc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -97,8 +98,8 @@
       <file leaf-file-name="search.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/search.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.555555">
-              <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
+            <state vertical-scroll-proportion="-15.333333">
+              <caret line="29" column="63" selection-start-line="29" selection-start-column="63" selection-end-line="29" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -107,13 +108,17 @@
       <file leaf-file-name="search.tpl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/view/search.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.90425533">
-              <caret line="80" column="47" selection-start-line="80" selection-start-column="47" selection-end-line="80" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.4787234">
+              <caret line="90" column="102" selection-start-line="90" selection-start-column="102" selection-end-line="90" selection-end-column="102" />
               <folding>
-                <element signature="e#746#770#0#HTML" expanded="true" />
-                <element signature="e#821#868#0#HTML" expanded="true" />
-                <element signature="e#1952#1976#0#HTML" expanded="true" />
-                <element signature="e#2027#2074#0#HTML" expanded="true" />
+                <element signature="e#1941#1965#0#HTML" expanded="true" />
+                <element signature="e#2006#2052#0#HTML" expanded="true" />
+                <element signature="e#2371#2417#0#HTML" expanded="true" />
+                <element signature="e#2545#2591#0#HTML" expanded="true" />
+                <element signature="e#2916#2940#0#HTML" expanded="true" />
+                <element signature="e#2991#3038#0#HTML" expanded="true" />
+                <element signature="e#4897#4921#0#HTML" expanded="true" />
+                <element signature="e#4972#5019#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -122,8 +127,8 @@
       <file leaf-file-name="menu.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/menu.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.0">
-              <caret line="3" column="49" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
+            <state vertical-scroll-proportion="-1.3333334">
+              <caret line="2" column="74" selection-start-line="2" selection-start-column="74" selection-end-line="2" selection-end-column="74" />
               <folding />
             </state>
           </provider>
@@ -142,8 +147,8 @@
       <file leaf-file-name="exams.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/exams.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.2105265">
-              <caret line="74" column="20" selection-start-line="74" selection-start-column="20" selection-end-line="74" selection-end-column="20" />
+            <state vertical-scroll-proportion="-4.3157897">
+              <caret line="68" column="7" selection-start-line="68" selection-start-column="7" selection-end-line="71" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -206,6 +211,7 @@
         <option value="$PROJECT_DIR$/controller/old_results.php" />
         <option value="$PROJECT_DIR$/view/old_results.tpl" />
         <option value="$PROJECT_DIR$/view/menu.tpl" />
+        <option value="$PROJECT_DIR$/js/tinymce.min.js" />
         <option value="$PROJECT_DIR$/controller/search.php" />
         <option value="$PROJECT_DIR$/view/search.tpl" />
       </list>
@@ -309,6 +315,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dkc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dkc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -368,7 +388,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="746" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18712121" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -406,13 +426,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/view/index.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/header.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -765,14 +778,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/menu.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.0">
-          <caret line="3" column="49" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/model/Basic.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.122807">
@@ -846,14 +851,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/clinical_laboratory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.555555">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="31" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/exam_panel1.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.2222223">
@@ -862,31 +859,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/tinymce.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39962476">
+          <caret line="8" column="31477" selection-start-line="8" selection-start-column="31477" selection-end-line="8" selection-end-column="31477" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/view/exams.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.2105265">
-          <caret line="74" column="20" selection-start-line="74" selection-start-column="20" selection-end-line="74" selection-end-column="20" />
+        <state vertical-scroll-proportion="-4.3157897">
+          <caret line="68" column="7" selection-start-line="68" selection-start-column="7" selection-end-line="71" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/menu.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3333334">
+          <caret line="2" column="74" selection-start-line="2" selection-start-column="74" selection-end-line="2" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/clinical_laboratory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.555555">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="31" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/search.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.555555">
-          <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
+        <state vertical-scroll-proportion="-15.333333">
+          <caret line="29" column="63" selection-start-line="29" selection-start-column="63" selection-end-line="29" selection-end-column="63" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/search.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.90425533">
-          <caret line="80" column="47" selection-start-line="80" selection-start-column="47" selection-end-line="80" selection-end-column="47" />
+        <state vertical-scroll-proportion="0.4787234">
+          <caret line="90" column="102" selection-start-line="90" selection-start-column="102" selection-end-line="90" selection-end-column="102" />
           <folding>
-            <element signature="e#746#770#0#HTML" expanded="true" />
-            <element signature="e#821#868#0#HTML" expanded="true" />
-            <element signature="e#1952#1976#0#HTML" expanded="true" />
-            <element signature="e#2027#2074#0#HTML" expanded="true" />
+            <element signature="e#1941#1965#0#HTML" expanded="true" />
+            <element signature="e#2006#2052#0#HTML" expanded="true" />
+            <element signature="e#2371#2417#0#HTML" expanded="true" />
+            <element signature="e#2545#2591#0#HTML" expanded="true" />
+            <element signature="e#2916#2940#0#HTML" expanded="true" />
+            <element signature="e#2991#3038#0#HTML" expanded="true" />
+            <element signature="e#4897#4921#0#HTML" expanded="true" />
+            <element signature="e#4972#5019#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>

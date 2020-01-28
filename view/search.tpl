@@ -3,6 +3,48 @@
 <script type="text/javascript" charset="utf8" src="../js/jquery-3.3.1.min.js"></script>
 <link rel="stylesheet" type="text/css" href="../libs/jquery.dataTables.css">
 <script type="text/javascript" charset="utf8" src="../libs/jquery.dataTables.js"></script>
+<script src="../js/tinymce.min.js" referrerpolicy="origin"></script>
+<style>
+
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+
+    /* Modal Content */
+    .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+    }
+
+    /* The Close Button */
+    .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+</style>
 <script>
     $(document).ready(function() {
         $('#journal').DataTable({
@@ -17,10 +59,42 @@
 
         );
     });
+
+
+</script>
+<script>
+    tinymce.init({
+        selector: '#mytextarea'
+    });
+    tinymce.init({
+        selector: '#mytextarea2'
+    });
+    tinymce.init({
+        selector: '#mytextarea3'
+    });
 </script>
 <div class="main">
 
-    {if $type == 'idn'}
+    {if $type == 'idn'}<p style="font-size: 16px;">
+        <a href="./new_request_cl.php" style="text-decoration: none; color: #394c70;"
+
+           onclick="window.open('./new_request_cl.php?patient_names={$patient_info.pi_names}&patient_idn={$patient_info.pi_patient_idn}&doctor={$doctor}',
+               'newwindow',
+               'width=700,height=500');
+               return false;"
+
+        >+Заявка клинична лаборатория</a> |
+        <a href="" style="text-decoration: none; color: #394c70;">+Заявка микробиология</a> |
+        <a href="./add_exam.php?idn={$patient_info.pi_patient_idn}&find_patient=Намери"
+           style="text-decoration: none; color: #394c70;"
+
+           onclick="window.open('./add_exam.php?idn={$patient_info.pi_patient_idn}&find_patient=Намери',
+                   'newwindow',
+                   'width=700,height=500');
+                   return false;"
+
+        >Нов преглед</a>
+        </p>
 <table border="0"><tr><td>
         <table border="1" cellspacing="0" style="font-size: 16px;">
             <tr>
@@ -28,32 +102,42 @@
             </tr>
             <tr>
                 <td align="right">Пациент: </td>
-                <td>{$patient_info.pi_names}</td>
+                <td><input type="text" name="" value="{$patient_info.pi_names}"></td>
             </tr>
             <tr>
                 <td align="right">ЕГН: </td>
-                <td>{$patient_info.pi_patient_idn}</td>
+                <td><input type="text" name="" value="{$patient_info.pi_patient_idn}"></td>
             </tr>
 
             <tr>
                 <td align="right">Адрес: </td>
-                <td>{$patient_info.pi_address}</td>
+                <td><input type="text" name="" value="{$patient_info.pi_address}"></td>
             </tr>
             <tr>
                 <td align="right">E-mail: </td>
-                <td>{$patient_info.pi_mail}</td>
+                <td><input type="mail" name="" value="{$patient_info.pi_mail}"></td>
             </tr>
             <tr>
                 <td align="right">Телефон: </td>
-                <td>{$patient_info.pi_phone}</td>
+                <td><input type="text" name="" value="{$patient_info.pi_phone}"></td>
             </tr>
             <tr>
                 <td align="right">Работно място:</td>
-                <td>{$patient_info.pi_workplace}</td>
+                <td><input type="text" name="" value="{$patient_info.pi_workplace}"></td>
             </tr>
             <tr>
                 <td align="right">Гражданство: </td>
-                <td>{$patient_info.citizenship}</td>
+                <td><input type="text" name="" value="{$patient_info.citizenship}"></td>
+            </tr>
+            <tr>
+                <td align="right">Пол: </td>
+                <td>
+                    <select>
+                        <option value="1" {if $patient_info.pi_gender == '1'}selected{else}{/if}>Мъж</option>
+                        <option value="2" {if $patient_info.pi_gender == '2'}selected{else}{/if}>Жена</option>
+                        <option value="3" {if $patient_info.pi_gender == '3'}selected{else}{/if}>Не е посочено</option>
+                    </select>
+                </td>
             </tr>
             </table>
 </td><td>
@@ -64,27 +148,37 @@
 
             <tr>
             <td>ЛК № </td>
-                <td>{$patient_info.pi_lk_num}</td>
+                <td><input type="text" value="{$patient_info.pi_lk_num}"></td>
             </tr>
             <tr>
             <td>Издадена: </td>
-            <td>{$patient_info.pi_out_date|date_format:"%D"}</td>
+            <td><input type="date" value="{$patient_info.pi_out_date}"></td>
             </tr>
             <tr>
                 <td>Валидна до: </td>
                 <td>
-                    {$patient_info.pi_exp_date|date_format:"%D"}
+                   <input type="date" value="{$patient_info.pi_exp_date}">
                 </td>
             </tr>
             <tr>
                 <td>Издадена от: </td>
-                <td>{$patient_info.pi_out_place}</td>
+                <td><input type="text" value="{$patient_info.pi_out_place}"></td>
             </tr>
 
         </table>
-        </td></tr></table>
+        </td></tr>
+        <tr>
+            <td colspan="2">
+
+            </td>
+        </tr>
+
+</table>
         {/if}
 
 
 </div>
+
+
+
 {include file="footer.tpl"}

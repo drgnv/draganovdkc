@@ -1,6 +1,6 @@
 <div class="sidenav">
     <center><img src="../images/dkcwhite.png" width="100px" height="100px" ></center>
-    <form id="demo-2" action="./search.php" method="GET">
+    <form id="demo-2" action="./search.php" method="GET" autocomplete="off">
         <input type="search" placeholder="Търсене" name="search">
     </form><br>
     <a href="./home.php">Начало</a>

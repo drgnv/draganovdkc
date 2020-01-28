@@ -27,6 +27,7 @@ if(isset($_GET['search'])){
 
         $patient_info = $Dkc->getPersonalInfo($search);
         $Smarty->assign('patient_info', $patient_info[0]);
+        $Smarty->assign('doctor', $_SESSION['user_info'][0]['id']);
         $type='idn';
         $Smarty->assign('type', $type);
 
