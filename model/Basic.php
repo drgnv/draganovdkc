@@ -635,6 +635,29 @@ class Basic extends Host{
         //return $sql;
     }
 
+    public function updatePersonalInfoSearch($pi){
+        $sql = "UPDATE personal_info SET
+        `pi_names` = '".mysqli_real_escape_string($this->connect(),$pi['names'])."',
+        `pi_patient_idn` = '".mysqli_real_escape_string($this->connect(),$pi['idn'])."',
+        `pi_address` = '".mysqli_real_escape_string($this->connect(),$pi['address'])."',
+         `pi_phone` = '".mysqli_real_escape_string($this->connect(), $pi['phone'])."',
+         `pi_mail` = '".mysqli_real_escape_string($this->connect(),$pi['mail'])."',
+         `pi_blood_type` = '".mysqli_real_escape_string($this->connect(),$pi['blood_type'])."',
+         `pi_gender` = '".mysqli_real_escape_string($this->connect(),$pi['gender'])."',
+         `citizenship` = '".mysqli_real_escape_string($this->connect(),$pi['citizenship'])."',
+         `zdr_knizkha_num` = '".mysqli_real_escape_string($this->connect(),$pi['zdr_knizkha_num'])."',
+         `rec_knizkha_num` = '".mysqli_real_escape_string($this->connect(),$pi['rec_knizkha_num'])."',
+          `lak_num` = '".mysqli_real_escape_string($this->connect(),$pi['lak_num'])."',
+          `pi_lk_num` = '".mysqli_real_escape_string($this->connect(),$pi['lk_num'])."',
+          `pi_out_date` = '".mysqli_real_escape_string($this->connect(),$pi['out_date'])."',
+          `pi_exp_date` = '".mysqli_real_escape_string($this->connect(),$pi['exp_date'])."',
+          `pi_out_place` = '".mysqli_real_escape_string($this->connect(),$pi['out_place'])."',
+         `pi_workplace` = '".mysqli_real_escape_string($this->connect(),$pi['work_place'])."'
+         WHERE pi_patient_idn = '".mysqli_real_escape_string($this->connect(),$pi['idn'])."'";
+        $this->sqliexecute($sql);
+        //return $sql;
+    }
+
     public function egn_valid($egn) {
         $EGN_WEIGHTS = array(2,4,8,5,10,9,7,3,6);
        // global $EGN_WEIGHTS;

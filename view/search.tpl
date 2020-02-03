@@ -119,6 +119,7 @@
 
         >Алергии</a>
         </p>
+        <form action="./search.php?search={$patient_info.pi_patient_idn}" method="post">
 <table border="0"><tr><td>
         <table border="1" cellspacing="0" style="font-size: 16px;">
             <tr>
@@ -126,37 +127,37 @@
             </tr>
             <tr>
                 <td align="right">Пациент: </td>
-                <td><input type="text" name="" value="{$patient_info.pi_names}"></td>
+                <td><input type="text" name="names" value="{$patient_info.pi_names}"></td>
             </tr>
             <tr>
                 <td align="right">ЕГН: </td>
-                <td><input type="text" name="" value="{$patient_info.pi_patient_idn}"></td>
+                <td><input type="text" name="idn" value="{$patient_info.pi_patient_idn}"></td>
             </tr>
 
             <tr>
                 <td align="right">Адрес: </td>
-                <td><input type="text" name="" value="{$patient_info.pi_address}"></td>
+                <td><input type="text" name="address" value="{$patient_info.pi_address}"></td>
             </tr>
             <tr>
                 <td align="right">E-mail: </td>
-                <td><input type="mail" name="" value="{$patient_info.pi_mail}"></td>
+                <td><input type="mail" name="mail" value="{$patient_info.pi_mail}"></td>
             </tr>
             <tr>
                 <td align="right">Телефон: </td>
-                <td><input type="text" name="" value="{$patient_info.pi_phone}"></td>
+                <td><input type="text" name="phone" value="{$patient_info.pi_phone}"></td>
             </tr>
             <tr>
                 <td align="right">Работно място:</td>
-                <td><input type="text" name="" value="{$patient_info.pi_workplace}"></td>
+                <td><input type="text" name="work_place" value="{$patient_info.pi_workplace}"></td>
             </tr>
             <tr>
                 <td align="right">Гражданство: </td>
-                <td><input type="text" name="" value="{$patient_info.citizenship}"></td>
+                <td><input type="text" name="citizenship" value="{$patient_info.citizenship}"></td>
             </tr>
             <tr>
                 <td align="right">Пол: </td>
                 <td>
-                    <select>
+                    <select name="gender">
                         <option value="1" {if $patient_info.pi_gender == '1'}selected{else}{/if}>Мъж</option>
                         <option value="2" {if $patient_info.pi_gender == '2'}selected{else}{/if}>Жена</option>
                         <option value="3" {if $patient_info.pi_gender == '3'}selected{else}{/if}>Не е посочено</option>
@@ -172,32 +173,53 @@
 
             <tr>
             <td>ЛК № </td>
-                <td><input type="text" value="{$patient_info.pi_lk_num}"></td>
+                <td><input name="lk_num" type="text" value="{$patient_info.pi_lk_num}"></td>
             </tr>
             <tr>
             <td>Издадена: </td>
-            <td><input type="date" value="{$patient_info.pi_out_date}"></td>
+            <td><input type="date" name="out_date" value="{$patient_info.pi_out_date}"></td>
             </tr>
             <tr>
                 <td>Валидна до: </td>
                 <td>
-                   <input type="date" value="{$patient_info.pi_exp_date}">
+                   <input name="exp_date" type="date" value="{$patient_info.pi_exp_date}">
                 </td>
             </tr>
             <tr>
                 <td>Издадена от: </td>
-                <td><input type="text" value="{$patient_info.pi_out_place}"></td>
+                <td><input name="outplace" type="text" value="{$patient_info.pi_out_place}"></td>
             </tr>
 
         </table>
         </td></tr>
         <tr>
             <td colspan="2">
-
+<table border="1" cellspacing="0">
+    <thead>
+    <th colspan="2" style="background-color: #394c70;color: white; font-size: 16px" align="center">Здравна информация</th>
+    </thead>
+    <tbody>
+    <tr>
+        <td style="font-size: 14px" align="right">Здравна книжка №</td>
+        <td><input type="text" value="{$patient_info.zdr_knizkha_num}" name="zdr_knizkha_num"></td>
+    </tr>
+    <tr>
+        <td align="right" style="font-size: 14px">Рецептурна книжка №</td>
+        <td><input type="text" value="{$patient_info.rec_knizkha_num}" name="rec_knizkha_num"></td>
+    </tr>
+    <tr>
+        <td align="right" style="font-size: 14px">ЛАК №</td>
+        <td><input type="text" value="{$patient_info.lak_num}" name="lak_num"></td>
+    </tr>
+    </tbody>
+</table>
             </td>
         </tr>
 
+
 </table>
+            <input type="submit" name="save" value="Запиши">
+            </form>
         {/if}
 
 
