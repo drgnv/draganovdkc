@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-01-28 23:20:06
+/* Smarty version 3.1.32, created on 2020-01-31 08:10:15
   from '/var/www/html/dkc/view/search.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5e30a586291406_84324579',
+  'unifunc' => 'content_5e33c4c70eb3a9_43555012',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b48d7f05efacfdd1a7f35ced35d1fd7125237330' => 
     array (
       0 => '/var/www/html/dkc/view/search.tpl',
-      1 => 1580246405,
+      1 => 1580451004,
       2 => 'file',
     ),
   ),
@@ -23,7 +23,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5e30a586291406_84324579 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e33c4c70eb3a9_43555012 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 $_smarty_tpl->_subTemplateRender("file:menu.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 echo '<script'; ?>
@@ -135,7 +135,16 @@ echo '<script'; ?>
                    return false;"
 
         >Нов преглед</a> |
-        <a href="" style="text-decoration: none; color: #394c70;">Лична анамнеза</a> |
+        <a href="./personal_medical_history.php?idn=<?php echo $_smarty_tpl->tpl_vars['patient_info']->value['pi_patient_idn'];?>
+" style="text-decoration: none; color: #394c70;"
+
+           onclick="window.open('./personal_medical_history.php?idn=<?php echo $_smarty_tpl->tpl_vars['patient_info']->value['pi_patient_idn'];?>
+',
+                   'newwindow',
+                   'width=1300,height=650');
+                   return false;"
+
+        >Лична анамнеза</a> |
         <a href="" style="text-decoration: none; color: #394c70;">Фамилна анамнеза</a> |
         <a href="" style="text-decoration: none; color: #394c70;">Алергии</a>
         </p>

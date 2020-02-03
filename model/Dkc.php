@@ -66,4 +66,9 @@ class Dkc extends Mdds
 
     }
 
+    public function updatePmh($pmh, $idn){
+        $sql = "UPDATE personal_info SET pi_life_anamneza = '".$pmh."' WHERE pi_patient_idn = '".$idn."'";
+        $this->sqliexecute($sql);
+    }
+
 }

@@ -94,7 +94,14 @@
                    return false;"
 
         >Нов преглед</a> |
-        <a href="" style="text-decoration: none; color: #394c70;">Лична анамнеза</a> |
+        <a href="./personal_medical_history.php?idn={$patient_info.pi_patient_idn}" style="text-decoration: none; color: #394c70;"
+
+           onclick="window.open('./personal_medical_history.php?idn={$patient_info.pi_patient_idn}',
+                   'newwindow',
+                   'width=1300,height=650');
+                   return false;"
+
+        >Лична анамнеза</a> |
         <a href="" style="text-decoration: none; color: #394c70;">Фамилна анамнеза</a> |
         <a href="" style="text-decoration: none; color: #394c70;">Алергии</a>
         </p>

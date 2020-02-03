@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0f0652b-a8f7-4d6e-b035-4646ba311cfb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template_c/5f4a8c1eb7459a580d789d80853337f5cf29f962_0.file.add_exam.tpl.php" afterPath="$PROJECT_DIR$/template_c/5f4a8c1eb7459a580d789d80853337f5cf29f962_0.file.add_exam.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/dkc.png" afterPath="$PROJECT_DIR$/images/dkc.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/dkcblue.png" afterPath="$PROJECT_DIR$/images/dkcblue.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/dkcwhite.png" afterPath="$PROJECT_DIR$/images/dkcwhite.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/Dkc.php" afterPath="$PROJECT_DIR$/model/Dkc.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template_c/b48d7f05efacfdd1a7f35ced35d1fd7125237330_0.file.search.tpl.php" afterPath="$PROJECT_DIR$/template_c/b48d7f05efacfdd1a7f35ced35d1fd7125237330_0.file.search.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/add_exam.tpl" afterPath="$PROJECT_DIR$/view/add_exam.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/search.tpl" afterPath="$PROJECT_DIR$/view/search.tpl" />
     </list>
     <ignored path="dkc.iws" />
@@ -27,21 +30,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="add_exam.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/add_exam.tpl">
+      <file leaf-file-name="Dkc.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model/Dkc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.0">
-              <caret line="51" column="88" selection-start-line="51" selection-start-column="88" selection-end-line="51" selection-end-column="88" />
-              <folding />
+            <state vertical-scroll-proportion="-17.037037">
+              <caret line="70" column="33" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="33" />
+              <folding>
+                <marker date="1580716999460" expanded="true" signature="199:331" placeholder="SELECT * FRO... exams" />
+                <marker date="1580716999460" expanded="true" signature="464:589" placeholder="SELECT * FRO... exams" />
+                <marker date="1580716999460" expanded="true" signature="706:1246" placeholder="UPDATE exams... " />
+                <marker date="1580716999460" expanded="true" signature="1352:1405" placeholder="DELETE FROM " />
+                <marker date="1580716999460" expanded="true" signature="1556:2153" placeholder="INSERT INTO `exams`... " />
+                <marker date="1580716999460" expanded="true" signature="2270:2392" placeholder="UPDATE exams... " />
+                <marker date="1580716999460" expanded="true" signature="2515:2729" placeholder="SELECT * FRO... patients" />
+                <marker date="1580716999460" expanded="true" signature="2909:3095" placeholder="SELECT * FRO... patients" />
+                <marker date="1580716999460" expanded="true" signature="3204:3228" placeholder="UPDATE perso... " />
+                <marker date="1580716999460" expanded="true" signature="3204:3249" placeholder="UPDATE perso... " />
+                <marker date="1580716999460" expanded="true" signature="3204:3283" placeholder="UPDATE perso... " />
+                <marker date="1580716999460" expanded="true" signature="3204:3284" placeholder="UPDATE perso... " />
+                <marker date="1580716999460" expanded="true" signature="3204:3292" placeholder="UPDATE perso... " />
+                <marker date="1580716999460" expanded="true" signature="3204:3293" placeholder="UPDATE perso... " />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.tpl" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/view/search.tpl">
+      <file leaf-file-name="personal_medical_history.tpl" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/view/personal_medical_history.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8758865">
-              <caret line="98" column="73" selection-start-line="98" selection-start-column="73" selection-end-line="98" selection-end-column="73" />
+            <state vertical-scroll-proportion="0.37218046">
+              <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -79,7 +97,6 @@
         <option value="$PROJECT_DIR$/view/exam_panel2.tpl" />
         <option value="$PROJECT_DIR$/controller/exams.php" />
         <option value="$PROJECT_DIR$/controller/patients.php" />
-        <option value="$PROJECT_DIR$/model/Dkc.php" />
         <option value="$PROJECT_DIR$/view/exam_panel1.tpl" />
         <option value="$PROJECT_DIR$/view/edit.tpl" />
         <option value="$PROJECT_DIR$/controller/clinical_laboratory.php" />
@@ -97,6 +114,9 @@
         <option value="$PROJECT_DIR$/controller/search.php" />
         <option value="$PROJECT_DIR$/view/add_exam.tpl" />
         <option value="$PROJECT_DIR$/view/search.tpl" />
+        <option value="$PROJECT_DIR$/model/Dkc.php" />
+        <option value="$PROJECT_DIR$/view/personal_medical_history.tpl" />
+        <option value="$PROJECT_DIR$/controller/personal_medical_history.php" />
       </list>
     </option>
   </component>
@@ -112,8 +132,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="width" value="1366" />
-    <option name="height" value="746" />
+    <option name="x" value="-1" />
+    <option name="y" value="24" />
+    <option name="width" value="1368" />
+    <option name="height" value="707" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -198,20 +220,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dkc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dkc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -270,10 +278,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="746" extended-state="6" />
+    <frame x="-1" y="24" width="1368" height="707" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19015151" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20227273" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -309,20 +317,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/view/header.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="81" column="44" selection-start-line="81" selection-start-column="25" selection-end-line="81" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/exams.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/exams.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -481,9 +475,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -515,13 +506,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/Dkc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.031914894">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15957446">
@@ -540,20 +524,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22340426">
           <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/add_exam.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="39" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/header.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39184397">
-          <caret line="91" column="37" selection-start-line="91" selection-start-column="30" selection-end-line="91" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -610,7 +580,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="24" column="51" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -618,7 +587,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.39962476">
           <caret line="8" column="31477" selection-start-line="8" selection-start-column="31477" selection-end-line="8" selection-end-column="31477" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -626,7 +594,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="68" column="7" selection-start-line="68" selection-start-column="7" selection-end-line="71" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -634,7 +601,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="74" selection-start-line="2" selection-start-column="74" selection-end-line="2" selection-end-column="74" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -642,7 +608,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="31" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -650,7 +615,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5531915">
           <caret line="29" column="63" selection-start-line="29" selection-start-column="63" selection-end-line="29" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -658,79 +622,74 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.031914894">
           <caret line="608" column="31" selection-start-line="608" selection-start-column="23" selection-end-line="608" selection-end-column="31" />
-          <folding>
-            <marker date="1580031931905" expanded="true" signature="133:229" placeholder="SELECT * FRO... users" />
-            <marker date="1580031931905" expanded="true" signature="795:1628" placeholder="INSERT INTO `patients`... " />
-            <marker date="1580031931905" expanded="true" signature="1679:1707" placeholder="SELECT MAX(i... patients" />
-            <marker date="1580031931905" expanded="true" signature="2019:2385" placeholder="INSERT INTO `results`... " />
-            <marker date="1580031931905" expanded="true" signature="2506:2567" placeholder="SELECT * FRO... personal_info" />
-            <marker date="1580031931905" expanded="true" signature="2793:3112" placeholder="SELECT * FRO... patients" />
-            <marker date="1580031931905" expanded="true" signature="3250:3464" placeholder="SELECT * FRO... patients" />
-            <marker date="1580031931905" expanded="true" signature="3609:3839" placeholder="SELECT * FRO... patients" />
-            <marker date="1580031931905" expanded="true" signature="4031:4190" placeholder="SELECT * FRO... patients" />
-            <marker date="1580031931905" expanded="true" signature="4254:4429" placeholder="SELECT * FRO... patients" />
-            <marker date="1580031931905" expanded="true" signature="4496:4673" placeholder="SELECT * FRO... patients" />
-            <marker date="1580031931905" expanded="true" signature="4826:5097" placeholder="SELECT * FRO... patients" />
-            <marker date="1580031931905" expanded="true" signature="5247:5341" placeholder="SELECT * FRO... patients" />
-            <marker date="1580031931905" expanded="true" signature="5801:6050" placeholder="SELECT * FRO... patients" />
-            <marker date="1580031931905" expanded="true" signature="7269:7380" placeholder="SELECT names... " />
-            <marker date="1580031931905" expanded="true" signature="7485:7506" placeholder="SELECT * FRO... doctors" />
-            <marker date="1580031931905" expanded="true" signature="7602:7621" placeholder="SELECT * FRO... tests" />
-            <marker date="1580031931905" expanded="true" signature="8948:9095" placeholder="SELECT * FRO... patients" />
-            <marker date="1580031931905" expanded="true" signature="9194:9277" placeholder="DELETE FROM " />
-            <marker date="1580031931905" expanded="true" signature="9326:9416" placeholder="DELETE FROM " />
-            <marker date="1580031931905" expanded="true" signature="9512:9939" placeholder="UPDATE patie... " />
-            <marker date="1580031931905" expanded="true" signature="9512:9940" placeholder="UPDATE patie... " />
-            <marker date="1580031931905" expanded="true" signature="10034:10056" placeholder="SELECT * FRO... hospital" />
-            <marker date="1580031931905" expanded="true" signature="12586:12633" placeholder="SELECT COUNT... tests" />
-            <marker date="1580031931905" expanded="true" signature="12842:12889" placeholder="SELECT COUNT... tests" />
-            <marker date="1580031931905" expanded="true" signature="13100:13146" placeholder="SELECT COUNT... tests" />
-            <marker date="1580031931905" expanded="true" signature="13355:13402" placeholder="SELECT COUNT... tests" />
-            <marker date="1580031931905" expanded="true" signature="13591:13638" placeholder="SELECT COUNT... tests" />
-            <marker date="1580031931905" expanded="true" signature="13807:13854" placeholder="SELECT COUNT... tests" />
-            <marker date="1580031931905" expanded="true" signature="14337:14497" placeholder="INSERT INTO `results`... " />
-            <marker date="1580031931905" expanded="true" signature="14629:14680" placeholder="DELETE FROM " />
-            <marker date="1580031931905" expanded="true" signature="14953:15113" placeholder="INSERT INTO `results`... " />
-            <marker date="1580031931905" expanded="true" signature="15245:15296" placeholder="DELETE FROM " />
-            <marker date="1580031931905" expanded="true" signature="15630:15790" placeholder="INSERT INTO `results`... " />
-            <marker date="1580031931905" expanded="true" signature="15922:15973" placeholder="DELETE FROM " />
-            <marker date="1580031931905" expanded="true" signature="16250:16410" placeholder="INSERT INTO `results`... " />
-            <marker date="1580031931905" expanded="true" signature="16542:16591" placeholder="DELETE FROM " />
-            <marker date="1580031931905" expanded="true" signature="16685:16977" placeholder="INSERT INTO `results`... " />
-            <marker date="1580031931905" expanded="true" signature="17169:17324" placeholder="SELECT *FROM... patients" />
-            <marker date="1580031931905" expanded="true" signature="17394:17544" placeholder="SELECT *FROM... patients" />
-            <marker date="1580031931905" expanded="true" signature="17615:17762" placeholder="SELECT *FROM... patients" />
-            <marker date="1580031931905" expanded="true" signature="17949:18066" placeholder="SELECT COUNT... patients" />
-            <marker date="1580031931905" expanded="true" signature="18228:18331" placeholder="SELECT COUNT... patients" />
-            <marker date="1580031931905" expanded="true" signature="18510:19123" placeholder="INSERT INTO `tests`... " />
-            <marker date="1580031931905" expanded="true" signature="19960:20066" placeholder="SELECT * FRO... patients" />
-            <marker date="1580031931905" expanded="true" signature="20434:20641" placeholder="SELECT `test... results" />
-            <marker date="1580031931905" expanded="true" signature="21169:21320" placeholder="SELECT * FRO... results" />
-            <marker date="1580031931905" expanded="true" signature="21543:21718" placeholder="DELETE FROM " />
-            <marker date="1580031931905" expanded="true" signature="21873:22080" placeholder="SELECT `test... results" />
-            <marker date="1580031931905" expanded="true" signature="22715:22870" placeholder="SELECT `name... patients" />
-            <marker date="1580031931905" expanded="true" signature="22978:23072" placeholder="SELECT * FRO... patients" />
-            <marker date="1580031931905" expanded="true" signature="23215:23247" placeholder="SELECT MAX(n... patients" />
-            <marker date="1580031931905" expanded="true" signature="23648:23694" placeholder="SELECT defau... hospital" />
-            <marker date="1580031931905" expanded="true" signature="23804:23909" placeholder="SELECT * FRO... personal_info" />
-            <marker date="1580031931905" expanded="true" signature="24019:25726" placeholder="UPDATE perso... " />
-            <marker date="1580031931905" expanded="true" signature="26767:26799" placeholder="SELECT MAX()... patients" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/add_exam.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="51" column="88" selection-start-line="51" selection-start-column="88" selection-end-line="51" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/add_exam.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7765958">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/header.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="8" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/search.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8758865">
-          <caret line="98" column="73" selection-start-line="98" selection-start-column="73" selection-end-line="98" selection-end-column="73" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="74" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/personal_medical_history.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5263158">
+          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/Dkc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.037037">
+          <caret line="70" column="33" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="33" />
+          <folding>
+            <marker date="1580716999460" expanded="true" signature="199:331" placeholder="SELECT * FRO... exams" />
+            <marker date="1580716999460" expanded="true" signature="464:589" placeholder="SELECT * FRO... exams" />
+            <marker date="1580716999460" expanded="true" signature="706:1246" placeholder="UPDATE exams... " />
+            <marker date="1580716999460" expanded="true" signature="1352:1405" placeholder="DELETE FROM " />
+            <marker date="1580716999460" expanded="true" signature="1556:2153" placeholder="INSERT INTO `exams`... " />
+            <marker date="1580716999460" expanded="true" signature="2270:2392" placeholder="UPDATE exams... " />
+            <marker date="1580716999460" expanded="true" signature="2515:2729" placeholder="SELECT * FRO... patients" />
+            <marker date="1580716999460" expanded="true" signature="2909:3095" placeholder="SELECT * FRO... patients" />
+            <marker date="1580716999460" expanded="true" signature="3204:3228" placeholder="UPDATE perso... " />
+            <marker date="1580716999460" expanded="true" signature="3204:3249" placeholder="UPDATE perso... " />
+            <marker date="1580716999460" expanded="true" signature="3204:3283" placeholder="UPDATE perso... " />
+            <marker date="1580716999460" expanded="true" signature="3204:3284" placeholder="UPDATE perso... " />
+            <marker date="1580716999460" expanded="true" signature="3204:3292" placeholder="UPDATE perso... " />
+            <marker date="1580716999460" expanded="true" signature="3204:3293" placeholder="UPDATE perso... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/personal_medical_history.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37218046">
+          <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
           <folding />
         </state>
       </provider>
