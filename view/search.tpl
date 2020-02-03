@@ -102,8 +102,22 @@
                    return false;"
 
         >Лична анамнеза</a> |
-        <a href="" style="text-decoration: none; color: #394c70;">Фамилна анамнеза</a> |
-        <a href="" style="text-decoration: none; color: #394c70;">Алергии</a>
+        <a href="./fam_medical_history.php?idn={$patient_info.pi_patient_idn}" style="text-decoration: none; color: #394c70;"
+
+           onclick="window.open('./fam_medical_history.php?idn={$patient_info.pi_patient_idn}',
+                   'newwindow',
+                   'width=1300,height=650');
+                   return false;"
+
+        >Фамилна анамнеза</a> |
+        <a href="./alergies.php?idn={$patient_info.pi_patient_idn}" style="text-decoration: none; color: #394c70;"
+
+           onclick="window.open('./alergies.php?idn={$patient_info.pi_patient_idn}',
+                   'newwindow',
+                   'width=1300,height=650');
+                   return false;"
+
+        >Алергии</a>
         </p>
 <table border="0"><tr><td>
         <table border="1" cellspacing="0" style="font-size: 16px;">

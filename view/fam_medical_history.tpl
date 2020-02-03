@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Лична анамнеза</title>
+    <title>Фамилна анамнеза</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="../css/richtext.min.css">
@@ -10,10 +10,10 @@
 </head>
 <body>
 <center>
-<h2>Лична анамнеза</h2>
-<p><b>Пациент:</b> {$pi.pi_names} | <b>ЕГН:</b> {$pi.pi_patient_idn}</p></center>
-<form action="./personal_medical_history.php?idn={$idn}" method="post">
-<textarea class="content" name="phm">{$pmh}</textarea>
+    <h2>Фамилна анамнеза</h2>
+    <p><b>Пациент:</b> {$pi.pi_names} | <b>ЕГН:</b> {$pi.pi_patient_idn}</p></center>
+<form action="./fam_medical_history.php?idn={$idn}" method="post">
+    <textarea class="content" name="fhm">{$fmh}</textarea>
 
     <input type="submit" name="save" value="Запиши">
 </form>

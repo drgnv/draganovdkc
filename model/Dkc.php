@@ -71,4 +71,13 @@ class Dkc extends Mdds
         $this->sqliexecute($sql);
     }
 
+    public function updateFmh($fmh, $idn){
+        $sql = "UPDATE personal_info SET pi_fam_anamneza = '".$fmh."' WHERE pi_patient_idn = '".$idn."'";
+        $this->sqliexecute($sql);
+    }
+
+    public function updateAlergies($alergi, $idn){
+        $sql = "UPDATE personal_info SET pi_alergi = '".$alergi."' WHERE pi_patient_idn = '".$idn."'";
+        $this->sqliexecute($sql);
+    }
 }

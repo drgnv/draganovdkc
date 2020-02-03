@@ -21,18 +21,18 @@ $Smarty->assign('lang', $language);
 
 if(isset($_GET['idn'])){
     $Smarty->assign('idn', $_GET['idn']);
-$idn = $_GET['idn'];
-   $personal_info = $Dkc->getPersonalInfo($idn);
-    $Smarty->assign('pmh', $personal_info[0]['pi_life_anamneza']);
+    $idn = $_GET['idn'];
+    $personal_info = $Dkc->getPersonalInfo($idn);
+    $Smarty->assign('fmh', $personal_info[0]['pi_fam_anamneza']);
     $Smarty->assign('pi', $personal_info[0]);
 
     if(isset($_POST['save'])){
-        $Dkc->updatePmh($_POST['phm'], $idn);
-        header('Location: ./personal_medical_history.php?idn='.$idn.'');
+        $Dkc->updateFmh($_POST['fhm'], $idn);
+        header('Location: ./fam_medical_history.php?idn='.$idn.'');
     }
 
 
 }
 
 
-$Smarty->display('personal_medical_history.tpl');
+$Smarty->display('fam_medical_history.tpl');
