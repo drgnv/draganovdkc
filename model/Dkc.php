@@ -80,4 +80,55 @@ class Dkc extends Mdds
         $sql = "UPDATE personal_info SET pi_alergi = '".$alergi."' WHERE pi_patient_idn = '".$idn."'";
         $this->sqliexecute($sql);
     }
+
+    public function setNewPatient($pi){
+
+        $sql  = "INSERT INTO `personal_info` (
+            `pi_address`,
+            `pi_phone`,
+            `pi_mail`,
+            `pi_gender`,
+            `pi_blood_type`,
+            `pi_workplace`,
+            `pi_id`,
+            `pi_patient_idn`,
+            `citizenship`,
+            `zdr_knizkha_num`,
+            `rec_knizkha_num`,
+            `lak_num`,
+            `pi_lk_num`,
+            `pi_out_date`,
+            `pi_exp_date`,
+            `pi_out_place`,
+            `pi_fam_anamneza`,
+            `pi_life_anamneza`,
+            `pi_alergi`,
+            `pi_names`)
+
+            VALUES (
+            '".$pi['address']."',
+            '".$pi['phone']."',
+            '".$pi['mail']."',
+            '".$pi['gender']."',
+            '".$pi['blood_type']."',
+            '".$pi['work_place']."',
+            NULL,
+            '".$pi['idn']."',
+            '".$pi['citizenship']."',
+            '".$pi['zdr_knizkha']."',
+            '".$pi['rec_knizkha']."',
+            '".$pi['lak_num']."',
+            '".$pi['lk_num']."',
+            '".$pi['out_date']."',
+            '".$pi['exp_date']."',
+            '".$pi['out_place']."',
+             NULL,
+             NULL,
+             NULL,
+             '".$pi['names']."')";
+
+         $this->sqliexecute($sql);
+
+
+    }
 }

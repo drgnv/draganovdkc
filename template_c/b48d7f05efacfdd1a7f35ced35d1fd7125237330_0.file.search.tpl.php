@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-02-03 22:00:20
+/* Smarty version 3.1.32, created on 2020-02-04 17:49:58
   from '/var/www/html/dkc/view/search.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5e387bd4de5109_70159763',
+  'unifunc' => 'content_5e3992a650d030_92404669',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b48d7f05efacfdd1a7f35ced35d1fd7125237330' => 
     array (
       0 => '/var/www/html/dkc/view/search.tpl',
-      1 => 1580760020,
+      1 => 1580831397,
       2 => 'file',
     ),
   ),
@@ -23,7 +23,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5e387bd4de5109_70159763 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e3992a650d030_92404669 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 $_smarty_tpl->_subTemplateRender("file:menu.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 echo '<script'; ?>
@@ -36,6 +36,22 @@ echo '<script'; ?>
 <?php echo '<script'; ?>
  src="../js/tinymce.min.js" referrerpolicy="origin"><?php echo '</script'; ?>
 >
+<style>
+    input[type=submit] {
+        width: 15%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+</style>
 <style>
 
     /* The Modal (background) */
@@ -168,123 +184,141 @@ echo '<script'; ?>
         </p>
         <form action="./search.php?search=<?php echo $_smarty_tpl->tpl_vars['patient_info']->value['pi_patient_idn'];?>
 " method="post">
-<table border="0"><tr><td>
-        <table border="1" cellspacing="0" style="font-size: 16px;">
-            <tr>
-                <td colspan="2" style="background-color: #394c70;color: white;" align="center">Лична информация</td>
-            </tr>
-            <tr>
-                <td align="right">Пациент: </td>
-                <td><input type="text" name="names" value="<?php echo $_smarty_tpl->tpl_vars['patient_info']->value['pi_names'];?>
+            <table border="1" cellspacing="0" align="center">
+                <thead style="font-size: 18px; background-color: #34495E; color: white;">
+                <th colspan="4">Лични данни</th>
+                </thead>
+                <tbody style="font-size: 16px;">
+                <tr>
+                    <td>Име:</td>
+                    <td><input type="text" name="names" value="<?php echo $_smarty_tpl->tpl_vars['patient_info']->value['pi_names'];?>
 "></td>
-            </tr>
-            <tr>
-                <td align="right">ЕГН: </td>
-                <td><input type="text" name="idn" value="<?php echo $_smarty_tpl->tpl_vars['patient_info']->value['pi_patient_idn'];?>
-"></td>
-            </tr>
 
-            <tr>
-                <td align="right">Адрес: </td>
-                <td><input type="text" name="address" value="<?php echo $_smarty_tpl->tpl_vars['patient_info']->value['pi_address'];?>
+                    <td>ЕГН:</td>
+                    <td><input type="text" name="idn" value="<?php echo $_smarty_tpl->tpl_vars['patient_info']->value['pi_patient_idn'];?>
 "></td>
-            </tr>
-            <tr>
-                <td align="right">E-mail: </td>
-                <td><input type="mail" name="mail" value="<?php echo $_smarty_tpl->tpl_vars['patient_info']->value['pi_mail'];?>
+                </tr>
+
+                <tr>
+                    <td>Адрес:</td>
+                    <td><input type="text" name="address" value="<?php echo $_smarty_tpl->tpl_vars['patient_info']->value['pi_address'];?>
 "></td>
-            </tr>
-            <tr>
-                <td align="right">Телефон: </td>
-                <td><input type="text" name="phone" value="<?php echo $_smarty_tpl->tpl_vars['patient_info']->value['pi_phone'];?>
+
+                    <td>E-mail:</td>
+                    <td><input type="text" name="mail" value="<?php echo $_smarty_tpl->tpl_vars['patient_info']->value['pi_mail'];?>
 "></td>
-            </tr>
-            <tr>
-                <td align="right">Работно място:</td>
-                <td><input type="text" name="work_place" value="<?php echo $_smarty_tpl->tpl_vars['patient_info']->value['pi_workplace'];?>
+                </tr>
+
+                <tr>
+                    <td>Телефон:</td>
+                    <td><input type="text" name="phone" value="<?php echo $_smarty_tpl->tpl_vars['patient_info']->value['pi_phone'];?>
 "></td>
-            </tr>
-            <tr>
-                <td align="right">Гражданство: </td>
-                <td><input type="text" name="citizenship" value="<?php echo $_smarty_tpl->tpl_vars['patient_info']->value['citizenship'];?>
+
+                    <td>Работно Място:</td>
+                    <td><input type="text" name="work_place" value="<?php echo $_smarty_tpl->tpl_vars['patient_info']->value['pi_workplace'];?>
 "></td>
-            </tr>
-            <tr>
-                <td align="right">Пол: </td>
-                <td>
-                    <select name="gender">
-                        <option value="1" <?php if ($_smarty_tpl->tpl_vars['patient_info']->value['pi_gender'] == '1') {?>selected<?php } else {
+                </tr>
+
+                <tr>
+                    <td>Гражданство:</td>
+                    <td><input type="text" name="citizenship" value="<?php echo $_smarty_tpl->tpl_vars['patient_info']->value['citizenship'];?>
+"></td>
+
+                    <td>Пол:</td>
+                    <td>
+                        <select name="gender">
+                            <option value="1" <?php if ($_smarty_tpl->tpl_vars['patient_info']->value['pi_gender'] == '1') {?>selected<?php } else {
 }?>>Мъж</option>
-                        <option value="2" <?php if ($_smarty_tpl->tpl_vars['patient_info']->value['pi_gender'] == '2') {?>selected<?php } else {
+                            <option value="2" <?php if ($_smarty_tpl->tpl_vars['patient_info']->value['pi_gender'] == '2') {?>selected<?php } else {
 }?>>Жена</option>
-                        <option value="3" <?php if ($_smarty_tpl->tpl_vars['patient_info']->value['pi_gender'] == '3') {?>selected<?php } else {
+                            <option value="3" <?php if ($_smarty_tpl->tpl_vars['patient_info']->value['pi_gender'] == '3') {?>selected<?php } else {
 }?>>Не е посочено</option>
-                    </select>
-                </td>
-            </tr>
-            </table>
-</td><td>
-        <table border="1" cellspacing="0" style="font-size: 16px;">
-            <tr>
-                <td colspan="2" style="background-color: #394c70;color: white;" align="center">Лична карта</td>
-            </tr>
+                        </select>
+                    </td>
+                </tr>
+                </tbody>
 
-            <tr>
-            <td>ЛК № </td>
-                <td><input name="lk_num" type="text" value="<?php echo $_smarty_tpl->tpl_vars['patient_info']->value['pi_lk_num'];?>
+                <thead style="font-size: 18px;background-color: #34495E; color: white;">
+                <th colspan="4">Лична карта</th>
+                </thead>
+                <tbody style="font-size: 16px;">
+                <tr>
+                    <td>ЛК №</td>
+                    <td><input type="text" name="lk_num" value="<?php echo $_smarty_tpl->tpl_vars['patient_info']->value['pi_lk_num'];?>
 "></td>
-            </tr>
-            <tr>
-            <td>Издадена: </td>
-            <td><input type="date" name="out_date" value="<?php echo $_smarty_tpl->tpl_vars['patient_info']->value['pi_out_date'];?>
+
+                    <td>Издадена:</td>
+                    <td><input type="date" name="out_date" value="<?php echo $_smarty_tpl->tpl_vars['patient_info']->value['pi_out_date'];?>
 "></td>
-            </tr>
-            <tr>
-                <td>Валидна до: </td>
-                <td>
-                   <input name="exp_date" type="date" value="<?php echo $_smarty_tpl->tpl_vars['patient_info']->value['pi_exp_date'];?>
-">
-                </td>
-            </tr>
-            <tr>
-                <td>Издадена от: </td>
-                <td><input name="outplace" type="text" value="<?php echo $_smarty_tpl->tpl_vars['patient_info']->value['pi_out_place'];?>
+
+                </tr>
+                <tr>
+                    <td>Валидна до:</td>
+                    <td><input type="date" name="exp_date" value="<?php echo $_smarty_tpl->tpl_vars['patient_info']->value['pi_exp_date'];?>
 "></td>
-            </tr>
 
-        </table>
-        </td></tr>
-        <tr>
-            <td colspan="2">
-<table border="1" cellspacing="0">
-    <thead>
-    <th colspan="2" style="background-color: #394c70;color: white; font-size: 16px" align="center">Здравна информация</th>
-    </thead>
-    <tbody>
-    <tr>
-        <td style="font-size: 14px" align="right">Здравна книжка №</td>
-        <td><input type="text" value="<?php echo $_smarty_tpl->tpl_vars['patient_info']->value['zdr_knizkha_num'];?>
-" name="zdr_knizkha_num"></td>
-    </tr>
-    <tr>
-        <td align="right" style="font-size: 14px">Рецептурна книжка №</td>
-        <td><input type="text" value="<?php echo $_smarty_tpl->tpl_vars['patient_info']->value['rec_knizkha_num'];?>
-" name="rec_knizkha_num"></td>
-    </tr>
-    <tr>
-        <td align="right" style="font-size: 14px">ЛАК №</td>
-        <td><input type="text" value="<?php echo $_smarty_tpl->tpl_vars['patient_info']->value['lak_num'];?>
-" name="lak_num"></td>
-    </tr>
-    </tbody>
-</table>
-            </td>
-        </tr>
+                    <td>Издадена от:</td>
+                    <td><input type="text" name="outplace" value="<?php echo $_smarty_tpl->tpl_vars['patient_info']->value['pi_out_place'];?>
+"></td>
+
+                </tr>
+                </tbody>
 
 
-</table>
-            <input type="submit" name="save" value="Запиши">
-            </form>
+                <thead style="font-size: 18px;background-color: #34495E; color: white;">
+
+                <th colspan="4">Здравна информация</th>
+
+                </thead>
+                <tbody style="font-size: 16px;">
+
+                <tr>
+                    <td colspan="2" align="right">Здравна книжка №:</td>
+                    <td colspan="2"><input type="text" name="zdr_knizkha_num" value="<?php echo $_smarty_tpl->tpl_vars['patient_info']->value['zdr_knizkha_num'];?>
+"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="right">Рецептурна книжка №:</td>
+                    <td colspan="2"><input type="text" name="rec_knizkha_num" value="<?php echo $_smarty_tpl->tpl_vars['patient_info']->value['rec_knizkha_num'];?>
+"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="right">ЛАК №:</td>
+                    <td colspan="2"><input type="text" name="lak_num" type="text" value="<?php echo $_smarty_tpl->tpl_vars['patient_info']->value['lak_num'];?>
+"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="right">Кръвна група:</td>
+                    <td colspan="2">
+                        <select name="blood_type">
+                            <option value="1" <?php if ($_smarty_tpl->tpl_vars['patient_info']->value['pi_blood_type'] == '1') {?>selected<?php } else {
+}?>>A+</option>
+                            <option value="2" <?php if ($_smarty_tpl->tpl_vars['patient_info']->value['pi_blood_type'] == '2') {?>selected<?php } else {
+}?>>A-</option>
+                            <option value="3" <?php if ($_smarty_tpl->tpl_vars['patient_info']->value['pi_blood_type'] == '3') {?>selected<?php } else {
+}?>>B+</option>
+                            <option value="4" <?php if ($_smarty_tpl->tpl_vars['patient_info']->value['pi_blood_type'] == '4') {?>selected<?php } else {
+}?>>B-</option>
+                            <option value="5" <?php if ($_smarty_tpl->tpl_vars['patient_info']->value['pi_blood_type'] == '5') {?>selected<?php } else {
+}?>>AB+</option>
+                            <option value="6" <?php if ($_smarty_tpl->tpl_vars['patient_info']->value['pi_blood_type'] == '6') {?>selected<?php } else {
+}?>>AB-</option>
+                            <option value="7" <?php if ($_smarty_tpl->tpl_vars['patient_info']->value['pi_blood_type'] == '7') {?>selected<?php } else {
+}?>>0+</option>
+                            <option value="8" <?php if ($_smarty_tpl->tpl_vars['patient_info']->value['pi_blood_type'] == '8') {?>selected<?php } else {
+}?>>0-</option>
+                            <option value="false" <?php if ($_smarty_tpl->tpl_vars['patient_info']->value['pi_blood_type'] == 'false') {?>selected<?php } else {
+}?>>Не е посочено</option>
+                        </select>
+
+                    </td>
+                </tr>
+                </tbody>
+
+            </table><center>
+                <input type="submit" name="save" value="Добави нов пациент" style="font-size: 14px;">
+            </center>
+        </form>
         <?php }?>
 
 
