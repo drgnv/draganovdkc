@@ -5,7 +5,12 @@
     </form><br>
     <a href="./home.php">Начало</a>
     <a href="./exams.php">Прегледи</a>
-    <a href="#services">Пациенти</a>
+    <div class="showhim">
+    <a href="#services">Пациенти+</a>
+        <div class="showme">
+            <a style="font-size: 15px" href="new_patient.php">>>Нов пациент</a>
+            </div>
+    </div>
     <div class="showhim">
         <a>Лаборатории+</a>
         <div class="showme">

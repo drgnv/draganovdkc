@@ -47,7 +47,6 @@ if(isset($_GET['search'])){
             $pi['out_date'] = filter_input(INPUT_POST, 'out_date');
             $pi['exp_date'] = filter_input(INPUT_POST, 'exp_date');
             $pi['out_place'] = filter_input(INPUT_POST, 'outplace');
-
             $pi['blood_type'] = filter_input(INPUT_POST, 'blood_type',  FILTER_VALIDATE_INT);
             $pi['idn'] = filter_input(INPUT_POST, 'idn');
             $Dkc->updatePersonalInfoSearch($pi);
