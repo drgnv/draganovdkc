@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="stylesheet" type="text/css" href="../css/notifications.css">
     <!--Datatables start-->
     <link rel="stylesheet" type="text/css" href="../libs/jquery.dataTables.css">
     <script type="text/javascript" charset="utf8" src="../libs/jquery.dataTables.js"></script>

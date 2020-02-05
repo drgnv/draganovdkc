@@ -92,6 +92,7 @@
 <div class="main">
 
     {if $type == 'idn'}<p style="font-size: 16px;">
+        <div align="center" style="font-size: 16px;">
         <a href="./new_request_cl.php" style="text-decoration: none; color: #394c70;"
 
            onclick="window.open('./new_request_cl.php?patient_names={$patient_info.pi_names}&patient_idn={$patient_info.pi_patient_idn}&doctor={$doctor}',
@@ -135,6 +136,7 @@
 
         >Алергии</a>
         </p>
+        </div>
         <form action="./search.php?search={$patient_info.pi_patient_idn}" method="post">
             <table border="1" cellspacing="0" align="center">
                 <thead style="font-size: 18px; background-color: #34495E; color: white;">

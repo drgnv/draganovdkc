@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-01-05 12:41:46
+/* Smarty version 3.1.32, created on 2020-02-04 18:11:40
   from '/var/www/html/dkc/view/header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5e11bd6a993df4_61904575',
+  'unifunc' => 'content_5e3997bcbde7f1_85504081',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8df10e1e6db7d0dcfb070b8417cdace8f7c5d773' => 
     array (
       0 => '/var/www/html/dkc/view/header.tpl',
-      1 => 1578220905,
+      1 => 1580832696,
       2 => 'file',
     ),
   ),
@@ -20,12 +20,12 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e11bd6a993df4_61904575 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e3997bcbde7f1_85504081 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="stylesheet" type="text/css" href="../css/notifications.css">
     <!--Datatables start-->
     <link rel="stylesheet" type="text/css" href="../libs/jquery.dataTables.css">
     <?php echo '<script'; ?>

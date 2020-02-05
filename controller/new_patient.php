@@ -19,11 +19,10 @@ include_once "../languages/".$def_lang[0]['default_lang'].".php";
 $Smarty->assign('lang', $language);
 //LANGUAGE STOP
 
-if(isset($_POST['save'])){
+if(isset($_POST['new_patient'])){
 
     $pi['idn'] = $_POST['idn'];
 
-    if($Dkc->egn_valid($pi['idn']) == true) {
 
         $pi['names'] = $_POST['names'];
         $pi['address'] = $_POST['address'];
@@ -40,14 +39,22 @@ if(isset($_POST['save'])){
         $pi['rec_knizkha'] = $_POST['rec_knizkha'];
         $pi['lak_num'] = $_POST['lak_num'];
         $pi['blood_type'] = $_POST['blood_type'];
+
+   //
+
+    if($Dkc->egn_valid($pi['idn'])) {
         $Dkc->setNewPatient($pi);
+        $notification['show'] = 'true';
+        $notification['alert_type'] = 'success';
+        $notification['msg'] = 'Пациента е добавен успешно';
+        $Smarty->assign('notification', $notification);
+    }else{
+        $notification['show'] = 'true';
+        $notification['alert_type'] = 'error';
+        $notification['msg'] = 'Въведен е невалиден ЕГН';
+        $Smarty->assign('notification', $notification);
     }
 
-
-
-
 }
-
-
 
 $Smarty->display('new_patient.tpl');

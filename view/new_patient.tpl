@@ -1,5 +1,6 @@
 {include file="header.tpl"}
 {include file="menu.tpl"}
+<link rel="stylesheet" type="text/css" href="../css/notifications.css">
 
 <script type="text/javascript" charset="utf8" src="../js/jquery-3.3.1.min.js"></script>
 <link rel="stylesheet" type="text/css" href="../libs/jquery.dataTables.css">
@@ -31,10 +32,10 @@
         <tbody style="font-size: 16px;">
     <tr>
         <td>Име:</td>
-        <td><input type="text" name="names"></td>
+        <td><input type="text" name="names" required></td>
 
         <td>ЕГН:</td>
-        <td><input type="text" name="idn"></td>
+        <td><input type="text" name="idn" required></td>
     </tr>
 
     <tr>
@@ -42,12 +43,12 @@
          <td><input type="text" name="address"></td>
 
          <td>E-mail:</td>
-         <td><input type="text" name="mail"></td>
+         <td><input type="email" name="mail"></td>
     </tr>
 
     <tr>
         <td>Телефон:</td>
-        <td><input type="text" name="phone"></td>
+        <td><input type="tel" name="phone"></td>
 
         <td>Работно Място:</td>
         <td><input type="text" name="work_place"></td>
@@ -55,11 +56,11 @@
 
     <tr>
         <td>Гражданство:</td>
-        <td><input type="text" name="citizenship"></td>
+        <td><input type="text" name="citizenship" required></td>
 
         <td>Пол:</td>
         <td>
-            <select name="gender">
+            <select name="gender" required>
                 <option value="1">Мъж</option>
                 <option value="2">Жена</option>
                 <option value="3">Не е посочено</option>
@@ -131,6 +132,9 @@
 
     </table><center>
 <input type="submit" name="new_patient" value="Добави нов пациент" style="font-size: 14px;">
+        {if isset($notification.show)}
+        <div class="alert-box {$notification.alert_type}"><span> <img src="../images/{$notification.alert_type}.png" width="20" height="20"> {$notification.alert_type}: </span>{$notification.msg}.</div>
+        {/if}
         </center>
     </form>
 </div>

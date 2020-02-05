@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-02-04 17:49:58
+/* Smarty version 3.1.32, created on 2020-02-04 17:53:45
   from '/var/www/html/dkc/view/search.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5e3992a650d030_92404669',
+  'unifunc' => 'content_5e399389a16205_57955489',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b48d7f05efacfdd1a7f35ced35d1fd7125237330' => 
     array (
       0 => '/var/www/html/dkc/view/search.tpl',
-      1 => 1580831397,
+      1 => 1580831625,
       2 => 'file',
     ),
   ),
@@ -23,7 +23,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5e3992a650d030_92404669 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e399389a16205_57955489 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 $_smarty_tpl->_subTemplateRender("file:menu.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 echo '<script'; ?>
@@ -128,6 +128,7 @@ echo '<script'; ?>
 <div class="main">
 
     <?php if ($_smarty_tpl->tpl_vars['type']->value == 'idn') {?><p style="font-size: 16px;">
+        <div align="center" style="font-size: 16px;">
         <a href="./new_request_cl.php" style="text-decoration: none; color: #394c70;"
 
            onclick="window.open('./new_request_cl.php?patient_names=<?php echo $_smarty_tpl->tpl_vars['patient_info']->value['pi_names'];?>
@@ -182,6 +183,7 @@ echo '<script'; ?>
 
         >Алергии</a>
         </p>
+        </div>
         <form action="./search.php?search=<?php echo $_smarty_tpl->tpl_vars['patient_info']->value['pi_patient_idn'];?>
 " method="post">
             <table border="1" cellspacing="0" align="center">

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-02-04 12:30:59
+/* Smarty version 3.1.32, created on 2020-02-05 11:14:22
   from '/var/www/html/dkc/view/new_patient.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5e3947e3b7ecc2_95572906',
+  'unifunc' => 'content_5e3a876e6b1707_42012336',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a6cae1d3872eea545d7a71e7a6dbf4440dfb67f1' => 
     array (
       0 => '/var/www/html/dkc/view/new_patient.tpl',
-      1 => 1580812185,
+      1 => 1580894048,
       2 => 'file',
     ),
   ),
@@ -23,10 +23,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5e3947e3b7ecc2_95572906 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e3a876e6b1707_42012336 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 $_smarty_tpl->_subTemplateRender("file:menu.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
+<link rel="stylesheet" type="text/css" href="../css/notifications.css">
 
 <?php echo '<script'; ?>
  type="text/javascript" charset="utf8" src="../js/jquery-3.3.1.min.js"><?php echo '</script'; ?>
@@ -62,10 +63,10 @@ $_smarty_tpl->_subTemplateRender("file:menu.tpl", $_smarty_tpl->cache_id, $_smar
         <tbody style="font-size: 16px;">
     <tr>
         <td>Име:</td>
-        <td><input type="text" name="names"></td>
+        <td><input type="text" name="names" required></td>
 
         <td>ЕГН:</td>
-        <td><input type="text" name="idn"></td>
+        <td><input type="text" name="idn" required></td>
     </tr>
 
     <tr>
@@ -73,12 +74,12 @@ $_smarty_tpl->_subTemplateRender("file:menu.tpl", $_smarty_tpl->cache_id, $_smar
          <td><input type="text" name="address"></td>
 
          <td>E-mail:</td>
-         <td><input type="text" name="mail"></td>
+         <td><input type="email" name="mail"></td>
     </tr>
 
     <tr>
         <td>Телефон:</td>
-        <td><input type="text" name="phone"></td>
+        <td><input type="tel" name="phone"></td>
 
         <td>Работно Място:</td>
         <td><input type="text" name="work_place"></td>
@@ -86,11 +87,11 @@ $_smarty_tpl->_subTemplateRender("file:menu.tpl", $_smarty_tpl->cache_id, $_smar
 
     <tr>
         <td>Гражданство:</td>
-        <td><input type="text" name="citizenship"></td>
+        <td><input type="text" name="citizenship" required></td>
 
         <td>Пол:</td>
         <td>
-            <select name="gender">
+            <select name="gender" required>
                 <option value="1">Мъж</option>
                 <option value="2">Жена</option>
                 <option value="3">Не е посочено</option>
@@ -161,7 +162,14 @@ $_smarty_tpl->_subTemplateRender("file:menu.tpl", $_smarty_tpl->cache_id, $_smar
         </tbody>
 
     </table><center>
-<input type="submit" name="save" value="Добави нов пациент" style="font-size: 14px;">
+<input type="submit" name="new_patient" value="Добави нов пациент" style="font-size: 14px;">
+        <?php if (isset($_smarty_tpl->tpl_vars['notification']->value['show'])) {?>
+        <div class="alert-box <?php echo $_smarty_tpl->tpl_vars['notification']->value['alert_type'];?>
+"><span> <img src="../images/<?php echo $_smarty_tpl->tpl_vars['notification']->value['alert_type'];?>
+.png" width="20" height="20"> <?php echo $_smarty_tpl->tpl_vars['notification']->value['alert_type'];?>
+: </span><?php echo $_smarty_tpl->tpl_vars['notification']->value['msg'];?>
+.</div>
+        <?php }?>
         </center>
     </form>
 </div>
