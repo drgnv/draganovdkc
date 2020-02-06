@@ -24,7 +24,7 @@
 
 <div class="main">
 <p align="center" style="font-size: 24px;">Нов пациент</p>
-<form action="./new_patient.php" method="post">
+<form action="./new_patient.php" method="post" autocomplete="off">
     <table border="1" cellspacing="0" align="center">
     <thead style="font-size: 18px; background-color: #34495E; color: white;">
     <th colspan="4">Лични данни</th>
@@ -133,7 +133,8 @@
     </table><center>
 <input type="submit" name="new_patient" value="Добави нов пациент" style="font-size: 14px;">
         {if isset($notification.show)}
-        <div class="alert-box {$notification.alert_type}"><span> <img src="../images/{$notification.alert_type}.png" width="20" height="20"> {$notification.alert_type}: </span>{$notification.msg}.</div>
+        <div class="alert-box {$notification.alert_type}"><span> <img src="../images/{$notification.alert_type}.png" width="20" height="20"> {$notification.alert_type}: </span>
+            {$notification.msg}. {if $notification.exist == 'true'} Можете да го прегледате <a href="./search.php?search={$idn}"> ТУК</a> {/if}</div>
         {/if}
         </center>
     </form>

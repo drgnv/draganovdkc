@@ -12,11 +12,11 @@
 }
 
 .error {
-    background:#ffecec url('../images/error.png') no-repeat 10px 50%;
+    background:#ffecec;
     border:1px solid #f5aca6;
 }
 .success {
-    background:#e9ffd9 url('../images/success.png') no-repeat 10px 50%;
+    background:#e9ffd9;
     border:1px solid #a6ca8a;
 }
 .warning {

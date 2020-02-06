@@ -43,11 +43,25 @@ if(isset($_POST['new_patient'])){
    //
 
     if($Dkc->egn_valid($pi['idn'])) {
-        $Dkc->setNewPatient($pi);
-        $notification['show'] = 'true';
-        $notification['alert_type'] = 'success';
-        $notification['msg'] = 'Пациента е добавен успешно';
-        $Smarty->assign('notification', $notification);
+
+        if(!is_array($Dkc->getPersonalInfo($pi['idn']))){
+            $Dkc->setNewPatient($pi);
+            $notification['show'] = 'true';
+            $notification['alert_type'] = 'success';
+            $notification['msg'] = 'Пациента е добавен успешно';
+            $Smarty->assign('notification', $notification);
+        }else{
+            $notification['show'] = 'true';
+            $notification['alert_type'] = 'error';
+            $notification['msg'] = "Съществува пациент с този ЕГН";
+            $notification['exist'] = "true";
+            $Smarty->assign('exist', $notification['exist']);
+            $Smarty->assign('idn', $pi['idn']);
+            $Smarty->assign('notification', $notification);
+        }
+
+
+
     }else{
         $notification['show'] = 'true';
         $notification['alert_type'] = 'error';

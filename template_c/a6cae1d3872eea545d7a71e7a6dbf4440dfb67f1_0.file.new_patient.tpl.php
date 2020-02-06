@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-02-05 11:14:22
+/* Smarty version 3.1.32, created on 2020-02-06 19:23:48
   from '/var/www/html/dkc/view/new_patient.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5e3a876e6b1707_42012336',
+  'unifunc' => 'content_5e3c4ba4005c25_66994330',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a6cae1d3872eea545d7a71e7a6dbf4440dfb67f1' => 
     array (
       0 => '/var/www/html/dkc/view/new_patient.tpl',
-      1 => 1580894048,
+      1 => 1581009826,
       2 => 'file',
     ),
   ),
@@ -23,7 +23,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5e3a876e6b1707_42012336 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e3c4ba4005c25_66994330 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 $_smarty_tpl->_subTemplateRender("file:menu.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
@@ -55,7 +55,7 @@ $_smarty_tpl->_subTemplateRender("file:menu.tpl", $_smarty_tpl->cache_id, $_smar
 
 <div class="main">
 <p align="center" style="font-size: 24px;">Нов пациент</p>
-<form action="./new_patient.php" method="post">
+<form action="./new_patient.php" method="post" autocomplete="off">
     <table border="1" cellspacing="0" align="center">
     <thead style="font-size: 18px; background-color: #34495E; color: white;">
     <th colspan="4">Лични данни</th>
@@ -167,8 +167,10 @@ $_smarty_tpl->_subTemplateRender("file:menu.tpl", $_smarty_tpl->cache_id, $_smar
         <div class="alert-box <?php echo $_smarty_tpl->tpl_vars['notification']->value['alert_type'];?>
 "><span> <img src="../images/<?php echo $_smarty_tpl->tpl_vars['notification']->value['alert_type'];?>
 .png" width="20" height="20"> <?php echo $_smarty_tpl->tpl_vars['notification']->value['alert_type'];?>
-: </span><?php echo $_smarty_tpl->tpl_vars['notification']->value['msg'];?>
-.</div>
+: </span>
+            <?php echo $_smarty_tpl->tpl_vars['notification']->value['msg'];?>
+. <?php if ($_smarty_tpl->tpl_vars['notification']->value['exist'] == 'true') {?> Можете да го прегледате <a href="./search.php?search=<?php echo $_smarty_tpl->tpl_vars['idn']->value;?>
+"> ТУК</a> <?php }?></div>
         <?php }?>
         </center>
     </form>
