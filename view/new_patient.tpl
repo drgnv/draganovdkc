@@ -128,6 +128,19 @@
 
             </td>
         </tr>
+
+
+        <tr>
+            <td colspan="2" align="right">Личен лекар:</td>
+            <td colspan="2">
+                <select>
+                    {foreach from=$doctors item=doctor}
+                    <option value="{$doctor.doctor_id}">{$doctor.doctor} - УИН:{$doctor.uin}</option>
+                    {/foreach}
+                </select>
+            </td>
+        </tr>
+
         </tbody>
 
     </table><center>

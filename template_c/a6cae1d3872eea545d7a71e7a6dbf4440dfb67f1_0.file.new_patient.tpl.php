@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-02-06 19:23:48
+/* Smarty version 3.1.32, created on 2020-02-06 21:33:22
   from '/var/www/html/dkc/view/new_patient.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5e3c4ba4005c25_66994330',
+  'unifunc' => 'content_5e3c6a02ccc325_92160091',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a6cae1d3872eea545d7a71e7a6dbf4440dfb67f1' => 
     array (
       0 => '/var/www/html/dkc/view/new_patient.tpl',
-      1 => 1581009826,
+      1 => 1581017602,
       2 => 'file',
     ),
   ),
@@ -23,7 +23,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5e3c4ba4005c25_66994330 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e3c6a02ccc325_92160091 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 $_smarty_tpl->_subTemplateRender("file:menu.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
@@ -159,6 +159,29 @@ $_smarty_tpl->_subTemplateRender("file:menu.tpl", $_smarty_tpl->cache_id, $_smar
 
             </td>
         </tr>
+
+
+        <tr>
+            <td colspan="2" align="right">Личен лекар:</td>
+            <td colspan="2">
+                <select>
+                    <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['doctors']->value, 'doctor');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['doctor']->value) {
+?>
+                    <option value="<?php echo $_smarty_tpl->tpl_vars['doctor']->value['doctor_id'];?>
+"><?php echo $_smarty_tpl->tpl_vars['doctor']->value['doctor'];?>
+ - УИН:<?php echo $_smarty_tpl->tpl_vars['doctor']->value['uin'];?>
+</option>
+                    <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+                </select>
+            </td>
+        </tr>
+
         </tbody>
 
     </table><center>

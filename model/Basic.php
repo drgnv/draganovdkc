@@ -516,8 +516,8 @@ class Basic extends Host{
         return $patient_dates;
     }
 
-        public function accessControl($userLevel) {
-            if($userLevel < "3"){
+        public function accessControl($userLevel, $needed_lvl) {
+            if($userLevel < $needed_lvl){
                 session_destroy();
                 header("Location: ../index.php");
             }

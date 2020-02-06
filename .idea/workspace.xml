@@ -4,7 +4,6 @@
     <list default="true" id="c0f0652b-a8f7-4d6e-b035-4646ba311cfb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/new_patient.php" afterPath="$PROJECT_DIR$/controller/new_patient.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/notifications.css" afterPath="$PROJECT_DIR$/css/notifications.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/Basic.php" afterPath="$PROJECT_DIR$/model/Basic.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template_c/a6cae1d3872eea545d7a71e7a6dbf4440dfb67f1_0.file.new_patient.tpl.php" afterPath="$PROJECT_DIR$/template_c/a6cae1d3872eea545d7a71e7a6dbf4440dfb67f1_0.file.new_patient.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/new_patient.tpl" afterPath="$PROJECT_DIR$/view/new_patient.tpl" />
@@ -29,80 +28,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="new_patient.tpl" pinned="false" current-in-tab="false">
+      <file leaf-file-name="new_patient.tpl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/view/new_patient.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.037037">
-              <caret line="26" column="64" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Basic.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/model/Basic.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.23684211">
-              <caret line="7" column="133" selection-start-line="7" selection-start-column="133" selection-end-line="7" selection-end-column="133" />
+            <state vertical-scroll-proportion="0.5601504">
+              <caret line="137" column="79" selection-start-line="137" selection-start-column="79" selection-end-line="137" selection-end-column="79" />
               <folding>
-                <marker date="1581015700609" expanded="true" signature="133:232" placeholder="SELECT * FRO... users" />
-                <marker date="1581015700609" expanded="true" signature="133:245" placeholder="SELECT * FRO... users" />
-                <marker date="1581015700609" expanded="true" signature="133:251" placeholder="SELECT * FRO... users" />
-                <marker date="1581015700609" expanded="true" signature="817:1650" placeholder="INSERT INTO `patients`... " />
-                <marker date="1581015700609" expanded="true" signature="1701:1729" placeholder="SELECT MAX(i... patients" />
-                <marker date="1581015700609" expanded="true" signature="2041:2407" placeholder="INSERT INTO `results`... " />
-                <marker date="1581015700609" expanded="true" signature="2528:2589" placeholder="SELECT * FRO... personal_info" />
-                <marker date="1581015700609" expanded="true" signature="2815:3134" placeholder="SELECT * FRO... patients" />
-                <marker date="1581015700609" expanded="true" signature="3272:3486" placeholder="SELECT * FRO... patients" />
-                <marker date="1581015700609" expanded="true" signature="3631:3861" placeholder="SELECT * FRO... patients" />
-                <marker date="1581015700609" expanded="true" signature="4053:4212" placeholder="SELECT * FRO... patients" />
-                <marker date="1581015700609" expanded="true" signature="4276:4451" placeholder="SELECT * FRO... patients" />
-                <marker date="1581015700609" expanded="true" signature="4518:4695" placeholder="SELECT * FRO... patients" />
-                <marker date="1581015700609" expanded="true" signature="4848:5119" placeholder="SELECT * FRO... patients" />
-                <marker date="1581015700609" expanded="true" signature="5269:5363" placeholder="SELECT * FRO... patients" />
-                <marker date="1581015700609" expanded="true" signature="5823:6072" placeholder="SELECT * FRO... patients" />
-                <marker date="1581015700609" expanded="true" signature="7291:7402" placeholder="SELECT names... " />
-                <marker date="1581015700609" expanded="true" signature="7507:7528" placeholder="SELECT * FRO... doctors" />
-                <marker date="1581015700609" expanded="true" signature="7624:7643" placeholder="SELECT * FRO... tests" />
-                <marker date="1581015700609" expanded="true" signature="8970:9117" placeholder="SELECT * FRO... patients" />
-                <marker date="1581015700609" expanded="true" signature="9216:9299" placeholder="DELETE FROM " />
-                <marker date="1581015700609" expanded="true" signature="9348:9438" placeholder="DELETE FROM " />
-                <marker date="1581015700609" expanded="true" signature="9534:9961" placeholder="UPDATE patie... " />
-                <marker date="1581015700609" expanded="true" signature="10056:10078" placeholder="SELECT * FRO... hospital" />
-                <marker date="1581015700609" expanded="true" signature="12608:12655" placeholder="SELECT COUNT... tests" />
-                <marker date="1581015700609" expanded="true" signature="12864:12911" placeholder="SELECT COUNT... tests" />
-                <marker date="1581015700609" expanded="true" signature="13122:13168" placeholder="SELECT COUNT... tests" />
-                <marker date="1581015700609" expanded="true" signature="13377:13424" placeholder="SELECT COUNT... tests" />
-                <marker date="1581015700609" expanded="true" signature="13613:13660" placeholder="SELECT COUNT... tests" />
-                <marker date="1581015700609" expanded="true" signature="13829:13876" placeholder="SELECT COUNT... tests" />
-                <marker date="1581015700609" expanded="true" signature="14359:14519" placeholder="INSERT INTO `results`... " />
-                <marker date="1581015700609" expanded="true" signature="14651:14702" placeholder="DELETE FROM " />
-                <marker date="1581015700609" expanded="true" signature="14975:15135" placeholder="INSERT INTO `results`... " />
-                <marker date="1581015700609" expanded="true" signature="15267:15318" placeholder="DELETE FROM " />
-                <marker date="1581015700609" expanded="true" signature="15652:15812" placeholder="INSERT INTO `results`... " />
-                <marker date="1581015700609" expanded="true" signature="15944:15995" placeholder="DELETE FROM " />
-                <marker date="1581015700609" expanded="true" signature="16272:16432" placeholder="INSERT INTO `results`... " />
-                <marker date="1581015700609" expanded="true" signature="16564:16613" placeholder="DELETE FROM " />
-                <marker date="1581015700609" expanded="true" signature="16707:16999" placeholder="INSERT INTO `results`... " />
-                <marker date="1581015700609" expanded="true" signature="17191:17346" placeholder="SELECT *FROM... patients" />
-                <marker date="1581015700609" expanded="true" signature="17416:17566" placeholder="SELECT *FROM... patients" />
-                <marker date="1581015700609" expanded="true" signature="17637:17784" placeholder="SELECT *FROM... patients" />
-                <marker date="1581015700609" expanded="true" signature="17971:18088" placeholder="SELECT COUNT... patients" />
-                <marker date="1581015700609" expanded="true" signature="18250:18353" placeholder="SELECT COUNT... patients" />
-                <marker date="1581015700609" expanded="true" signature="18532:19145" placeholder="INSERT INTO `tests`... " />
-                <marker date="1581015700609" expanded="true" signature="19982:20088" placeholder="SELECT * FRO... patients" />
-                <marker date="1581015700609" expanded="true" signature="20456:20663" placeholder="SELECT `test... results" />
-                <marker date="1581015700609" expanded="true" signature="21191:21342" placeholder="SELECT * FRO... results" />
-                <marker date="1581015700609" expanded="true" signature="21565:21740" placeholder="DELETE FROM " />
-                <marker date="1581015700609" expanded="true" signature="21895:22102" placeholder="SELECT `test... results" />
-                <marker date="1581015700609" expanded="true" signature="22737:22892" placeholder="SELECT `name... patients" />
-                <marker date="1581015700609" expanded="true" signature="23000:23094" placeholder="SELECT * FRO... patients" />
-                <marker date="1581015700609" expanded="true" signature="23237:23269" placeholder="SELECT MAX(n... patients" />
-                <marker date="1581015700609" expanded="true" signature="23670:23716" placeholder="SELECT defau... hospital" />
-                <marker date="1581015700609" expanded="true" signature="23826:23931" placeholder="SELECT * FRO... personal_info" />
-                <marker date="1581015700609" expanded="true" signature="24041:25748" placeholder="UPDATE perso... " />
-                <marker date="1581015700609" expanded="true" signature="25882:27470" placeholder="UPDATE perso... " />
-                <marker date="1581015700609" expanded="true" signature="28511:28543" placeholder="SELECT MAX(n... patients" />
+                <element signature="e#4458#4482#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -111,49 +43,78 @@
       <file leaf-file-name="new_patient.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/new_patient.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="57" column="59" selection-start-line="57" selection-start-column="59" selection-end-line="57" selection-end-column="59" />
+            <state vertical-scroll-proportion="-7.3333335">
+              <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dkc.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/Dkc.php">
+      <file leaf-file-name="Basic.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model/Basic.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="21" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="21" />
+            <state vertical-scroll-proportion="-3.245614">
+              <caret line="519" column="39" selection-start-line="519" selection-start-column="39" selection-end-line="519" selection-end-column="39" />
               <folding>
-                <marker date="1580812428977" expanded="true" signature="199:331" placeholder="SELECT * FRO... exams" />
-                <marker date="1580812428977" expanded="true" signature="464:589" placeholder="SELECT * FRO... exams" />
-                <marker date="1580812428977" expanded="true" signature="706:1246" placeholder="UPDATE exams... " />
-                <marker date="1580812428977" expanded="true" signature="1352:1405" placeholder="DELETE FROM " />
-                <marker date="1580812428977" expanded="true" signature="1556:2153" placeholder="INSERT INTO `exams`... " />
-                <marker date="1580812428977" expanded="true" signature="2270:2392" placeholder="UPDATE exams... " />
-                <marker date="1580812428977" expanded="true" signature="2515:2729" placeholder="SELECT * FRO... patients" />
-                <marker date="1580812428977" expanded="true" signature="2909:3095" placeholder="SELECT * FRO... patients" />
-                <marker date="1580812428977" expanded="true" signature="3204:3228" placeholder="UPDATE perso... " />
-                <marker date="1580812428977" expanded="true" signature="3204:3249" placeholder="UPDATE perso... " />
-                <marker date="1580812428977" expanded="true" signature="3204:3283" placeholder="UPDATE perso... " />
-                <marker date="1580812428977" expanded="true" signature="3204:3284" placeholder="UPDATE perso... " />
-                <marker date="1580812428977" expanded="true" signature="3204:3292" placeholder="UPDATE perso... " />
-                <marker date="1580812428977" expanded="true" signature="3204:3293" placeholder="UPDATE perso... " />
-                <marker date="1580812428977" expanded="true" signature="3395:3482" placeholder="UPDATE perso... " />
-                <marker date="1580812428977" expanded="true" signature="3593:3677" placeholder="UPDATE perso... " />
-                <marker date="1580812428977" expanded="true" signature="3779:4367" placeholder="INSERT INTO `personal_info`... " />
-                <marker date="1580812428977" expanded="true" signature="3779:4381" placeholder="INSERT INTO `personal_info`... " />
-                <marker date="1580812428977" expanded="true" signature="3779:4996" placeholder="INSERT INTO `personal_info`... " />
+                <marker date="1581017054756" expanded="true" signature="133:232" placeholder="SELECT * FRO... users" />
+                <marker date="1581017054756" expanded="true" signature="133:245" placeholder="SELECT * FRO... users" />
+                <marker date="1581017054756" expanded="true" signature="133:251" placeholder="SELECT * FRO... users" />
+                <marker date="1581017054756" expanded="true" signature="817:1650" placeholder="INSERT INTO `patients`... " />
+                <marker date="1581017054756" expanded="true" signature="1701:1729" placeholder="SELECT MAX(i... patients" />
+                <marker date="1581017054756" expanded="true" signature="2041:2407" placeholder="INSERT INTO `results`... " />
+                <marker date="1581017054756" expanded="true" signature="2528:2589" placeholder="SELECT * FRO... personal_info" />
+                <marker date="1581017054756" expanded="true" signature="2815:3134" placeholder="SELECT * FRO... patients" />
+                <marker date="1581017054756" expanded="true" signature="3272:3486" placeholder="SELECT * FRO... patients" />
+                <marker date="1581017054756" expanded="true" signature="3631:3861" placeholder="SELECT * FRO... patients" />
+                <marker date="1581017054756" expanded="true" signature="4053:4212" placeholder="SELECT * FRO... patients" />
+                <marker date="1581017054756" expanded="true" signature="4276:4451" placeholder="SELECT * FRO... patients" />
+                <marker date="1581017054756" expanded="true" signature="4518:4695" placeholder="SELECT * FRO... patients" />
+                <marker date="1581017054756" expanded="true" signature="4848:5119" placeholder="SELECT * FRO... patients" />
+                <marker date="1581017054756" expanded="true" signature="5269:5363" placeholder="SELECT * FRO... patients" />
+                <marker date="1581017054756" expanded="true" signature="5823:6072" placeholder="SELECT * FRO... patients" />
+                <marker date="1581017054756" expanded="true" signature="7291:7402" placeholder="SELECT names... " />
+                <marker date="1581017054756" expanded="true" signature="7507:7528" placeholder="SELECT * FRO... doctors" />
+                <marker date="1581017054756" expanded="true" signature="7624:7643" placeholder="SELECT * FRO... tests" />
+                <marker date="1581017054756" expanded="true" signature="8970:9117" placeholder="SELECT * FRO... patients" />
+                <marker date="1581017054756" expanded="true" signature="9216:9299" placeholder="DELETE FROM " />
+                <marker date="1581017054756" expanded="true" signature="9348:9438" placeholder="DELETE FROM " />
+                <marker date="1581017054756" expanded="true" signature="9534:9961" placeholder="UPDATE patie... " />
+                <marker date="1581017054756" expanded="true" signature="10056:10078" placeholder="SELECT * FRO... hospital" />
+                <marker date="1581017054756" expanded="true" signature="12608:12655" placeholder="SELECT COUNT... tests" />
+                <marker date="1581017054756" expanded="true" signature="12864:12911" placeholder="SELECT COUNT... tests" />
+                <marker date="1581017054756" expanded="true" signature="13122:13168" placeholder="SELECT COUNT... tests" />
+                <marker date="1581017054756" expanded="true" signature="13377:13424" placeholder="SELECT COUNT... tests" />
+                <marker date="1581017054756" expanded="true" signature="13613:13660" placeholder="SELECT COUNT... tests" />
+                <marker date="1581017054756" expanded="true" signature="13829:13876" placeholder="SELECT COUNT... tests" />
+                <marker date="1581017054756" expanded="true" signature="14359:14519" placeholder="INSERT INTO `results`... " />
+                <marker date="1581017054756" expanded="true" signature="14651:14702" placeholder="DELETE FROM " />
+                <marker date="1581017054756" expanded="true" signature="14975:15135" placeholder="INSERT INTO `results`... " />
+                <marker date="1581017054756" expanded="true" signature="15267:15318" placeholder="DELETE FROM " />
+                <marker date="1581017054756" expanded="true" signature="15652:15812" placeholder="INSERT INTO `results`... " />
+                <marker date="1581017054756" expanded="true" signature="15944:15995" placeholder="DELETE FROM " />
+                <marker date="1581017054756" expanded="true" signature="16272:16432" placeholder="INSERT INTO `results`... " />
+                <marker date="1581017054756" expanded="true" signature="16564:16613" placeholder="DELETE FROM " />
+                <marker date="1581017054756" expanded="true" signature="16707:16999" placeholder="INSERT INTO `results`... " />
+                <marker date="1581017054756" expanded="true" signature="17191:17346" placeholder="SELECT *FROM... patients" />
+                <marker date="1581017054756" expanded="true" signature="17416:17566" placeholder="SELECT *FROM... patients" />
+                <marker date="1581017054756" expanded="true" signature="17637:17784" placeholder="SELECT *FROM... patients" />
+                <marker date="1581017054756" expanded="true" signature="17971:18088" placeholder="SELECT COUNT... patients" />
+                <marker date="1581017054756" expanded="true" signature="18250:18353" placeholder="SELECT COUNT... patients" />
+                <marker date="1581017054756" expanded="true" signature="18532:19145" placeholder="INSERT INTO `tests`... " />
+                <marker date="1581017054756" expanded="true" signature="19982:20088" placeholder="SELECT * FRO... patients" />
+                <marker date="1581017054756" expanded="true" signature="20477:20684" placeholder="SELECT `test... results" />
+                <marker date="1581017054756" expanded="true" signature="21212:21363" placeholder="SELECT * FRO... results" />
+                <marker date="1581017054756" expanded="true" signature="21586:21761" placeholder="DELETE FROM " />
+                <marker date="1581017054756" expanded="true" signature="21916:22123" placeholder="SELECT `test... results" />
+                <marker date="1581017054756" expanded="true" signature="22758:22913" placeholder="SELECT `name... patients" />
+                <marker date="1581017054756" expanded="true" signature="23021:23115" placeholder="SELECT * FRO... patients" />
+                <marker date="1581017054756" expanded="true" signature="23258:23290" placeholder="SELECT MAX(n... patients" />
+                <marker date="1581017054756" expanded="true" signature="23691:23737" placeholder="SELECT defau... hospital" />
+                <marker date="1581017054756" expanded="true" signature="23847:23952" placeholder="SELECT * FRO... personal_info" />
+                <marker date="1581017054756" expanded="true" signature="24062:25769" placeholder="UPDATE perso... " />
+                <marker date="1581017054756" expanded="true" signature="25903:27491" placeholder="UPDATE perso... " />
+                <marker date="1581017054756" expanded="true" signature="28532:28564" placeholder="SELECT MAX(n... patients" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/header.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="73" selection-start-line="4" selection-start-column="73" selection-end-line="4" selection-end-column="73" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -215,9 +176,9 @@
         <option value="$PROJECT_DIR$/view/search.tpl" />
         <option value="$PROJECT_DIR$/view/header.tpl" />
         <option value="$PROJECT_DIR$/css/notifications.css" />
+        <option value="$PROJECT_DIR$/model/Basic.php" />
         <option value="$PROJECT_DIR$/controller/new_patient.php" />
         <option value="$PROJECT_DIR$/view/new_patient.tpl" />
-        <option value="$PROJECT_DIR$/model/Basic.php" />
       </list>
     </option>
   </component>
@@ -278,6 +239,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="dkc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dkc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dkc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -408,13 +383,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -551,13 +519,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/new_request.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.222222">
-          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/new_request_cl.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="4.6595745">
@@ -569,13 +530,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3670412">
           <caret line="100" column="57" selection-start-line="100" selection-start-column="57" selection-end-line="100" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/old_results.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40957448">
-          <caret line="43" column="60" selection-start-line="43" selection-start-column="60" selection-end-line="43" selection-end-column="60" />
         </state>
       </provider>
     </entry>
@@ -642,13 +596,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/personal_medical_history.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.333333">
-          <caret line="17" column="35" selection-start-line="0" selection-start-column="0" selection-end-line="37" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/personal_medical_history.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13533835">
@@ -691,32 +638,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/header.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="73" selection-start-line="4" selection-start-column="73" selection-end-line="4" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/search.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13721804">
-          <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/search.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13533835">
           <caret line="94" column="48" selection-start-line="94" selection-start-column="48" selection-end-line="94" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/new_request_cl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9830827">
-          <caret line="151" column="25" selection-start-line="151" selection-start-column="25" selection-end-line="151" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -734,7 +659,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/model/Dkc.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.033834588">
           <caret line="10" column="21" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="21" />
           <folding>
             <marker date="1580812428977" expanded="true" signature="199:331" placeholder="SELECT * FRO... exams" />
@@ -760,85 +685,143 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/new_patient.php">
+    <entry file="file://$PROJECT_DIR$/view/header.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="57" column="59" selection-start-line="57" selection-start-column="59" selection-end-line="57" selection-end-column="59" />
+        <state vertical-scroll-proportion="0.033834588">
+          <caret line="4" column="73" selection-start-line="4" selection-start-column="73" selection-end-line="4" selection-end-column="73" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/new_patient.tpl">
+    <entry file="file://$PROJECT_DIR$/controller/search.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.037037">
-          <caret line="26" column="64" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
+        <state vertical-scroll-proportion="-2.851852">
+          <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.84586465">
+          <caret line="25" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/personal_medical_history.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17105263">
+          <caret line="17" column="35" selection-start-line="0" selection-start-column="0" selection-end-line="37" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/old_results.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43045112">
+          <caret line="43" column="60" selection-start-line="43" selection-start-column="60" selection-end-line="43" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/new_request_cl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9830827">
+          <caret line="151" column="25" selection-start-line="151" selection-start-column="25" selection-end-line="151" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/new_request.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5093985">
+          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/new_patient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.3333335">
+          <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/Basic.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23684211">
-          <caret line="7" column="133" selection-start-line="7" selection-start-column="133" selection-end-line="7" selection-end-column="133" />
+        <state vertical-scroll-proportion="-3.245614">
+          <caret line="519" column="39" selection-start-line="519" selection-start-column="39" selection-end-line="519" selection-end-column="39" />
           <folding>
-            <marker date="1581015700609" expanded="true" signature="133:232" placeholder="SELECT * FRO... users" />
-            <marker date="1581015700609" expanded="true" signature="133:245" placeholder="SELECT * FRO... users" />
-            <marker date="1581015700609" expanded="true" signature="133:251" placeholder="SELECT * FRO... users" />
-            <marker date="1581015700609" expanded="true" signature="817:1650" placeholder="INSERT INTO `patients`... " />
-            <marker date="1581015700609" expanded="true" signature="1701:1729" placeholder="SELECT MAX(i... patients" />
-            <marker date="1581015700609" expanded="true" signature="2041:2407" placeholder="INSERT INTO `results`... " />
-            <marker date="1581015700609" expanded="true" signature="2528:2589" placeholder="SELECT * FRO... personal_info" />
-            <marker date="1581015700609" expanded="true" signature="2815:3134" placeholder="SELECT * FRO... patients" />
-            <marker date="1581015700609" expanded="true" signature="3272:3486" placeholder="SELECT * FRO... patients" />
-            <marker date="1581015700609" expanded="true" signature="3631:3861" placeholder="SELECT * FRO... patients" />
-            <marker date="1581015700609" expanded="true" signature="4053:4212" placeholder="SELECT * FRO... patients" />
-            <marker date="1581015700609" expanded="true" signature="4276:4451" placeholder="SELECT * FRO... patients" />
-            <marker date="1581015700609" expanded="true" signature="4518:4695" placeholder="SELECT * FRO... patients" />
-            <marker date="1581015700609" expanded="true" signature="4848:5119" placeholder="SELECT * FRO... patients" />
-            <marker date="1581015700609" expanded="true" signature="5269:5363" placeholder="SELECT * FRO... patients" />
-            <marker date="1581015700609" expanded="true" signature="5823:6072" placeholder="SELECT * FRO... patients" />
-            <marker date="1581015700609" expanded="true" signature="7291:7402" placeholder="SELECT names... " />
-            <marker date="1581015700609" expanded="true" signature="7507:7528" placeholder="SELECT * FRO... doctors" />
-            <marker date="1581015700609" expanded="true" signature="7624:7643" placeholder="SELECT * FRO... tests" />
-            <marker date="1581015700609" expanded="true" signature="8970:9117" placeholder="SELECT * FRO... patients" />
-            <marker date="1581015700609" expanded="true" signature="9216:9299" placeholder="DELETE FROM " />
-            <marker date="1581015700609" expanded="true" signature="9348:9438" placeholder="DELETE FROM " />
-            <marker date="1581015700609" expanded="true" signature="9534:9961" placeholder="UPDATE patie... " />
-            <marker date="1581015700609" expanded="true" signature="10056:10078" placeholder="SELECT * FRO... hospital" />
-            <marker date="1581015700609" expanded="true" signature="12608:12655" placeholder="SELECT COUNT... tests" />
-            <marker date="1581015700609" expanded="true" signature="12864:12911" placeholder="SELECT COUNT... tests" />
-            <marker date="1581015700609" expanded="true" signature="13122:13168" placeholder="SELECT COUNT... tests" />
-            <marker date="1581015700609" expanded="true" signature="13377:13424" placeholder="SELECT COUNT... tests" />
-            <marker date="1581015700609" expanded="true" signature="13613:13660" placeholder="SELECT COUNT... tests" />
-            <marker date="1581015700609" expanded="true" signature="13829:13876" placeholder="SELECT COUNT... tests" />
-            <marker date="1581015700609" expanded="true" signature="14359:14519" placeholder="INSERT INTO `results`... " />
-            <marker date="1581015700609" expanded="true" signature="14651:14702" placeholder="DELETE FROM " />
-            <marker date="1581015700609" expanded="true" signature="14975:15135" placeholder="INSERT INTO `results`... " />
-            <marker date="1581015700609" expanded="true" signature="15267:15318" placeholder="DELETE FROM " />
-            <marker date="1581015700609" expanded="true" signature="15652:15812" placeholder="INSERT INTO `results`... " />
-            <marker date="1581015700609" expanded="true" signature="15944:15995" placeholder="DELETE FROM " />
-            <marker date="1581015700609" expanded="true" signature="16272:16432" placeholder="INSERT INTO `results`... " />
-            <marker date="1581015700609" expanded="true" signature="16564:16613" placeholder="DELETE FROM " />
-            <marker date="1581015700609" expanded="true" signature="16707:16999" placeholder="INSERT INTO `results`... " />
-            <marker date="1581015700609" expanded="true" signature="17191:17346" placeholder="SELECT *FROM... patients" />
-            <marker date="1581015700609" expanded="true" signature="17416:17566" placeholder="SELECT *FROM... patients" />
-            <marker date="1581015700609" expanded="true" signature="17637:17784" placeholder="SELECT *FROM... patients" />
-            <marker date="1581015700609" expanded="true" signature="17971:18088" placeholder="SELECT COUNT... patients" />
-            <marker date="1581015700609" expanded="true" signature="18250:18353" placeholder="SELECT COUNT... patients" />
-            <marker date="1581015700609" expanded="true" signature="18532:19145" placeholder="INSERT INTO `tests`... " />
-            <marker date="1581015700609" expanded="true" signature="19982:20088" placeholder="SELECT * FRO... patients" />
-            <marker date="1581015700609" expanded="true" signature="20456:20663" placeholder="SELECT `test... results" />
-            <marker date="1581015700609" expanded="true" signature="21191:21342" placeholder="SELECT * FRO... results" />
-            <marker date="1581015700609" expanded="true" signature="21565:21740" placeholder="DELETE FROM " />
-            <marker date="1581015700609" expanded="true" signature="21895:22102" placeholder="SELECT `test... results" />
-            <marker date="1581015700609" expanded="true" signature="22737:22892" placeholder="SELECT `name... patients" />
-            <marker date="1581015700609" expanded="true" signature="23000:23094" placeholder="SELECT * FRO... patients" />
-            <marker date="1581015700609" expanded="true" signature="23237:23269" placeholder="SELECT MAX(n... patients" />
-            <marker date="1581015700609" expanded="true" signature="23670:23716" placeholder="SELECT defau... hospital" />
-            <marker date="1581015700609" expanded="true" signature="23826:23931" placeholder="SELECT * FRO... personal_info" />
-            <marker date="1581015700609" expanded="true" signature="24041:25748" placeholder="UPDATE perso... " />
-            <marker date="1581015700609" expanded="true" signature="25882:27470" placeholder="UPDATE perso... " />
-            <marker date="1581015700609" expanded="true" signature="28511:28543" placeholder="SELECT MAX(n... patients" />
+            <marker date="1581017054756" expanded="true" signature="133:232" placeholder="SELECT * FRO... users" />
+            <marker date="1581017054756" expanded="true" signature="133:245" placeholder="SELECT * FRO... users" />
+            <marker date="1581017054756" expanded="true" signature="133:251" placeholder="SELECT * FRO... users" />
+            <marker date="1581017054756" expanded="true" signature="817:1650" placeholder="INSERT INTO `patients`... " />
+            <marker date="1581017054756" expanded="true" signature="1701:1729" placeholder="SELECT MAX(i... patients" />
+            <marker date="1581017054756" expanded="true" signature="2041:2407" placeholder="INSERT INTO `results`... " />
+            <marker date="1581017054756" expanded="true" signature="2528:2589" placeholder="SELECT * FRO... personal_info" />
+            <marker date="1581017054756" expanded="true" signature="2815:3134" placeholder="SELECT * FRO... patients" />
+            <marker date="1581017054756" expanded="true" signature="3272:3486" placeholder="SELECT * FRO... patients" />
+            <marker date="1581017054756" expanded="true" signature="3631:3861" placeholder="SELECT * FRO... patients" />
+            <marker date="1581017054756" expanded="true" signature="4053:4212" placeholder="SELECT * FRO... patients" />
+            <marker date="1581017054756" expanded="true" signature="4276:4451" placeholder="SELECT * FRO... patients" />
+            <marker date="1581017054756" expanded="true" signature="4518:4695" placeholder="SELECT * FRO... patients" />
+            <marker date="1581017054756" expanded="true" signature="4848:5119" placeholder="SELECT * FRO... patients" />
+            <marker date="1581017054756" expanded="true" signature="5269:5363" placeholder="SELECT * FRO... patients" />
+            <marker date="1581017054756" expanded="true" signature="5823:6072" placeholder="SELECT * FRO... patients" />
+            <marker date="1581017054756" expanded="true" signature="7291:7402" placeholder="SELECT names... " />
+            <marker date="1581017054756" expanded="true" signature="7507:7528" placeholder="SELECT * FRO... doctors" />
+            <marker date="1581017054756" expanded="true" signature="7624:7643" placeholder="SELECT * FRO... tests" />
+            <marker date="1581017054756" expanded="true" signature="8970:9117" placeholder="SELECT * FRO... patients" />
+            <marker date="1581017054756" expanded="true" signature="9216:9299" placeholder="DELETE FROM " />
+            <marker date="1581017054756" expanded="true" signature="9348:9438" placeholder="DELETE FROM " />
+            <marker date="1581017054756" expanded="true" signature="9534:9961" placeholder="UPDATE patie... " />
+            <marker date="1581017054756" expanded="true" signature="10056:10078" placeholder="SELECT * FRO... hospital" />
+            <marker date="1581017054756" expanded="true" signature="12608:12655" placeholder="SELECT COUNT... tests" />
+            <marker date="1581017054756" expanded="true" signature="12864:12911" placeholder="SELECT COUNT... tests" />
+            <marker date="1581017054756" expanded="true" signature="13122:13168" placeholder="SELECT COUNT... tests" />
+            <marker date="1581017054756" expanded="true" signature="13377:13424" placeholder="SELECT COUNT... tests" />
+            <marker date="1581017054756" expanded="true" signature="13613:13660" placeholder="SELECT COUNT... tests" />
+            <marker date="1581017054756" expanded="true" signature="13829:13876" placeholder="SELECT COUNT... tests" />
+            <marker date="1581017054756" expanded="true" signature="14359:14519" placeholder="INSERT INTO `results`... " />
+            <marker date="1581017054756" expanded="true" signature="14651:14702" placeholder="DELETE FROM " />
+            <marker date="1581017054756" expanded="true" signature="14975:15135" placeholder="INSERT INTO `results`... " />
+            <marker date="1581017054756" expanded="true" signature="15267:15318" placeholder="DELETE FROM " />
+            <marker date="1581017054756" expanded="true" signature="15652:15812" placeholder="INSERT INTO `results`... " />
+            <marker date="1581017054756" expanded="true" signature="15944:15995" placeholder="DELETE FROM " />
+            <marker date="1581017054756" expanded="true" signature="16272:16432" placeholder="INSERT INTO `results`... " />
+            <marker date="1581017054756" expanded="true" signature="16564:16613" placeholder="DELETE FROM " />
+            <marker date="1581017054756" expanded="true" signature="16707:16999" placeholder="INSERT INTO `results`... " />
+            <marker date="1581017054756" expanded="true" signature="17191:17346" placeholder="SELECT *FROM... patients" />
+            <marker date="1581017054756" expanded="true" signature="17416:17566" placeholder="SELECT *FROM... patients" />
+            <marker date="1581017054756" expanded="true" signature="17637:17784" placeholder="SELECT *FROM... patients" />
+            <marker date="1581017054756" expanded="true" signature="17971:18088" placeholder="SELECT COUNT... patients" />
+            <marker date="1581017054756" expanded="true" signature="18250:18353" placeholder="SELECT COUNT... patients" />
+            <marker date="1581017054756" expanded="true" signature="18532:19145" placeholder="INSERT INTO `tests`... " />
+            <marker date="1581017054756" expanded="true" signature="19982:20088" placeholder="SELECT * FRO... patients" />
+            <marker date="1581017054756" expanded="true" signature="20477:20684" placeholder="SELECT `test... results" />
+            <marker date="1581017054756" expanded="true" signature="21212:21363" placeholder="SELECT * FRO... results" />
+            <marker date="1581017054756" expanded="true" signature="21586:21761" placeholder="DELETE FROM " />
+            <marker date="1581017054756" expanded="true" signature="21916:22123" placeholder="SELECT `test... results" />
+            <marker date="1581017054756" expanded="true" signature="22758:22913" placeholder="SELECT `name... patients" />
+            <marker date="1581017054756" expanded="true" signature="23021:23115" placeholder="SELECT * FRO... patients" />
+            <marker date="1581017054756" expanded="true" signature="23258:23290" placeholder="SELECT MAX(n... patients" />
+            <marker date="1581017054756" expanded="true" signature="23691:23737" placeholder="SELECT defau... hospital" />
+            <marker date="1581017054756" expanded="true" signature="23847:23952" placeholder="SELECT * FRO... personal_info" />
+            <marker date="1581017054756" expanded="true" signature="24062:25769" placeholder="UPDATE perso... " />
+            <marker date="1581017054756" expanded="true" signature="25903:27491" placeholder="UPDATE perso... " />
+            <marker date="1581017054756" expanded="true" signature="28532:28564" placeholder="SELECT MAX(n... patients" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/new_patient.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5601504">
+          <caret line="137" column="79" selection-start-line="137" selection-start-column="79" selection-end-line="137" selection-end-column="79" />
+          <folding>
+            <element signature="e#4458#4482#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>

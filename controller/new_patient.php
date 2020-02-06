@@ -12,7 +12,10 @@ $Smarty->template_dir='../view/';
 $Smarty->compile_dir='../template_c/';
 
 $Dkc = new Dkc();
-
+$needed_lvl = '2';
+$Dkc->accessControl($_SESSION['user_info'][0]['lvl'], $needed_lvl);
+$Smarty->assign('lvl', $_SESSION['user_info'][0]['lvl']);
+$Smarty->assign('doctors', $Dkc->getAllDoctors());
 //LANGUAGE START
 $def_lang = $Dkc->getLanguage();
 include_once "../languages/".$def_lang[0]['default_lang'].".php";
