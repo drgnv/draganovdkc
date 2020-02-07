@@ -12,7 +12,7 @@ $Smarty->compile_dir='../template_c/';
 
 
 $Basic = new Basic();
-
+$Smarty->assign('user_info', $_SESSION['user_info'][0]);
 //LANGUAGE START
 $def_lang = $Basic->getLanguage();
 include_once "../languages/".$def_lang[0]['default_lang'].".php";

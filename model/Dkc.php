@@ -128,7 +128,7 @@ class Dkc extends Mdds
              NULL,
              '".$pi['gp']."',
              '".$pi['names']."')";
-
+//echo $sql;
          $this->sqliexecute($sql);
 
 

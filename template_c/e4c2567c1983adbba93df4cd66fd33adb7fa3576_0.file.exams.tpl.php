@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-01-26 10:16:28
+/* Smarty version 3.1.32, created on 2020-02-07 13:57:52
   from '/var/www/html/dkc/view/exams.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5e2d4adc48e034_10598511',
+  'unifunc' => 'content_5e3d50c0e11191_82095166',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e4c2567c1983adbba93df4cd66fd33adb7fa3576' => 
     array (
       0 => '/var/www/html/dkc/view/exams.tpl',
-      1 => 1580026587,
+      1 => 1581076672,
       2 => 'file',
     ),
   ),
@@ -24,7 +24,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5e2d4adc48e034_10598511 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e3d50c0e11191_82095166 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 $_smarty_tpl->_subTemplateRender("file:menu.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
@@ -98,6 +98,8 @@ $_smarty_tpl->_subTemplateRender("file:menu.tpl", $_smarty_tpl->cache_id, $_smar
 >
 
 <div class="main">
+    <b style="font-size: 20px; text-decoration: underline;">Прегледи</b>
+    <br>
     <a style="font-size: 16px; text-decoration: none;" href="./add_exam.php"
 
        onclick="window.open('./add_exam.php',

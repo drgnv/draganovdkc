@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-02-04 18:11:40
+/* Smarty version 3.1.32, created on 2020-02-07 13:43:11
   from '/var/www/html/dkc/view/header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5e3997bcbde7f1_85504081',
+  'unifunc' => 'content_5e3d4d4f125982_22287127',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8df10e1e6db7d0dcfb070b8417cdace8f7c5d773' => 
     array (
       0 => '/var/www/html/dkc/view/header.tpl',
-      1 => 1580832696,
+      1 => 1581075790,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e3997bcbde7f1_85504081 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e3d4d4f125982_22287127 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html>
 <head>
@@ -83,9 +83,11 @@ function content_5e3997bcbde7f1_85504081 (Smarty_Internal_Template $_smarty_tpl)
         /* Demo 2 */
         #demo-2 input[type=search] {
             width: 15px;
+            height: 10px;
             padding-left: 10px;
             color: transparent;
             cursor: pointer;
+
         }
         #demo-2 input[type=search]:hover {
             background-color: #fff;
@@ -133,8 +135,9 @@ function content_5e3997bcbde7f1_85504081 (Smarty_Internal_Template $_smarty_tpl)
         }
         .main {
             margin-left: 175px; /* Same as the width of the sidenav */
+            margin-top: 0px;
             font-size: 28px; /* Increased text to enable scrolling */
-            padding: 0px 10px;
+            padding: 0px 0px 0px;
         }
 
         .showme {

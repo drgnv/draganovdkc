@@ -64,6 +64,8 @@
 </script>
 
 <div class="main">
+    <b style="font-size: 20px; text-decoration: underline;">Прегледи</b>
+    <br>
     <a style="font-size: 16px; text-decoration: none;" href="./add_exam.php"
 
        onclick="window.open('./add_exam.php',

@@ -652,6 +652,7 @@ class Basic extends Host{
           `pi_out_date` = '".mysqli_real_escape_string($this->connect(),$pi['out_date'])."',
           `pi_exp_date` = '".mysqli_real_escape_string($this->connect(),$pi['exp_date'])."',
           `pi_out_place` = '".mysqli_real_escape_string($this->connect(),$pi['out_place'])."',
+          `pi_gp` = '".mysqli_real_escape_string($this->connect(),$pi['gp'])."',
          `pi_workplace` = '".mysqli_real_escape_string($this->connect(),$pi['work_place'])."'
          WHERE pi_patient_idn = '".mysqli_real_escape_string($this->connect(),$pi['idn'])."'";
         $this->sqliexecute($sql);

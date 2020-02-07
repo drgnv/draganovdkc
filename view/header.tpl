@@ -58,9 +58,11 @@
         /* Demo 2 */
         #demo-2 input[type=search] {
             width: 15px;
+            height: 10px;
             padding-left: 10px;
             color: transparent;
             cursor: pointer;
+
         }
         #demo-2 input[type=search]:hover {
             background-color: #fff;
@@ -108,8 +110,9 @@
         }
         .main {
             margin-left: 175px; /* Same as the width of the sidenav */
+            margin-top: 0px;
             font-size: 28px; /* Increased text to enable scrolling */
-            padding: 0px 10px;
+            padding: 0px 0px 0px;
         }
 
         .showme {

@@ -12,7 +12,11 @@ $Smarty->template_dir='../view/';
 $Smarty->compile_dir='../template_c/';
 
 $Dkc = new Dkc();
-
+$needed_lvl = '2';
+$Dkc->accessControl($_SESSION['user_info'][0]['lvl'], $needed_lvl);
+$Smarty->assign('lvl', $_SESSION['user_info'][0]['lvl']);
+$Smarty->assign('user_info', $_SESSION['user_info'][0]);
+$Smarty->assign('doctors', $Dkc->getAllDoctors());
 //LANGUAGE START
 $def_lang = $Dkc->getLanguage();
 include_once "../languages/".$def_lang[0]['default_lang'].".php";
@@ -24,7 +28,12 @@ if(isset($_GET['search'])){
     $search = $_GET['search'];
 
     if(is_numeric($search) && strlen($search) == 10){
-
+        if(isset($_GET['success'])){
+            $notification['show'] = 'true';
+            $notification['alert_type'] = 'success';
+            $notification['msg'] = 'Пациента е добавен успешно';
+            $Smarty->assign('notification', $notification);
+        }
         $patient_info = $Dkc->getPersonalInfo($search);
         $Smarty->assign('patient_info', $patient_info[0]);
         $Smarty->assign('doctor', $_SESSION['user_info'][0]['id']);
@@ -33,6 +42,7 @@ if(isset($_GET['search'])){
 
 
         if(isset($_POST['save'])){
+
             $pi['address'] = filter_input(INPUT_POST, 'address');
             $pi['mail'] = filter_input(INPUT_POST, 'mail', FILTER_VALIDATE_EMAIL);
             $pi['gender'] = filter_input(INPUT_POST, 'gender', FILTER_VALIDATE_INT);
@@ -49,8 +59,24 @@ if(isset($_GET['search'])){
             $pi['out_place'] = filter_input(INPUT_POST, 'outplace');
             $pi['blood_type'] = filter_input(INPUT_POST, 'blood_type',  FILTER_VALIDATE_INT);
             $pi['idn'] = filter_input(INPUT_POST, 'idn');
-            $Dkc->updatePersonalInfoSearch($pi);
-            header('Location: ./search.php?search='.$pi['idn'].'');
+            $pi['gp'] = filter_input(INPUT_POST, 'gp');
+
+
+            if($Dkc->egn_valid($pi['idn'])) {
+                     $Dkc->updatePersonalInfoSearch($pi);
+                $notification['show'] = 'true';
+                $notification['alert_type'] = 'success';
+                $notification['msg'] = 'Пациента е добавен успешно';
+                $Smarty->assign('notification', $notification);
+                     header('Location: ./search.php?search='.$pi['idn'].'&success=true');
+            }else{
+
+                $notification['show'] = 'true';
+                $notification['alert_type'] = 'error';
+                $notification['msg'] = 'Въведен е невалиден ЕГН';
+                $Smarty->assign('notification', $notification);
+
+            }
         }
     }
 

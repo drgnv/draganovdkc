@@ -137,7 +137,7 @@
         >Алергии</a>
         </p>
         </div>
-        <form action="./search.php?search={$patient_info.pi_patient_idn}" method="post">
+        <form action="./search.php?search={$patient_info.pi_patient_idn}" method="post" autocomplete="on">
             <table border="1" cellspacing="0" align="center">
                 <thead style="font-size: 18px; background-color: #34495E; color: white;">
                 <th colspan="4">Лични данни</th>
@@ -145,10 +145,10 @@
                 <tbody style="font-size: 16px;">
                 <tr>
                     <td>Име:</td>
-                    <td><input type="text" name="names" value="{$patient_info.pi_names}"></td>
+                    <td><input type="text" name="names" value="{$patient_info.pi_names}" required></td>
 
                     <td>ЕГН:</td>
-                    <td><input type="text" name="idn" value="{$patient_info.pi_patient_idn}"></td>
+                    <td><input type="text" name="idn" value="{$patient_info.pi_patient_idn}" required></td>
                 </tr>
 
                 <tr>
@@ -156,12 +156,12 @@
                     <td><input type="text" name="address" value="{$patient_info.pi_address}"></td>
 
                     <td>E-mail:</td>
-                    <td><input type="text" name="mail" value="{$patient_info.pi_mail}"></td>
+                    <td><input type="mail" name="mail" value="{$patient_info.pi_mail}"></td>
                 </tr>
 
                 <tr>
                     <td>Телефон:</td>
-                    <td><input type="text" name="phone" value="{$patient_info.pi_phone}"></td>
+                    <td><input type="tel" name="phone" value="{$patient_info.pi_phone}"></td>
 
                     <td>Работно Място:</td>
                     <td><input type="text" name="work_place" value="{$patient_info.pi_workplace}"></td>
@@ -169,7 +169,7 @@
 
                 <tr>
                     <td>Гражданство:</td>
-                    <td><input type="text" name="citizenship" value="{$patient_info.citizenship}"></td>
+                    <td><input type="text" name="citizenship" value="{$patient_info.citizenship}" required></td>
 
                     <td>Пол:</td>
                     <td>
@@ -241,10 +241,28 @@
 
                     </td>
                 </tr>
+                {if $lvl >= 3}
+                    <tr>
+                        <td colspan="2" align="right">Личен лекар:</td>
+                        <td colspan="2">
+                            <select name="gp">
+                                {foreach from=$doctors item=doctor}
+                                    <option value="{$doctor.doctor_id}" {if $patient_info.pi_gp == $doctor.doctor_id} selected {/if}>{$doctor.doctor} - УИН:{$doctor.uin}</option>
+                                {/foreach}
+                            </select>
+                        </td>
+                    </tr>
+                {else}
+                    <input type="hidden" name="gp" value="{$user_info.doctor_id}">
+                {/if}
                 </tbody>
 
             </table><center>
                 <input type="submit" name="save" value="Добави нов пациент" style="font-size: 14px;">
+                {if isset($notification.show)}
+                    <div class="alert-box {$notification.alert_type}"><span> <img src="../images/{$notification.alert_type}.png" width="20" height="20"> {$notification.alert_type}: </span>
+                        {$notification.msg}. {if $notification.exist == 'true'} Можете да го прегледате <a href="./search.php?search={$idn}"> ТУК</a> {/if}</div>
+                {/if}
             </center>
         </form>
         {/if}

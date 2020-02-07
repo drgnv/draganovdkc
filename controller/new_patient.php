@@ -25,8 +25,7 @@ $Smarty->assign('lang', $language);
 
 if(isset($_POST['new_patient'])){
 
-    $pi['idn'] = $_POST['idn'];
-
+        $pi['idn'] = $_POST['idn'];
 
         $pi['names'] = $_POST['names'];
         $pi['address'] = $_POST['address'];

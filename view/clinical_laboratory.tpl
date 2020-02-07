@@ -19,9 +19,9 @@
     });
 </script>
 <div class="main">
-
+    <b style="font-size: 20px; text-decoration: underline;">Клинична лаборатория</b>
+<br>
     <a style="font-size: 16px; text-decoration: none; color: #1b6d85;" href="./new_request.php"
-
        onclick="window.open('./new_request.php',
                'newwindow',
                'width=1000,height=800');

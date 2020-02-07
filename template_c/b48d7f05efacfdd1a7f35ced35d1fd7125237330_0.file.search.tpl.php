@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-02-04 17:53:45
+/* Smarty version 3.1.32, created on 2020-02-07 12:05:17
   from '/var/www/html/dkc/view/search.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5e399389a16205_57955489',
+  'unifunc' => 'content_5e3d365db07908_26558175',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b48d7f05efacfdd1a7f35ced35d1fd7125237330' => 
     array (
       0 => '/var/www/html/dkc/view/search.tpl',
-      1 => 1580831625,
+      1 => 1581069916,
       2 => 'file',
     ),
   ),
@@ -23,7 +23,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5e399389a16205_57955489 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e3d365db07908_26558175 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 $_smarty_tpl->_subTemplateRender("file:menu.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 echo '<script'; ?>
@@ -207,13 +207,13 @@ echo '<script'; ?>
 "></td>
 
                     <td>E-mail:</td>
-                    <td><input type="text" name="mail" value="<?php echo $_smarty_tpl->tpl_vars['patient_info']->value['pi_mail'];?>
+                    <td><input type="mail" name="mail" value="<?php echo $_smarty_tpl->tpl_vars['patient_info']->value['pi_mail'];?>
 "></td>
                 </tr>
 
                 <tr>
                     <td>Телефон:</td>
-                    <td><input type="text" name="phone" value="<?php echo $_smarty_tpl->tpl_vars['patient_info']->value['pi_phone'];?>
+                    <td><input type="tel" name="phone" value="<?php echo $_smarty_tpl->tpl_vars['patient_info']->value['pi_phone'];?>
 "></td>
 
                     <td>Работно Място:</td>
@@ -315,10 +315,44 @@ echo '<script'; ?>
 
                     </td>
                 </tr>
+                <?php if ($_smarty_tpl->tpl_vars['lvl']->value >= 3) {?>
+                    <tr>
+                        <td colspan="2" align="right">Личен лекар:</td>
+                        <td colspan="2">
+                            <select name="gp">
+                                <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['doctors']->value, 'doctor');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['doctor']->value) {
+?>
+                                    <option value="<?php echo $_smarty_tpl->tpl_vars['doctor']->value['doctor_id'];?>
+" <?php if ($_smarty_tpl->tpl_vars['patient_info']->value['pi_gp'] == $_smarty_tpl->tpl_vars['doctor']->value['doctor_id']) {?> selected <?php }?>><?php echo $_smarty_tpl->tpl_vars['doctor']->value['doctor'];?>
+ - УИН:<?php echo $_smarty_tpl->tpl_vars['doctor']->value['uin'];?>
+</option>
+                                <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+                            </select>
+                        </td>
+                    </tr>
+                <?php } else { ?>
+                    <input type="hidden" name="gp" value="<?php echo $_smarty_tpl->tpl_vars['user_info']->value['doctor_id'];?>
+">
+                <?php }?>
                 </tbody>
 
             </table><center>
                 <input type="submit" name="save" value="Добави нов пациент" style="font-size: 14px;">
+                <?php if (isset($_smarty_tpl->tpl_vars['notification']->value['show'])) {?>
+                    <div class="alert-box <?php echo $_smarty_tpl->tpl_vars['notification']->value['alert_type'];?>
+"><span> <img src="../images/<?php echo $_smarty_tpl->tpl_vars['notification']->value['alert_type'];?>
+.png" width="20" height="20"> <?php echo $_smarty_tpl->tpl_vars['notification']->value['alert_type'];?>
+: </span>
+                        <?php echo $_smarty_tpl->tpl_vars['notification']->value['msg'];?>
+. <?php if ($_smarty_tpl->tpl_vars['notification']->value['exist'] == 'true') {?> Можете да го прегледате <a href="./search.php?search=<?php echo $_smarty_tpl->tpl_vars['idn']->value;?>
+"> ТУК</a> <?php }?></div>
+                <?php }?>
             </center>
         </form>
         <?php }?>

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-02-04 09:15:29
+/* Smarty version 3.1.32, created on 2020-02-07 13:27:58
   from '/var/www/html/dkc/view/menu.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5e391a11e0a866_52483597',
+  'unifunc' => 'content_5e3d49be904757_94473865',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '53d8056cc597d4ad0196423f1f5ce6a3f046a1f3' => 
     array (
       0 => '/var/www/html/dkc/view/menu.tpl',
-      1 => 1580800529,
+      1 => 1581074877,
       2 => 'file',
     ),
   ),
@@ -20,9 +20,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e391a11e0a866_52483597 (Smarty_Internal_Template $_smarty_tpl) {
-?><div class="sidenav">
+function content_5e3d49be904757_94473865 (Smarty_Internal_Template $_smarty_tpl) {
+?>
+<div class="sidenav">
     <center><img src="../images/dkcwhite.png" width="100px" height="100px" ></center>
+
     <form id="demo-2" action="./search.php" method="GET" autocomplete="off">
         <input type="search" placeholder="Търсене" name="search">
     </form><br>
@@ -42,7 +44,10 @@ function content_5e391a11e0a866_52483597 (Smarty_Internal_Template $_smarty_tpl)
         </div>
     </div>
     <a href="#clients">Документи</a>
-    <a href="#contact">Настройки</a>
+    <a href="./settings.php">Настройки</a>
     <a href="../logout.php">Изход</a>
-</div><?php }
+    <a style="font-size: 14px">Потребител: <?php echo $_smarty_tpl->tpl_vars['user_info']->value['name'];?>
+</a>
+</div>
+<?php }
 }

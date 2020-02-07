@@ -18,24 +18,7 @@ $def_lang = $Dkc->getLanguage();
 include_once "../languages/".$def_lang[0]['default_lang'].".php";
 $Smarty->assign('lang', $language);
 //LANGUAGE STOP
-//echo $_SESSION['user_info'][0]['id'];
-$exam_list = $Dkc->getExamsByUserId($_SESSION['user_info'][0]['id']);
-$Smarty->assign('exam_list', $exam_list);
 
-if(isset($_GET['delete_id'])){
 
-    $delete_id = $_GET['delete_id'];
-    $Dkc->deleteExamById($delete_id);
-    header('Location: exams.php');
 
-}
-
-if(isset($_GET['status'])){
-$status = $_GET['status'];
-$exam_id = $_GET['exam_id'];
-    $Dkc->changeExamStatus($status, $exam_id);
-    header('Location: exams.php');
-
-}
-
-$Smarty->display('exams.tpl');
+$Smarty->display('settings.tpl');
