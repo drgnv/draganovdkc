@@ -103,6 +103,7 @@ class Dkc extends Mdds
             `pi_fam_anamneza`,
             `pi_life_anamneza`,
             `pi_alergi`,
+            `pi_gp`,
             `pi_names`)
 
             VALUES (
@@ -125,6 +126,7 @@ class Dkc extends Mdds
              NULL,
              NULL,
              NULL,
+             '".$pi['gp']."',
              '".$pi['names']."')";
 
          $this->sqliexecute($sql);

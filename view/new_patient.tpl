@@ -129,17 +129,20 @@
             </td>
         </tr>
 
-
+        {if $lvl >= 3}
         <tr>
             <td colspan="2" align="right">Личен лекар:</td>
             <td colspan="2">
-                <select>
+                <select name="gp">
                     {foreach from=$doctors item=doctor}
                     <option value="{$doctor.doctor_id}">{$doctor.doctor} - УИН:{$doctor.uin}</option>
                     {/foreach}
                 </select>
             </td>
         </tr>
+            {else}
+            <input type="hidden" name="gp" value="{$user_info.doctor_id}">
+        {/if}
 
         </tbody>
 

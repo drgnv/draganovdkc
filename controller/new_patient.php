@@ -15,6 +15,7 @@ $Dkc = new Dkc();
 $needed_lvl = '2';
 $Dkc->accessControl($_SESSION['user_info'][0]['lvl'], $needed_lvl);
 $Smarty->assign('lvl', $_SESSION['user_info'][0]['lvl']);
+$Smarty->assign('user_info', $_SESSION['user_info'][0]);
 $Smarty->assign('doctors', $Dkc->getAllDoctors());
 //LANGUAGE START
 $def_lang = $Dkc->getLanguage();
@@ -42,6 +43,7 @@ if(isset($_POST['new_patient'])){
         $pi['rec_knizkha'] = $_POST['rec_knizkha'];
         $pi['lak_num'] = $_POST['lak_num'];
         $pi['blood_type'] = $_POST['blood_type'];
+        $pi['gp'] = $_POST['gp'];
 
    //
 
