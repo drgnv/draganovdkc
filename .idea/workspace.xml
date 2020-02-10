@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c0f0652b-a8f7-4d6e-b035-4646ba311cfb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/clinical_laboratory.php" afterPath="$PROJECT_DIR$/controller/clinical_laboratory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/exams.php" afterPath="$PROJECT_DIR$/controller/exams.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/home.php" afterPath="$PROJECT_DIR$/controller/home.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/new_patient.php" afterPath="$PROJECT_DIR$/controller/new_patient.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/search.php" afterPath="$PROJECT_DIR$/controller/search.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/jquery.dataTables.css" afterPath="$PROJECT_DIR$/libs/jquery.dataTables.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/Basic.php" afterPath="$PROJECT_DIR$/model/Basic.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/Dkc.php" afterPath="$PROJECT_DIR$/model/Dkc.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template_c/498439288ab0f2eb56a6123b4928b96d96336e55_0.file.clinical_laboratory.tpl.php" afterPath="$PROJECT_DIR$/template_c/498439288ab0f2eb56a6123b4928b96d96336e55_0.file.clinical_laboratory.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template_c/53d8056cc597d4ad0196423f1f5ce6a3f046a1f3_0.file.menu.tpl.php" afterPath="$PROJECT_DIR$/template_c/53d8056cc597d4ad0196423f1f5ce6a3f046a1f3_0.file.menu.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template_c/8df10e1e6db7d0dcfb070b8417cdace8f7c5d773_0.file.header.tpl.php" afterPath="$PROJECT_DIR$/template_c/8df10e1e6db7d0dcfb070b8417cdace8f7c5d773_0.file.header.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template_c/a6cae1d3872eea545d7a71e7a6dbf4440dfb67f1_0.file.new_patient.tpl.php" afterPath="$PROJECT_DIR$/template_c/a6cae1d3872eea545d7a71e7a6dbf4440dfb67f1_0.file.new_patient.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template_c/b48d7f05efacfdd1a7f35ced35d1fd7125237330_0.file.search.tpl.php" afterPath="$PROJECT_DIR$/template_c/b48d7f05efacfdd1a7f35ced35d1fd7125237330_0.file.search.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template_c/e4c2567c1983adbba93df4cd66fd33adb7fa3576_0.file.exams.tpl.php" afterPath="$PROJECT_DIR$/template_c/e4c2567c1983adbba93df4cd66fd33adb7fa3576_0.file.exams.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/clinical_laboratory.tpl" afterPath="$PROJECT_DIR$/view/clinical_laboratory.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/exams.tpl" afterPath="$PROJECT_DIR$/view/exams.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/header.tpl" afterPath="$PROJECT_DIR$/view/header.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/menu.tpl" afterPath="$PROJECT_DIR$/view/menu.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/search.tpl" afterPath="$PROJECT_DIR$/view/search.tpl" />
-    </list>
+    <list default="true" id="c0f0652b-a8f7-4d6e-b035-4646ba311cfb" name="Default" comment="" />
     <ignored path="dkc.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -309,7 +288,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1366" height="706" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22878788" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
