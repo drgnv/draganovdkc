@@ -6,7 +6,7 @@ class Host{
  public       $port=8080;
  public       $user="root";
  public       $password="TRfL711mMcooL";
- public       $database="dlab1911";
+ public       $database="dlab";
  public       $charset="utf8";  
  public       $connection;
  public       $vesion = "4.0";

@@ -58,8 +58,20 @@
 
                 </td>
                 <td>{$patient.number}</td>
-                <td>{$patient.names}</td>
-                <td>{$patient.idn}</td>
+                <td>
+                    <a href="./edit.php?id={$patient.id}"
+                       style="text-decoration: none; color: #1b6d85"
+                       onclick="window.open('./edit.php?id={$patient.id}',
+                               'newwindow',
+                               'width=900,height=600');
+                               return false;"
+                    >
+                        {$patient.names}</a></td>
+                <td>
+                    <a title="Търси по ЕГН" href="./search.php?search={$patient.idn}" style="text-decoration: none; color: #1b6d85" >
+                        <img src="../images/magnifire.png" width="15" height="15">
+                    {$patient.idn}
+                    </a></td>
                 <td>
                     <a href="./new_request_cl.php?names={$patient.names}&idn={$patient.idn}&doctor={$patient.doctor_id}"
                        style="text-decoration: none;"
