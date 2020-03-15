@@ -24,9 +24,4 @@ $dayList = $Dkc->getDayPatientListForDoc($_SESSION['user_info'][0]['doctor_id'])
 $Smarty->assign('daylist', $dayList);
 
 
-
-
-
-
-
 $Smarty->display('clinical_laboratory.tpl');

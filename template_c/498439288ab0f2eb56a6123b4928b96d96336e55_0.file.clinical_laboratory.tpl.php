@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-02-07 13:58:20
+/* Smarty version 3.1.32, created on 2020-03-15 12:19:47
   from '/var/www/html/dkc/view/clinical_laboratory.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5e3d50dce1a287_06957238',
+  'unifunc' => 'content_5e6e01436d2b08_56153520',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '498439288ab0f2eb56a6123b4928b96d96336e55' => 
     array (
       0 => '/var/www/html/dkc/view/clinical_laboratory.tpl',
-      1 => 1581076696,
+      1 => 1584219380,
       2 => 'file',
     ),
   ),
@@ -23,7 +23,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5e3d50dce1a287_06957238 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e6e01436d2b08_56153520 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 $_smarty_tpl->_subTemplateRender("file:menu.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 echo '<script'; ?>
@@ -101,10 +101,25 @@ if ($_prefixVariable2 !== "on") {?> <b hidden="true">b</b>
                 </td>
                 <td><?php echo $_smarty_tpl->tpl_vars['patient']->value['number'];?>
 </td>
-                <td><?php echo $_smarty_tpl->tpl_vars['patient']->value['names'];?>
-</td>
-                <td><?php echo $_smarty_tpl->tpl_vars['patient']->value['idn'];?>
-</td>
+                <td>
+                    <a href="./edit.php?id=<?php echo $_smarty_tpl->tpl_vars['patient']->value['id'];?>
+"
+                       style="text-decoration: none; color: #1b6d85"
+                       onclick="window.open('./edit.php?id=<?php echo $_smarty_tpl->tpl_vars['patient']->value['id'];?>
+',
+                               'newwindow',
+                               'width=900,height=600');
+                               return false;"
+                    >
+                        <?php echo $_smarty_tpl->tpl_vars['patient']->value['names'];?>
+</a></td>
+                <td>
+                    <a title="Търси по ЕГН" href="./search.php?search=<?php echo $_smarty_tpl->tpl_vars['patient']->value['idn'];?>
+" style="text-decoration: none; color: #1b6d85" >
+                        <img src="../images/magnifire.png" width="15" height="15">
+                    <?php echo $_smarty_tpl->tpl_vars['patient']->value['idn'];?>
+
+                    </a></td>
                 <td>
                     <a href="./new_request_cl.php?names=<?php echo $_smarty_tpl->tpl_vars['patient']->value['names'];?>
 &idn=<?php echo $_smarty_tpl->tpl_vars['patient']->value['idn'];?>

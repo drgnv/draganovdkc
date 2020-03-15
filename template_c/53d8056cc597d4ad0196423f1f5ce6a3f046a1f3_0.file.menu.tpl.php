@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2020-02-07 13:27:58
+/* Smarty version 3.1.32, created on 2020-03-15 18:36:01
   from '/var/www/html/dkc/view/menu.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5e3d49be904757_94473865',
+  'unifunc' => 'content_5e6e5971e1c8c4_85917119',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '53d8056cc597d4ad0196423f1f5ce6a3f046a1f3' => 
     array (
       0 => '/var/www/html/dkc/view/menu.tpl',
-      1 => 1581074877,
+      1 => 1584290160,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e3d49be904757_94473865 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e6e5971e1c8c4_85917119 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="sidenav">
     <center><img src="../images/dkcwhite.png" width="100px" height="100px" ></center>
@@ -43,7 +43,7 @@ function content_5e3d49be904757_94473865 (Smarty_Internal_Template $_smarty_tpl)
             <a style="font-size: 15px">>>Микробиология</a>
         </div>
     </div>
-    <a href="#clients">Документи</a>
+    <a href="./documents.php">Документи</a>
     <a href="./settings.php">Настройки</a>
     <a href="../logout.php">Изход</a>
     <a style="font-size: 14px">Потребител: <?php echo $_smarty_tpl->tpl_vars['user_info']->value['name'];?>
